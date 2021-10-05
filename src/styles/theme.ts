@@ -8,12 +8,13 @@ export default {
     radius: "1.2rem",
   },
   colors: {
-    white800: "#f8f8f8",
-    white900: "#fff",
+    mainBg: " #12131C",
+    gray: "#524861",
+    white: "#E5E7EB",
     black700: "#111",
     black800: "#06092b",
     black900: "#000",
-    red700: "#CC0F3E",
+    red800: "#C11010",
   },
   font: {
     family: {
