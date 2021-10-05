@@ -29,7 +29,9 @@ exports[`<Main /> should render the colors correctly 1`] = `
   -webkit-animation: gGvYtm 3s infinite linear;
   animation: gGvYtm 3s infinite linear;
   color: #f8f8f8;
-  font-size: 5rem;
+  font-family: 'Tangerine',cursive;
+  font-size: 7rem;
+  font-weight: 700;
 }
 
 .c3 {
@@ -45,6 +47,12 @@ exports[`<Main /> should render the colors correctly 1`] = `
 .c2 {
   color: #CC0F3E;
   font-size: 3rem;
+}
+
+@media (max-width:450px) {
+  .c2 {
+    font-size: 1.4rem;
+  }
 }
 
 <main
