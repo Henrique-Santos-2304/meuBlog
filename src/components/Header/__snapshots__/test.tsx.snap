@@ -1,13 +1,184 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Header /> should render  1`] = `
+exports[`Header should render  1`] = `
+.c2 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0.8rem 1.6rem;
+  background: #12131C;
+  border-radius: 1.2rem;
+}
+
+.c3 {
+  font-family: 'Tangerine',cursive;
+  font-size: 5rem;
+  color: #E5E7EB;
+}
+
+.c4 {
+  font-family: 'Tangerine',cursive;
+  font-size: 5rem;
+  color: #C11010;
+}
+
+.c5 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  width: 4.125rem;
+  height: 4.125rem;
+  border-radius: 50%;
+  padding: 1rem;
+  background: #12131C;
+  border: 0.155rem solid transparent;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.c5:hover {
+  width: 4.65rem;
+  height: 4.65rem;
+}
+
+.c6 {
+  display: block;
+  width: 1.8rem;
+  height: 0.2rem;
+  position: relative;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  background: #E5E7EB;
+}
+
+.c6::after {
+  background: #E5E7EB;
+  bottom: -0.6rem;
+}
+
+.c6::before {
+  background: #E5E7EB;
+  top: -0.6rem;
+}
+
+.c6::after,
+.c6::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.c0 {
+  width: 100vw;
+  height: 8rem;
+  background: #12131C;
+}
+
+.c1 {
+  margin: 0 auto;
+  height: 8rem;
+  max-width: 96rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0.2rem 3rem;
+  background: #12131C;
+}
+
+@media (max-width:450px) {
+  .c3 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width:450px) {
+  .c4 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width:768px) {
+  .c1 {
+    max-width: 80rem;
+    padding: 0.2rem 3rem;
+  }
+}
+
+@media (max-width:450px) {
+  .c1 {
+    padding: 0.2rem 2rem;
+  }
+}
+
 <div>
   <div
-    class=""
+    class="c0"
   >
-    <h1>
-      Header
-    </h1>
+    <header
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        <p
+          class="c3"
+        >
+          Web
+        </p>
+        <p
+          class="c4"
+        >
+          Dev
+        </p>
+      </div>
+      <div
+        class="c5"
+        data-testid="divClick"
+      >
+        <span
+          class="c6"
+          data-testid="span-test"
+        />
+      </div>
+    </header>
   </div>
 </div>
 `;

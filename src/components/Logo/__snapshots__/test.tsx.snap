@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Logo /> create Snapshot for element 1`] = `
+.c0 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0.8rem 1.6rem;
+  background: #12131C;
+  border-radius: 1.2rem;
+}
+
+.c1 {
+  font-family: 'Tangerine',cursive;
+  font-size: 5rem;
+  color: #E5E7EB;
+}
+
+.c2 {
+  font-family: 'Tangerine',cursive;
+  font-size: 5rem;
+  color: #C11010;
+}
+
+@media (max-width:450px) {
+  .c1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width:450px) {
+  .c2 {
+    font-size: 3rem;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <p
+      class="c1"
+    >
+      Web
+    </p>
+    <p
+      class="c2"
+    >
+      Dev
+    </p>
+  </div>
+</div>
+`;
