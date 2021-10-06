@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Header should render  1`] = `
-.c2 {
+.c0 {
+  text-align: center;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -17,76 +18,11 @@ exports[`Header should render  1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-right: 4rem;
-}
-
-.c3 {
-  width: 20rem;
-  height: 20rem;
-  border-radius: 50%;
-  box-shadow: 0 0 20px #C11010,0 0 10px #E5E7EB;
-}
-
-.c4 {
-  color: #E5E7EB;
-  font-family: 'Tangerine',cursive;
-  font-size: 5rem;
-  margin-top: 2rem;
-}
-
-.c0 {
-  width: 100vw;
-  height: 84vh;
-  background: #12131C;
-}
-
-.c1 {
-  margin: 0 auto;
-  background: url("https://res.cloudinary.com/defnibbpl/image/upload/v1633372258/gif_Bg_Main_80bf1894aa.gif") no-repeat;
-  background-size: contain;
-  max-width: 96rem;
-  height: 70vh;
-  padding: 3rem;
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
 }
 
 <div>
-  <div
+  <main
     class="c0"
-  >
-    <main
-      class="c1"
-    >
-      <div
-        class="c2"
-      >
-        <img
-          alt="Foto Programador"
-          class="c3"
-          src="https://res.cloudinary.com/defnibbpl/image/upload/v1633360611/medium_henrique_techs_89a8aae1bc.jpg"
-        />
-        <h1
-          class="c4"
-        >
-          Henrique Dos Santos
-        </h1>
-      </div>
-    </main>
-  </div>
+  />
 </div>
 `;

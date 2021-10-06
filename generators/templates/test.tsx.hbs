@@ -5,7 +5,7 @@ import { renderTheme } from "utils/testRenderTheme";
 
 describe("<{{pascalCase name}} />", () => {
   it("should render ", () => {
-    const { container } = renderTheme(<{{pascalCase name}} {...args} />);
+    const { container } = renderTheme(<{{pascalCase name}} />);
     expect(container).toMatchSnapshot();
   });
 });
