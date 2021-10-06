@@ -1,9 +1,8 @@
 import { renderTheme } from "utils/testRenderTheme";
-import Header from ".";
-
-describe("Header", () => {
+import BoxUser from ".";
+describe("BoxUser", () => {
   it("should render ", () => {
-    const { container } = renderTheme(<Header />);
+    const { container } = renderTheme(<BoxUser />);
     expect(container).toMatchSnapshot();
   });
 });

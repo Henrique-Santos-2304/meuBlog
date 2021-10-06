@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import media from "styled-media-query";
 
 export const Wrapper = styled.div`
   ${({ theme }) => css`
@@ -6,7 +7,7 @@ export const Wrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: ${theme.spacings.xsmall};
+    padding: ${theme.spacings.xxsmall} ${theme.spacings.xsmall};
     background: ${theme.colors.mainBg};
     border-radius: ${theme.border.radius};
   `}
@@ -14,15 +15,21 @@ export const Wrapper = styled.div`
 export const PreTextLogo = styled.p`
   ${({ theme }) => css`
     font-family: ${theme.font.family.Tangerine};
-    font-size: 6rem;
+    font-size: 5rem;
     color: ${theme.colors.white};
+  `}
+  ${media.lessThan("small")`
+    font-size: 3rem;
   `}
 `;
 
 export const ProTextLogo = styled.p`
   ${({ theme }) => css`
     font-family: ${theme.font.family.Tangerine};
-    font-size: 6rem;
+    font-size: 5rem;
     color: ${theme.colors.red800};
+  `}
+  ${media.lessThan("small")`
+    font-size: 3rem;
   `}
 `;

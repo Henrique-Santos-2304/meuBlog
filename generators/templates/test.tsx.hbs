@@ -1,6 +1,11 @@
-import { render } from "@testing-library/react"; import
-{{pascalCase name}}; from "."; import Teste from "."; describe("{{pascalCase
-  name
-}}", () => { it("should render ", () => { const { container } = render({{pascalCase
-  name
-}}); expect(container).toMatchSnapshot(); }); });
+import {{pascalCase name}} from ".";
+import { renderTheme } from "utils/testRenderTheme";
+
+
+
+describe("<{{pascalCase name}} />", () => {
+  it("should render ", () => {
+    const { container } = renderTheme(<{{pascalCase name}} {...args} />);
+    expect(container).toMatchSnapshot();
+  });
+});

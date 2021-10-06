@@ -15,4 +15,10 @@ module.exports = {
   ],
   setupFilesAfterEnv: ["<rootDir>/.jest/setup.ts"],
   modulePaths: ["<rootDir>/src/"],
+  globals: {
+    "ts-jest": {
+      // ...
+      isolatedModules: true,
+    },
+  },
 };

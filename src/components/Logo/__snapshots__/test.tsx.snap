@@ -17,21 +17,33 @@ exports[`<Logo /> create Snapshot for element 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 1.6rem;
+  padding: 0.8rem 1.6rem;
   background: #12131C;
   border-radius: 1.2rem;
 }
 
 .c1 {
   font-family: 'Tangerine',cursive;
-  font-size: 6rem;
+  font-size: 5rem;
   color: #E5E7EB;
 }
 
 .c2 {
   font-family: 'Tangerine',cursive;
-  font-size: 6rem;
+  font-size: 5rem;
   color: #C11010;
+}
+
+@media (max-width:450px) {
+  .c1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width:450px) {
+  .c2 {
+    font-size: 3rem;
+  }
 }
 
 <div>

@@ -18,22 +18,39 @@ exports[`<Teste /> should render  1`] = `
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
-  width: 5rem;
-  height: 5rem;
+  width: 4.125rem;
+  height: 4.125rem;
   border-radius: 50%;
   padding: 1rem;
-  background-color: #E5E7EB;
-  border: 0.2rem solid #524861;
+  background: #12131C;
+  border: 0.155rem solid transparent;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.c0:hover {
+  width: 4.65rem;
+  height: 4.65rem;
 }
 
 .c1 {
   display: block;
-  width: 3rem;
-  height: 0.3rem;
+  width: 1.8rem;
+  height: 0.2rem;
   position: relative;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-  background-color: #524861;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  background: #E5E7EB;
+}
+
+.c1::after {
+  background: #E5E7EB;
+  bottom: -0.6rem;
+}
+
+.c1::before {
+  background: #E5E7EB;
+  top: -0.6rem;
 }
 
 .c1::after,
@@ -45,15 +62,6 @@ exports[`<Teste /> should render  1`] = `
   position: absolute;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
-  background: #524861;
-}
-
-.c1:before {
-  top: -1rem;
-}
-
-.c1:after {
-  bottom: -1rem;
 }
 
 <div>

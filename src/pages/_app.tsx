@@ -4,6 +4,7 @@ import GlobalStyles from "styles/global";
 import { ThemeProvider } from "styled-components";
 import theme from "styles/theme";
 import React from "react";
+import Header from "components/Header";
 
 function App({ Component, pageProps }: AppProps) {
   return (
@@ -18,7 +19,7 @@ function App({ Component, pageProps }: AppProps) {
           content="My Boyllerplate/ Template for Projects React | Next.js"
         />
       </Head>
-
+      <Header />
       <Component {...pageProps} />
       <GlobalStyles />
     </ThemeProvider>
