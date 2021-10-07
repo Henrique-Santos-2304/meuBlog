@@ -17,14 +17,14 @@ exports[`Header should render  1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-right: 4rem;
+  margin-right: 8rem;
 }
 
 .c3 {
   width: 20rem;
   height: 20rem;
   border-radius: 50%;
-  box-shadow: 0 0 20px #C11010,0 0 10px #E5E7EB;
+  box-shadow: 0 0 10px #C11010,0 0 10px #E5E7EB;
 }
 
 .c4 {
@@ -44,7 +44,7 @@ exports[`Header should render  1`] = `
   margin: 0 auto;
   background: url("https://res.cloudinary.com/defnibbpl/image/upload/v1633372258/gif_Bg_Main_80bf1894aa.gif") no-repeat;
   background-size: contain;
-  max-width: 96rem;
+  max-width: 86vw;
   height: 70vh;
   padding: 3rem;
   text-align: center;
@@ -63,6 +63,44 @@ exports[`Header should render  1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+}
+
+@media (max-width:1020px) {
+  .c2 {
+    margin: -1rem -0.5rem 0 0;
+  }
+}
+
+@media (max-width:480px) {
+  .c2 {
+    margin: -2rem -2rem 0 0;
+  }
+}
+
+@media (max-width:780px) {
+  .c3 {
+    width: 11rem;
+    height: 11rem;
+  }
+}
+
+@media (max-width:480px) {
+  .c3 {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
+@media (max-width:1020px) {
+  .c4 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width:480px) {
+  .c4 {
+    font-size: 4rem;
+  }
 }
 
 <div>

@@ -17,14 +17,14 @@ exports[`BoxUser should render  1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-right: 4rem;
+  margin-right: 8rem;
 }
 
 .c1 {
   width: 20rem;
   height: 20rem;
   border-radius: 50%;
-  box-shadow: 0 0 20px #C11010,0 0 10px #E5E7EB;
+  box-shadow: 0 0 10px #C11010,0 0 10px #E5E7EB;
 }
 
 .c2 {
@@ -32,6 +32,44 @@ exports[`BoxUser should render  1`] = `
   font-family: 'Tangerine',cursive;
   font-size: 5rem;
   margin-top: 2rem;
+}
+
+@media (max-width:1020px) {
+  .c0 {
+    margin: -1rem -0.5rem 0 0;
+  }
+}
+
+@media (max-width:480px) {
+  .c0 {
+    margin: -2rem -2rem 0 0;
+  }
+}
+
+@media (max-width:780px) {
+  .c1 {
+    width: 11rem;
+    height: 11rem;
+  }
+}
+
+@media (max-width:480px) {
+  .c1 {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
+@media (max-width:1020px) {
+  .c2 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width:480px) {
+  .c2 {
+    font-size: 4rem;
+  }
 }
 
 <div>

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContentBody = styled.div`
-  width: 100vw;
+  width: ${({ theme }) => theme.grid.container};
   height: 84vh;
   background: ${({ theme }) => theme.colors.mainBg};
 `;

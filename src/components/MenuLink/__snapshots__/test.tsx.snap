@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MenuLink /> should Menu it's in the display  1`] = `
+.c0 {
+  width: 86vw;
+  padding: 2.4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: transparent;
+  box-shadow: 0 0 30px #C11010,0 0 10px #E5E7EB;
+  -webkit-backdrop-filter: blur(0.1rem);
+  backdrop-filter: blur(0.1rem);
+  overflow: hidden;
+  opacity: 1;
+  -webkit-transition: 1.2s ease-in-out;
+  transition: 1.2s ease-in-out;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.c1 {
+  color: #E5E7EB;
+  font-weight: 700;
+  padding: 0.8rem;
+  font-size: 2.0rem;
+  -webkit-letter-spacing: 0.1rem;
+  -moz-letter-spacing: 0.1rem;
+  -ms-letter-spacing: 0.1rem;
+  letter-spacing: 0.1rem;
+  position: relative;
+  -webkit-transition: filter .3s;
+  transition: filter .3s;
+}
+
+.c1:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -0.1rem;
+  right: 0;
+  height: 0.3rem;
+  background: #C11010;
+  -webkit-animation: hoverAnimation .4s forwards;
+  animation: hoverAnimation .4s forwards;
+}
+
+@media (max-width:748px) {
+  .c0 {
+    width: 100vw;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background: #E5E7EB;
+    width: 100vw;
+    height: 80vh;
+    border-radius: 0;
+  }
+
+  .c0 a {
+    color: #12131C;
+    font-size: 2.5rem;
+    padding: 2.4rem 0.8rem;
+  }
+}
+
+@media (max-width:1020px) {
+  .c1 {
+    font-size: 1.6rem;
+  }
+}
+
+<div>
+  <nav
+    aria-hidden="false"
+    class="c0"
+    data-testid="menuLinks"
+  >
+    <a
+      class="c1"
+      href="#"
+    >
+      Inicio
+    </a>
+    <a
+      class="c1"
+      href="#project"
+    >
+      Projetos
+    </a>
+    <a
+      class="c1"
+      href="#skills"
+    >
+      Habilidades
+    </a>
+    <a
+      class="c1"
+      href="#about"
+    >
+      Sobre
+    </a>
+  </nav>
+</div>
+`;

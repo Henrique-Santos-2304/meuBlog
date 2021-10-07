@@ -34,7 +34,7 @@ const modifierStyleMenu = {
 
 export const Wrapper = styled.div<CheckProps>`
   ${({ theme }) => css`
-    width: max-content;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,7 +43,7 @@ export const Wrapper = styled.div<CheckProps>`
     width: 4.125rem;
     height: 4.125rem;
     border-radius: 50%;
-    padding: 1rem;
+
     background: ${theme.colors.mainBg};
     border: 0.155rem solid transparent;
     transition: 0.2s linear;
@@ -57,6 +57,7 @@ export const LineSpan = styled.span<CheckProps>`
   ${({ check, theme }) => css`
     display: block;
     width: 1.8rem;
+    margin: 0 1rem;
     height: 0.2rem;
     position: relative;
     transition: 0.4s ease-in-out;

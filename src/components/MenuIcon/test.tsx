@@ -1,7 +1,7 @@
 // import { screen } from "@testing-library/react";
 import React from "react";
 import { renderTheme } from "utils/testRenderTheme";
-import { fireEvent, screen } from "@testing-library/react";
+import { screen } from "@testing-library/react";
 import "jest-styled-components";
 
 import MenuIcon from ".";
@@ -61,16 +61,7 @@ describe("<Teste />", () => {
       }
     );
   });
-  it("should state change with click menu in false", () => {
-    renderTheme(<MenuIcon check={false} />);
-    expect(screen.getByTestId("span-test")).toHaveStyle({
-      background: "#E5E7EB",
-    });
-    fireEvent.click(screen.getByTestId("divClick"));
-    expect(screen.getByTestId("span-test")).toHaveStyle({
-      background: "#C11010",
-    });
-  });
+
   it("Hope you have these styles when the input is  checked", () => {
     renderTheme(<MenuIcon check={true} />);
 
@@ -96,16 +87,6 @@ describe("<Teste />", () => {
     });
     expect(screen.getByTestId("span-test")).toHaveStyleRule("bottom", "0", {
       modifier: "::after",
-    });
-  });
-  it("should state change with click menu in true ", () => {
-    renderTheme(<MenuIcon check={true} />);
-    expect(screen.getByTestId("span-test")).toHaveStyle({
-      background: "#C11010",
-    });
-    fireEvent.click(screen.getByTestId("divClick"));
-    expect(screen.getByTestId("span-test")).toHaveStyle({
-      background: "#E5E7EB",
     });
   });
 });
