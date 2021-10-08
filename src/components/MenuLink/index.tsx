@@ -1,9 +1,9 @@
 import * as S from "./styles";
-export type MenuIsOpen = {
-  isOpen?: boolean;
-};
-const MenuLink = ({ isOpen = false }: MenuIsOpen) => (
-  <S.Wrapper aria-hidden={!isOpen} data-testid="menuLinks" isOpen={isOpen}>
+export interface CheckProps {
+  isOpen: boolean;
+}
+const MenuLink = ({ isOpen }: CheckProps) => (
+  <S.Wrapper aria-hidden={!isOpen} isOpen={isOpen}>
     <S.MenuLink href="#">Inicio</S.MenuLink>
     <S.MenuLink href="#project">Projetos</S.MenuLink>
     <S.MenuLink href="#skills">Habilidades</S.MenuLink>

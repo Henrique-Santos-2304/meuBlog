@@ -1,23 +1,35 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
-export const ContentBody = styled.div`
-  width: ${({ theme }) => theme.grid.container};
-  height: 84vh;
-  background: ${({ theme }) => theme.colors.mainBg};
+export const ContentBody = styled.main`
+  ${({ theme }) => css`
+    width: ${theme.grid.container};
+    height: 84vh;
+    background: ${theme.colors.mainBg};
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: ${theme.spacings.large};
+  `}
 `;
 
-export const Wrapper = styled.main`
+export const WrapperUser = styled.div`
   margin: 0 auto;
-  background: url("https://res.cloudinary.com/defnibbpl/image/upload/v1633372258/gif_Bg_Main_80bf1894aa.gif")
-    no-repeat;
-  background-size: contain;
   max-width: ${({ theme }) => theme.grid.containerContent};
-  height: 70vh;
-
   padding: 3rem;
   text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
+`;
+export const WrapperDescription = styled(WrapperUser)`
+  ${({ theme }) => css`
+    color: ${theme.colors.white};
+    font-size: ${theme.font.sizes.small};
+    line-height: 5rem;
+    p {
+      font-size: ${theme.font.sizes.large};
+      text-align: center;
+    }
+  `}
 `;

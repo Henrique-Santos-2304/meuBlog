@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<MenuLink /> should Menu it's in the display  1`] = `
+exports[`<MenuLink /> should have a menu on the display  1`] = `
 .c0 {
   width: 86vw;
   padding: 2.4rem;
@@ -32,7 +32,8 @@ exports[`<MenuLink /> should Menu it's in the display  1`] = `
 .c1 {
   color: #E5E7EB;
   font-weight: 700;
-  padding: 0.8rem;
+  margin: 0 1.6rem;
+  padding: 0 0.3rem;
   font-size: 2.0rem;
   -webkit-letter-spacing: 0.1rem;
   -moz-letter-spacing: 0.1rem;
@@ -46,7 +47,7 @@ exports[`<MenuLink /> should Menu it's in the display  1`] = `
 .c1:hover::after {
   content: "";
   position: absolute;
-  bottom: -0.1rem;
+  bottom: -0.6rem;
   right: 0;
   height: 0.3rem;
   background: #C11010;
@@ -69,7 +70,7 @@ exports[`<MenuLink /> should Menu it's in the display  1`] = `
   .c0 a {
     color: #12131C;
     font-size: 2.5rem;
-    padding: 2.4rem 0.8rem;
+    margin: 2.4rem 0;
   }
 }
 
@@ -83,7 +84,6 @@ exports[`<MenuLink /> should Menu it's in the display  1`] = `
   <nav
     aria-hidden="false"
     class="c0"
-    data-testid="menuLinks"
   >
     <a
       class="c1"

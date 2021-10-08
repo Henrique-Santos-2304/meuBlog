@@ -106,6 +106,8 @@ exports[`Header should render  1`] = `
   margin: 0 auto;
   height: 8rem;
   max-width: 86vw;
+  border-bottom: 0.1rem solid #E5E7EB;
+  border-radius: 2rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -171,7 +173,8 @@ exports[`Header should render  1`] = `
 .c7 {
   color: #E5E7EB;
   font-weight: 700;
-  padding: 0.8rem;
+  margin: 0 1.6rem;
+  padding: 0 0.3rem;
   font-size: 2.0rem;
   -webkit-letter-spacing: 0.1rem;
   -moz-letter-spacing: 0.1rem;
@@ -185,7 +188,7 @@ exports[`Header should render  1`] = `
 .c7:hover::after {
   content: "";
   position: absolute;
-  bottom: -0.1rem;
+  bottom: -0.6rem;
   right: 0;
   height: 0.3rem;
   background: #C11010;
@@ -248,7 +251,7 @@ exports[`Header should render  1`] = `
   .c6 a {
     color: #12131C;
     font-size: 2.5rem;
-    padding: 2.4rem 0.8rem;
+    margin: 2.4rem 0;
   }
 }
 
@@ -285,7 +288,6 @@ exports[`Header should render  1`] = `
         <nav
           aria-hidden="true"
           class="c6"
-          data-testid="menuLinks"
         >
           <a
             class="c7"
@@ -314,8 +316,9 @@ exports[`Header should render  1`] = `
         </nav>
       </div>
       <div
+        aria-label="Open or Close Menu"
         class="c8"
-        data-testid="divClick"
+        role="button"
       >
         <span
           class="c9"

@@ -29,7 +29,7 @@ export const Wrapper = styled.nav<MenuIsOpen>`
       a {
         color: ${theme.colors.mainBg};
         font-size: 2.5rem;
-        padding: ${theme.spacings.small} ${theme.spacings.xxsmall};
+        margin: ${theme.spacings.small} 0;
       }
     }
   `}
@@ -38,7 +38,8 @@ export const MenuLink = styled.a`
   ${({ theme }) => css`
     color: ${theme.colors.white};
     font-weight: 700;
-    padding: ${theme.spacings.xxsmall} ;
+    margin: 0 ${theme.spacings.xsmall} ;
+    padding: 0 0.3rem;
     font-size: ${theme.font.sizes.xlarge};
     letter-spacing: 0.1rem;
     position: relative;
@@ -53,7 +54,7 @@ export const MenuLink = styled.a`
       &::after {
         content: "";
         position: absolute;
-        bottom: -0.1rem;
+        bottom: -0.6rem;
         right: 0;
         height: 0.3rem;
         background: ${theme.colors.red800};

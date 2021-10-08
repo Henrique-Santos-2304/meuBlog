@@ -63,8 +63,9 @@ exports[`<Teste /> should render  1`] = `
 
 <div>
   <div
+    aria-label="Open or Close Menu"
     class="c0"
-    data-testid="divClick"
+    role="button"
   >
     <span
       class="c1"

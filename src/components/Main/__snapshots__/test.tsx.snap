@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Header should render  1`] = `
-.c2 {
+.c3 {
+  height: 84vh;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -17,17 +18,16 @@ exports[`Header should render  1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-right: 8rem;
 }
 
-.c3 {
-  width: 20rem;
-  height: 20rem;
+.c4 {
+  width: 18rem;
+  height: 18rem;
   border-radius: 50%;
   box-shadow: 0 0 10px #C11010,0 0 10px #E5E7EB;
 }
 
-.c4 {
+.c5 {
   color: #E5E7EB;
   font-family: 'Tangerine',cursive;
   font-size: 5rem;
@@ -38,14 +38,24 @@ exports[`Header should render  1`] = `
   width: 100vw;
   height: 84vh;
   background: #12131C;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 4.0rem;
 }
 
 .c1 {
   margin: 0 auto;
-  background: url("https://res.cloudinary.com/defnibbpl/image/upload/v1633372258/gif_Bg_Main_80bf1894aa.gif") no-repeat;
-  background-size: contain;
   max-width: 86vw;
-  height: 70vh;
   padding: 3rem;
   text-align: center;
   display: -webkit-box;
@@ -55,76 +65,72 @@ exports[`Header should render  1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
-@media (max-width:1020px) {
-  .c2 {
-    margin: -1rem -0.5rem 0 0;
-  }
+.c2 {
+  color: #E5E7EB;
+  font-size: 1.4rem;
+  line-height: 5rem;
 }
 
-@media (max-width:480px) {
-  .c2 {
-    margin: -2rem -2rem 0 0;
-  }
+.c2 p {
+  font-size: 1.8rem;
+  text-align: center;
 }
 
-@media (max-width:780px) {
-  .c3 {
-    width: 11rem;
-    height: 11rem;
-  }
-}
-
-@media (max-width:480px) {
-  .c3 {
-    width: 8rem;
-    height: 8rem;
-  }
-}
-
-@media (max-width:1020px) {
+@media (max-width:1024px) {
   .c4 {
-    font-size: 3rem;
+    width: 16rem;
+    height: 16rem;
   }
 }
 
-@media (max-width:480px) {
-  .c4 {
+@media (max-width:1024px) {
+  .c5 {
     font-size: 4rem;
   }
 }
 
 <div>
-  <div
+  <main
     class="c0"
   >
-    <main
+    <div
+      class="c1 c2"
+    >
+      <h1>
+         Desenvolvedor Web
+      </h1>
+      <p>
+        React.Js
+      </p>
+    </div>
+    <div
       class="c1"
     >
       <div
-        class="c2"
+        class="c3"
       >
         <img
           alt="Foto Programador"
-          class="c3"
+          class="c4"
           src="https://res.cloudinary.com/defnibbpl/image/upload/v1633360611/medium_henrique_techs_89a8aae1bc.jpg"
         />
         <h1
-          class="c4"
+          class="c5"
         >
           Henrique Dos Santos
         </h1>
       </div>
-    </main>
-  </div>
+    </div>
+  </main>
 </div>
 `;

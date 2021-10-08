@@ -16,6 +16,8 @@ export const Wrapper = styled.header`
     margin: 0 auto;
     height: 8rem;
     max-width: ${theme.grid.containerContent};
+    border-bottom: 0.1rem solid ${theme.colors.white};
+    border-radius: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;

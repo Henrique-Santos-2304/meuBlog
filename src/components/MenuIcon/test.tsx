@@ -14,78 +14,57 @@ describe("<Teste />", () => {
   });
   it("should change style with event hover element ", () => {
     renderTheme(<MenuIcon check={false} />);
-
-    expect(screen.getByTestId("divClick")).toHaveStyle({
+    const buttonIcon = screen.getByRole("button", { hidden: true });
+    expect(buttonIcon).toHaveStyle({
       width: "4.125rem",
       height: "4.125rem",
       transition: "0.2s linear",
     });
 
-    expect(screen.getByTestId("divClick")).toHaveStyleRule("width", "4.65rem", {
+    expect(buttonIcon).toHaveStyleRule("width", "4.65rem", {
       modifier: ":hover",
     });
-    expect(screen.getByTestId("divClick")).toHaveStyleRule(
-      "height",
-      "4.65rem",
-      { modifier: ":hover" }
-    );
+    expect(buttonIcon).toHaveStyleRule("height", "4.65rem", {
+      modifier: ":hover",
+    });
   });
   it("hope i have them when menu is closed", () => {
     renderTheme(<MenuIcon check={false} />);
-
-    expect(screen.getByTestId("span-test")).toHaveStyle({
-      "background-color": "#E5E7EB",
+    const spanMenuIcon = screen.getByTestId("span-test");
+    expect(spanMenuIcon).toHaveStyle({
+      background: "#E5E7EB",
     });
-    expect(screen.getByTestId("span-test")).toHaveStyleRule(
-      "background",
-      "#E5E7EB",
-      {
-        modifier: "::before",
-      }
-    );
-    expect(screen.getByTestId("span-test")).toHaveStyleRule("top", "-0.6rem", {
+
+    expect(spanMenuIcon).toHaveStyleRule("background", "#E5E7EB", {
       modifier: "::before",
     });
-    expect(screen.getByTestId("span-test")).toHaveStyleRule(
-      "bottom",
-      "-0.6rem",
-      {
-        modifier: "::after",
-      }
-    );
-    expect(screen.getByTestId("span-test")).toHaveStyleRule(
-      "background",
-      "#E5E7EB",
-      {
-        modifier: "::after",
-      }
-    );
+    expect(spanMenuIcon).toHaveStyleRule("top", "-0.6rem", {
+      modifier: "::before",
+    });
+    expect(spanMenuIcon).toHaveStyleRule("bottom", "-0.6rem", {
+      modifier: "::after",
+    });
+    expect(spanMenuIcon).toHaveStyleRule("background", "#E5E7EB", {
+      modifier: "::after",
+    });
   });
 
   it("Hope you have these styles when the input is  checked", () => {
     renderTheme(<MenuIcon check={true} />);
-
-    expect(screen.getByTestId("span-test")).toHaveStyle({
-      "background-color": "#C11010",
+    const spanMenuIcon = screen.getByTestId("span-test");
+    expect(spanMenuIcon).toHaveStyle({
+      background: "#C11010",
     });
-    expect(screen.getByTestId("span-test")).toHaveStyleRule(
-      "background",
-      "#C11010",
-      {
-        modifier: "::before",
-      }
-    );
-    expect(screen.getByTestId("span-test")).toHaveStyleRule(
-      "background",
-      "#C11010",
-      {
-        modifier: "::after",
-      }
-    );
-    expect(screen.getByTestId("span-test")).toHaveStyleRule("top", "0", {
+    expect(spanMenuIcon).toHaveStyleRule("background", "#C11010", {
       modifier: "::before",
     });
-    expect(screen.getByTestId("span-test")).toHaveStyleRule("bottom", "0", {
+    expect(spanMenuIcon).toHaveStyleRule("background", "#C11010", {
+      modifier: "::after",
+    });
+    expect(spanMenuIcon).toHaveStyleRule("top", "0", {
+      modifier: "::before",
+    });
+    expect(spanMenuIcon).toHaveStyleRule("bottom", "0", {
       modifier: "::after",
     });
   });

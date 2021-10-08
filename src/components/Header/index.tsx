@@ -4,13 +4,8 @@ import MenuIcon from "components/MenuIcon";
 import * as S from "./styles";
 import MenuLink from "components/MenuLink";
 
-interface CheckProps {
-  check: boolean;
-  handleOpenMenu?: () => void;
-  isOpen?: boolean;
-}
-const Header = ({ check = false }: CheckProps) => {
-  const [checkMenu, setCheckMenu] = useState(check);
+const Header = () => {
+  const [checkMenu, setCheckMenu] = useState(false);
   function handleIsOpenMenu() {
     setCheckMenu(!checkMenu);
   }

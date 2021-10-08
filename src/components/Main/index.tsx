@@ -5,9 +5,13 @@ import * as S from "./styles";
 const Main = () => {
   return (
     <S.ContentBody>
-      <S.Wrapper>
+      <S.WrapperDescription>
+        <h1> Desenvolvedor Web</h1>
+        <p>React.Js</p>
+      </S.WrapperDescription>
+      <S.WrapperUser>
         <BoxUser />
-      </S.Wrapper>
+      </S.WrapperUser>
     </S.ContentBody>
   );
 };

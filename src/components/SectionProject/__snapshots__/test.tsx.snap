@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SectionProject /> should render  1`] = `
+.c0 {
+  margin-top: 22rem;
+  height: 84vh;
+}
+
+<div>
+  <div
+    class="c0"
+    id="project"
+  >
+    <h1>
+      SectionProject
+    </h1>
+  </div>
+</div>
+`;
