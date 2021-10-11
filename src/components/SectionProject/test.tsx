@@ -1,9 +1,9 @@
-import Header from ".";
+import SectionProject from ".";
 import { renderTheme } from "utils/testRenderTheme";
 
-describe("<Header />", () => {
+describe("<SectionProject />", () => {
   it("should render ", () => {
-    const { container } = renderTheme(<Header />);
+    const { container } = renderTheme(<SectionProject />);
     expect(container).toMatchSnapshot();
   });
 });

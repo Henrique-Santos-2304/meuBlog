@@ -1,9 +1,9 @@
+import MenuLink from ".";
 import { renderTheme } from "utils/testRenderTheme";
-import Main from ".";
 
-describe("Main", () => {
+describe("<MenuLink />", () => {
   it("should render ", () => {
-    const { container } = renderTheme(<Main />);
+    const { container } = renderTheme(<MenuLink />);
     expect(container).toMatchSnapshot();
   });
 });

@@ -23,6 +23,12 @@
     ]
   },
   "dependencies": {
+    "@chakra-ui/core": "^0.8.0",
+    "@chakra-ui/icons": "^1.0.15",
+    "@chakra-ui/react": "^1.6.9",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
+    "framer-motion": "^4",
     "fs": "^0.0.1-security",
     "next": "11.1.2",
     "next-pwa": "^5.3.1",

@@ -113,8 +113,8 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     ${({ theme }) => css`
-      background: ${theme.colors.mainBg}
-      font-size: ${theme.font.sizes.xlarge}
+      background: ${theme.colors.mainBg};
+      font-size: ${theme.font.sizes.xlarge};
       font-family: ${theme.font.family.Poppins};
       ${media.lessThan("medium")`
       font-size: ${theme.font.sizes.small};

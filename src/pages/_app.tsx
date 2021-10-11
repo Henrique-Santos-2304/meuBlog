@@ -1,10 +1,12 @@
 import { AppProps } from "next/app";
 import Head from "next/head";
 import GlobalStyles from "styles/global";
+import { ChakraProvider } from "@chakra-ui/react";
+
 import { ThemeProvider } from "styled-components";
 import theme from "styles/theme";
 import React from "react";
-import Header from "components/Header";
+import ContainerHeader from "components/Header/ContainerHeader";
 
 function App({ Component, pageProps }: AppProps) {
   return (
@@ -19,8 +21,10 @@ function App({ Component, pageProps }: AppProps) {
           content="My Boyllerplate/ Template for Projects React | Next.js"
         />
       </Head>
-      <Header />
-      <Component {...pageProps} />
+      <ChakraProvider>
+        <ContainerHeader />
+        <Component {...pageProps} />
+      </ChakraProvider>
       <GlobalStyles />
     </ThemeProvider>
   );
