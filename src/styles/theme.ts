@@ -1,0 +1,56 @@
+export default {
+  grid: {
+    container: "130rem",
+    containerContent: "96rem",
+    gutter: "3.2rem",
+  },
+  border: {
+    radius: "1.2rem",
+  },
+  colors: {
+    mainBg: " #12131C",
+    gray: "#524861",
+    white: "#E5E7EB",
+    black700: "#111",
+    black800: "#06092b",
+    black900: "#000",
+    red800: "#C11010",
+  },
+  font: {
+    family: {
+      Poppins: "'Poppins', sans-serif",
+      Tangerine: "'Tangerine', cursive",
+      GrechenFuemen: '"Grechen Fuemen", cursive',
+      Roboto: '"Roboto", monospace',
+    },
+    sizes: {
+      xsmall: "1.2rem",
+      small: "1.4rem",
+      medium: "1.6rem",
+      large: "1.8rem",
+      xlarge: "2.0rem",
+      xxlarge: "2.8rem",
+      xbiglarge: "3rem",
+      xxbiglarge: "3.4rem",
+    },
+    light: 300,
+    normal: 500,
+    bold: 700,
+  },
+  spacings: {
+    xxsmall: "0.8rem",
+    xsmall: "1.6rem",
+    small: "2.4rem",
+    medium: "3.2rem",
+    large: "4.0rem",
+    xlarge: "4.8rem",
+    xxlarge: "5.6rem",
+  },
+  layers: {
+    base: 10,
+    menu: 20,
+    overlay: 30,
+    modal: 40,
+    alwaysOnTop: 50,
+  },
+};
