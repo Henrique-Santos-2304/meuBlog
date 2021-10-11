@@ -33,4 +33,30 @@ describe("<MenuLink />", () => {
       })
     ).toBeInTheDocument();
   });
+  it("should have attribute for links   ", () => {
+    renderTheme(<MenuLink />);
+    expect(
+      screen.getByRole("link", {
+        name: /inicio/i,
+      })
+    ).toHaveAttribute("href", "#");
+
+    expect(
+      screen.getByRole("link", {
+        name: /projetos/i,
+      })
+    ).toHaveAttribute("href", "#project");
+
+    expect(
+      screen.getByRole("link", {
+        name: /sobre/i,
+      })
+    ).toHaveAttribute("href", "#about");
+
+    expect(
+      screen.getByRole("link", {
+        name: /contato/i,
+      })
+    ).toHaveAttribute("href", "#contact");
+  });
 });
