@@ -12,7 +12,7 @@ const ContainerHeader = () => {
       left="0"
       maxW="full"
       p="0"
-      bgGradient="linear(to-l,#a8eb12,#00bf72,#008793,#004d7a, #051937)"
+      bgGradient="linear(to-l,#a8eb12 ,#00bf72 ,#008793 ,#004d7a 45%, #051937)"
     >
       <Container
         p="0"

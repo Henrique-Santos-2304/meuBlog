@@ -8,7 +8,7 @@ module.exports = {
     "!src/**/_document.tsx",
     "!src/**/_app.tsx",
     "!src/pages/index.tsx",
-    "!src/components/**/styles.ts",
+    // "!src/components/**/styles.ts",
     "!src/styles/*.ts",
     "!src/types/*.ts",
     "!src/utils/*/.ts(x)",
