@@ -35,7 +35,7 @@ const Menu = ({ isOpen, onClose }: menuIsOpeCloseProps) => {
           />
 
           <DrawerBody>
-            <MenuLinks />
+            <MenuLinks onClose={onClose} />
           </DrawerBody>
         </DrawerContent>
       </Drawer>

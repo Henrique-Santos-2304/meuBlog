@@ -2,8 +2,10 @@ import * as S from "./styles";
 import { Flex } from "@chakra-ui/react";
 import Link from "next/link";
 
-const MenuLinks = () => (
-  <S.Navigation>
+type ButtonProps = { onClose?: () => void };
+
+const MenuLinks = ({ onClose }: ButtonProps) => (
+  <S.Navigation onClick={onClose}>
     <Flex align="center" direction="column" mt="5rem">
       <S.WrapperLink>
         <Link href="/">Inicio</Link>

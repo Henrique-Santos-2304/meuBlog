@@ -8,7 +8,7 @@ import * as S from "./styles";
 
 const IconsContact = () => (
   <S.Wrapper>
-    <HStack mt="3rem" spacing="1.8rem">
+    <HStack mt={["3rem", null, "2rem"]} spacing="1.8rem" mb="1rem">
       <Link href="https://github.com/Henrique-Santos-2304" passHref>
         <ChakraLink isExternal>
           <FaGithub id="github" title="/Henrique-Santos-2304" />

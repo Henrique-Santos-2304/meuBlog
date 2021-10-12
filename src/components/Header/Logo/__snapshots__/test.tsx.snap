@@ -8,7 +8,7 @@ exports[`<Logo /> should render  1`] = `
 
 .c1 {
   font-family: 'Tangerine',cursive;
-  font-size: 3.4rem;
+  font-size: 4.5rem;
   color: #E5E7EB;
 }
 

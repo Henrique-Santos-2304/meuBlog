@@ -4,13 +4,22 @@ exports[`<Footer /> should render  1`] = `
 <div>
    
   <div
-    class="chakra-container css-1devr16"
+    class="chakra-container css-gnbstb"
   >
-    <p
-      class="chakra-text css-nl2b33"
+    <div
+      class="chakra-container css-10gf8jm"
     >
-      Criado por Henrique dos Santos
-    </p>
+      <p
+        class="chakra-text css-1bg3qoe"
+      >
+        Criado por 
+        <b
+          style="color: yellow;"
+        >
+          Henrique dos Santos
+        </b>
+      </p>
+    </div>
   </div>
 </div>
 `;

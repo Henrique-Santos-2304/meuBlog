@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
 export const PreText = styled.p`
   ${({ theme }) => css`
     font-family: ${theme.font.family.Tangerine};
-    font-size: ${theme.font.sizes.xxbiglarge};
+    font-size: 4.5rem;
     color: ${theme.colors.white};
     span {
       color: ${theme.colors.red800};

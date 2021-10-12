@@ -4,10 +4,10 @@ exports[`<ImageUserMain /> should render  1`] = `
 <div>
    
   <div
-    class="css-1lads1q"
+    class="css-1odp1ew"
   >
     <img
-      class="chakra-image css-15n4icf"
+      class="chakra-image css-14je8p7"
       src="https://res.cloudinary.com/defnibbpl/image/upload/v1633360607/large_henrique_techs_89a8aae1bc.jpg"
     />
   </div>
