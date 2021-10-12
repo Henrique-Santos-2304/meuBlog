@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> should render  1`] = `
+<div>
+   
+  <div
+    class="chakra-container css-1devr16"
+  >
+    <p
+      class="chakra-text css-nl2b33"
+    >
+      Criado por Henrique dos Santos
+    </p>
+  </div>
+</div>
+`;

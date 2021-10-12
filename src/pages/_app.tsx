@@ -7,6 +7,7 @@ import { ThemeProvider } from "styled-components";
 import theme from "styles/theme";
 import React from "react";
 import ContainerHeader from "components/Header/ContainerHeader";
+import Footer from "components/Footer";
 
 function App({ Component, pageProps }: AppProps) {
   return (
@@ -24,6 +25,7 @@ function App({ Component, pageProps }: AppProps) {
       <ChakraProvider>
         <ContainerHeader />
         <Component {...pageProps} />
+        <Footer />
       </ChakraProvider>
       <GlobalStyles />
     </ThemeProvider>

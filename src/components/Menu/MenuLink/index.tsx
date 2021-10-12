@@ -1,20 +1,21 @@
 import * as S from "./styles";
 import { Flex } from "@chakra-ui/react";
+import Link from "next/link";
 
 const MenuLinks = () => (
   <S.Navigation>
     <Flex align="center" direction="column" mt="5rem">
       <S.WrapperLink>
-        <S.Link href="#">Inicio</S.Link>
+        <Link href="/">Inicio</Link>
       </S.WrapperLink>
       <S.WrapperLink>
-        <S.Link href="#project">Projetos</S.Link>
+        <Link href="/projects">Projetos</Link>
       </S.WrapperLink>
       <S.WrapperLink>
-        <S.Link href="#about">Sobre</S.Link>
+        <Link href="/about">Sobre</Link>
       </S.WrapperLink>
       <S.WrapperLink>
-        <S.Link href="#contact">Contato</S.Link>
+        <Link href="/contact">Contato</Link>
       </S.WrapperLink>
     </Flex>
   </S.Navigation>

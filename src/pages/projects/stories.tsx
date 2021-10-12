@@ -1,5 +1,5 @@
 import { Story, Meta } from "@storybook/react";
-import SectionProject from ".";
+import SectionProject from "./index";
 
 export default {
   title: "SectionProject",

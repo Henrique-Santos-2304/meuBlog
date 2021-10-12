@@ -39,24 +39,24 @@ describe("<MenuLink />", () => {
       screen.getByRole("link", {
         name: /inicio/i,
       })
-    ).toHaveAttribute("href", "#");
+    ).toHaveAttribute("href", "/");
 
     expect(
       screen.getByRole("link", {
         name: /projetos/i,
       })
-    ).toHaveAttribute("href", "#project");
+    ).toHaveAttribute("href", "/projects");
 
     expect(
       screen.getByRole("link", {
         name: /sobre/i,
       })
-    ).toHaveAttribute("href", "#about");
+    ).toHaveAttribute("href", "/about");
 
     expect(
       screen.getByRole("link", {
         name: /contato/i,
       })
-    ).toHaveAttribute("href", "#contact");
+    ).toHaveAttribute("href", "/contact");
   });
 });

@@ -7,13 +7,13 @@ exports[`<MenuLink /> should render  1`] = `
   padding: 2.7rem 1rem;
 }
 
-.c1 {
+.c0 a {
   -webkit-text-decoration: none;
   text-decoration: none;
   padding: 1rem 2rem;
 }
 
-.c1:hover:after {
+.c0 a:hover:after {
   content: "";
   position: absolute;
   bottom: 1.6rem;
@@ -37,8 +37,7 @@ exports[`<MenuLink /> should render  1`] = `
         class="c0"
       >
         <a
-          class="c1"
-          href="#"
+          href="/"
         >
           Inicio
         </a>
@@ -47,8 +46,7 @@ exports[`<MenuLink /> should render  1`] = `
         class="c0"
       >
         <a
-          class="c1"
-          href="#project"
+          href="/projects"
         >
           Projetos
         </a>
@@ -57,8 +55,7 @@ exports[`<MenuLink /> should render  1`] = `
         class="c0"
       >
         <a
-          class="c1"
-          href="#about"
+          href="/about"
         >
           Sobre
         </a>
@@ -67,8 +64,7 @@ exports[`<MenuLink /> should render  1`] = `
         class="c0"
       >
         <a
-          class="c1"
-          href="#contact"
+          href="/contact"
         >
           Contato
         </a>

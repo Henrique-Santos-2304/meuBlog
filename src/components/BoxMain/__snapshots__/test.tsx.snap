@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BoxMain /> should render  1`] = `
+<div>
+   
+  <div
+    class="css-x7v0br"
+  >
+    <h1
+      class="chakra-heading css-6564kn"
+    >
+      Henrique dos Santos
+    </h1>
+    <h4
+      class="chakra-heading css-1vcujdy"
+    >
+      Desenvolvedor Web front End
+    </h4>
+  </div>
+</div>
+`;

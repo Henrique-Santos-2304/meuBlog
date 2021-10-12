@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ImageUserMain /> should render  1`] = `
+<div>
+   
+  <div
+    class="css-1lads1q"
+  >
+    <img
+      class="chakra-image css-15n4icf"
+      src="https://res.cloudinary.com/defnibbpl/image/upload/v1633360607/large_henrique_techs_89a8aae1bc.jpg"
+    />
+  </div>
+</div>
+`;

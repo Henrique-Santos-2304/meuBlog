@@ -4,16 +4,16 @@ exports[`<SectionProject /> should render  1`] = `
 <div>
    
   <div
-    class="chakra-container css-8ljg7m"
+    class="chakra-container css-1n49xi7"
     id="project"
   >
-    <p
-      class="chakra-text css-fm86e8"
+    <div
+      class="css-gmuwbf"
     >
-       
-      Seção de Projetos
-       
-    </p>
+      <h1>
+        Será que vai
+      </h1>
+    </div>
   </div>
 </div>
 `;

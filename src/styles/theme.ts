@@ -9,6 +9,8 @@ export default {
   },
   colors: {
     mainBg: " #12131C",
+    blue: "#1E27A0",
+    yellow: "#E8EB33",
     gray: "#524861",
     white: "#E5E7EB",
     black700: "#111",
