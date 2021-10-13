@@ -37,6 +37,7 @@ exports[`<IconsContact /> should render  1`] = `
       class="chakra-stack css-chsok2"
     >
       <a
+        aria-label="Link Para meu Github"
         class="chakra-link css-f4h6uy"
         href="https://github.com/Henrique-Santos-2304"
         rel="noopener noreferrer"
@@ -61,6 +62,7 @@ exports[`<IconsContact /> should render  1`] = `
         </svg>
       </a>
       <a
+        aria-label="Link Para meu Linkedin"
         class="chakra-link css-f4h6uy"
         href="https://www.linkedin.com/in/henriquewebdeveloper/"
         rel="noopener noreferrer"
@@ -89,6 +91,7 @@ exports[`<IconsContact /> should render  1`] = `
         </svg>
       </a>
       <svg
+        aria-label="Envio de email via site"
         fill="currentColor"
         height="1em"
         id="email"
