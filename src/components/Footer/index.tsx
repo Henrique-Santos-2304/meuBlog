@@ -13,6 +13,8 @@ const Footer = () => (
         textAlign="end"
         fontSize="2xl"
         maxW="container.md"
+        aria-label="Criador do Design e do Site"
+        title="Created By"
       >
         Criado por <b style={{ color: "yellow" }}>Henrique dos Santos</b>
       </Text>
