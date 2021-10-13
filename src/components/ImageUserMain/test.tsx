@@ -21,17 +21,14 @@ describe("<ImageUserMain />", () => {
     renderTheme(<ImageUserMain />);
     expect(screen.getByRole("img")).toBeInTheDocument();
   });
-  it("should have a image on the screen ", () => {
+  it("should have as link for my Contacts and portfólio ", () => {
     renderTheme(<ImageUserMain />);
-    screen.logTestingPlaygroundURL();
-    // expect(
-    //   screen.queryByLabelText(/Link Para meu Github/i)
-    // ).toBeInTheDocument();
-    // expect(
-    //   screen.queryByLabelText(/Link Para meu Linkedin/i)
-    // ).toBeInTheDocument();
-    // expect(
-    //   screen.queryByLabelText(/Realizar um contato via Email/i)
-    // ).toBeInTheDocument();
+    expect(screen.getByLabelText(/Link Para meu Github/i)).toBeInTheDocument();
+    expect(
+      screen.queryByLabelText(/Link Para meu Linkedin/i)
+    ).toBeInTheDocument();
+    expect(
+      screen.queryByLabelText(/Envio de email via site/i)
+    ).toBeInTheDocument();
   });
 });
