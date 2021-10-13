@@ -30,6 +30,7 @@ exports[`Main should render  1`] = `
       class="chakra-container css-1y94jrs"
     >
       <div
+        aria-label="Inicio com apresentação de um desenvolvedor Web"
         class="css-ggoolq"
       >
         <div

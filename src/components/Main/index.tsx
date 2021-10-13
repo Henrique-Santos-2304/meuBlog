@@ -17,6 +17,7 @@ const Main = () => {
           w="100%"
           h="100%"
           direction={["column", null, "row"]}
+          aria-label="Inicio com apresentação de um desenvolvedor Web"
         >
           <BoxMain />
           <ImageUserMain />
