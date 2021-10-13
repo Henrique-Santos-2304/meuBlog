@@ -1,10 +1,10 @@
-import { Flex, Heading, useMediaQuery } from "@chakra-ui/react";
+import { Flex, Heading, Text, useMediaQuery } from "@chakra-ui/react";
 import IconsContact from "components/IconsContact";
 import theme from "styles/theme";
 import * as S from "./styles";
 
 const BoxMain = () => {
-  const [isLargerThan648] = useMediaQuery("(min-width: 767px)");
+  const [isLargerThan768] = useMediaQuery("(min-width: 768px)");
   return (
     <Flex
       align="center"
@@ -33,9 +33,17 @@ const BoxMain = () => {
         fontStyle="italic"
         fontFamily={theme.font.family.Poppins}
       >
-        Desenvolvedor Web front End
+        Desenvolvedor FrontEnd
       </Heading>
-      {isLargerThan648 && <IconsContact />}
+      <Text
+        lineHeight="4rem"
+        color="gray.100"
+        fontStyle="italic"
+        fontFamily={theme.font.family.Poppins}
+      >
+        Mobile, Web, Desktop
+      </Text>
+      {isLargerThan768 && <IconsContact />}
     </Flex>
   );
 };

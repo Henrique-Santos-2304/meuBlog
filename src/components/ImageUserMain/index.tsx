@@ -4,7 +4,7 @@ import { Img } from "@chakra-ui/react";
 import IconsContact from "components/IconsContact";
 
 const ImageUserMain = () => {
-  const [isGreatherThan768] = useMediaQuery("(max-width: 768px)");
+  const [isGreatherThan767] = useMediaQuery("(max-width: 767px)");
   return (
     <Flex
       align="center"
@@ -18,7 +18,7 @@ const ImageUserMain = () => {
         borderRadius="full"
         src="https://res.cloudinary.com/defnibbpl/image/upload/v1633360607/large_henrique_techs_89a8aae1bc.jpg"
       />
-      {isGreatherThan768 && <IconsContact />}
+      {isGreatherThan767 && <IconsContact />}
     </Flex>
   );
 };

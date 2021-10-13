@@ -26,7 +26,7 @@ describe("<BoxMain />", () => {
     ).toBeInTheDocument();
     expect(
       screen.getByRole("heading", {
-        name: /desenvolvedor web front end/i,
+        name: /Desenvolvedor FrontEnd/i,
       })
     ).toBeInTheDocument();
   });
@@ -39,6 +39,9 @@ describe("<BoxMain />", () => {
     ).toBeInTheDocument();
     expect(
       screen.queryByLabelText(/Envio de email via site/i)
+    ).toBeInTheDocument();
+    expect(
+      screen.queryByLabelText(/Envio de mensagem no Whatsapp/i)
     ).toBeInTheDocument();
   });
 });

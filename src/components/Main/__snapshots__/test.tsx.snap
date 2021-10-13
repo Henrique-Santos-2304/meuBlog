@@ -47,8 +47,13 @@ exports[`Main should render  1`] = `
           <h4
             class="chakra-heading css-1jbs7el"
           >
-            Desenvolvedor Web front End
+            Desenvolvedor FrontEnd
           </h4>
+          <p
+            class="chakra-text css-1npyosg"
+          >
+            Mobile, Web, Desktop
+          </p>
         </div>
         <div
           class="css-1odp1ew"

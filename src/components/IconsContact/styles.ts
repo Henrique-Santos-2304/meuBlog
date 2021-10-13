@@ -24,6 +24,11 @@ export const Wrapper = styled.nav`
         color: ${theme.colors.yellow};
         font-size: 3.2rem;
       }
+      &#whatsapp {
+        color: #53c65f;
+        font-size: 3.2rem;
+        border-radius: none;
+      }
     }
   `}
 `;
