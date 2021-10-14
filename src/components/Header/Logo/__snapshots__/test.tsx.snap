@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Logo /> should render  1`] = `
+.c0 {
+  padding: 0.3rem 2rem;
+  background: transparent;
+}
+
+.c1 {
+  font-family: 'Tangerine',cursive;
+  font-size: 4.5rem;
+  color: #E5E7EB;
+}
+
+.c1 span {
+  color: #C11010;
+}
+
+<div>
+   
+  <div
+    class="c0"
+  >
+    <div
+      class="css-hl966"
+    >
+      <p
+        aria-label="logo dev"
+        class="c1"
+      >
+        Web
+        <span>
+          Dev
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+`;

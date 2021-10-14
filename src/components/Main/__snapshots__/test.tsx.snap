@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main should render  1`] = `
+.c0 {
+  width: 100%;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.c0:after {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  content: "";
+  width: 30%;
+  height: 0.6rem;
+  background: #E8EB33;
+  border-radius: 2rem;
+}
+
+<div>
+   
+  <div
+    class="chakra-container css-1n49xi7"
+  >
+    <div
+      class="chakra-container css-1y94jrs"
+    >
+      <div
+        aria-label="Inicio com apresentação de um desenvolvedor Web"
+        class="css-ggoolq"
+      >
+        <div
+          class="css-1eeojed"
+        >
+          <span
+            class="c0"
+          />
+          <h1
+            class="chakra-heading css-1a4xx1o"
+          >
+            Henrique dos Santos
+          </h1>
+          <h4
+            class="chakra-heading css-1jbs7el"
+          >
+            Desenvolvedor FrontEnd
+          </h4>
+          <p
+            class="chakra-text css-1npyosg"
+          >
+            Mobile, Web, Desktop
+          </p>
+        </div>
+        <div
+          class="css-1odp1ew"
+        >
+          <img
+            class="chakra-image css-14je8p7"
+            src="https://res.cloudinary.com/defnibbpl/image/upload/v1633360607/large_henrique_techs_89a8aae1bc.jpg"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

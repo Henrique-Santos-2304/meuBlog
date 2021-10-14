@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SectionProject /> should render  1`] = `
+<div>
+   
+  <div
+    class="chakra-container css-1n49xi7"
+    id="project"
+  >
+    <div
+      class="css-gmuwbf"
+    >
+      <h1>
+        Será que vai
+      </h1>
+    </div>
+  </div>
+</div>
+`;
