@@ -1,12 +1,12 @@
 import React from "react";
 import { Alert, AlertIcon } from "@chakra-ui/react";
 
-// import { Container } from './styles';
 type messageType = { message: string };
 const AlertIcons = ({ message }: messageType) => {
   return (
     <Alert
       status="error"
+      role="alert"
       colorScheme="purple"
       color="blackAlpha.900"
       borderRadius="1rem"

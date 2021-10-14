@@ -26,6 +26,5 @@ describe("<IconsContact />", () => {
     expect(
       screen.getByLabelText(/Envio de email via site/i)
     ).toBeInTheDocument();
-    screen.logTestingPlaygroundURL();
   });
 });

@@ -82,6 +82,7 @@ exports[`<FormEmail /> should render  1`] = `
             Mensagem
           </label>
           <textarea
+            aria-label="Campo de Digitação de Mensagem"
             class="chakra-textarea css-1r5n2ve"
             id="field-3"
             name="message"

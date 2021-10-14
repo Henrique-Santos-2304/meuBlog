@@ -27,6 +27,8 @@ const TextAreas = ({ txt, type, registerer, err }: IconsTypesProps) => {
           required: `Campo  Obrigatório`,
         })}
         placeholder={`Digite sua Mensagem`}
+        name={type}
+        aria-label="Campo de Digitação de Mensagem"
         type={type}
         h="20rem"
         p="1.3rem"

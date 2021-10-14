@@ -1,7 +1,6 @@
 /* eslint-disable prettier/prettier */
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 import * as S from "./styles";
-import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 import { Button, Flex, VStack, useToast } from "@chakra-ui/react";
@@ -15,26 +14,17 @@ type dataMesssage = {
 };
 const FormEmail = () => {
   const { handleSubmit, register, formState } = useForm();
-  const [msg, setMsg] = useState({
-    name: "",
-    email: "",
-    message: "",
-    values: false,
-  });
+
   const toast = useToast();
 
-  function sendEmail(data: dataMesssage) {
-    const dataEmail = { ...data, values: true };
-    setMsg(dataEmail);
-  }
   const onSubmit = (data: dataMesssage) => {
     toast({
-      title: "Submitted!",
+      title: "Enviado!",
       status: "success",
       duration: 3000,
       isClosable: true,
     });
-    sendEmail(data);
+    console.log(data);
   };
   return (
     <Flex direction="column" align="center" justify="center">
@@ -61,28 +51,7 @@ const FormEmail = () => {
             registerer={register}
             err={formState.errors}
           />
-          {/* <FormControl>
-            <FormLabel
-              htmlFor="message"
-              fontSize="3xl"
-              color="yellow.600"
-              ml="0.5rem"
-            >
-              Mensagem
-            </FormLabel>
-            <Textarea
-              _focus={{ borderColor: "orange" }}
-              placeholder="Mensagem"
-              {...register("message", {
-                required: "Uma mensagem é obrigatória",
-              })}
-              fontSize="3xl"
-              borderRadius="1.5rem"
-              color="gray.100"
-              id="message"
-            />
-            {errors.message && <AlertIcons message={errors.message.message} />}
-          </FormControl> */}
+
           <Button
             type="submit"
             rightIcon={<ArrowForwardIcon />}
@@ -101,14 +70,6 @@ const FormEmail = () => {
           </Button>
         </VStack>
       </S.Form>
-
-      {msg.values && (
-        <ul>
-          <li>Nome: {msg.name!}</li>
-          <li>Email: {msg.email!}</li>
-          <li>Mensagem: {msg.message!}</li>{" "}
-        </ul>
-      )}
     </Flex>
   );
 };
