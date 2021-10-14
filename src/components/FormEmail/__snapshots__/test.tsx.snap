@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FormEmail /> should render  1`] = `
+.c0 {
+  width: 70vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+<div>
+   
+  <div
+    class="css-u6v8er"
+  >
+    <form
+      class="c0"
+    >
+      <div
+        class="chakra-stack css-r5xrk8"
+      >
+        <div
+          class="chakra-form-control css-1kxonj9"
+          role="group"
+        >
+          <label
+            class="chakra-form__label css-bk1051"
+            for="name"
+            id="field-1-label"
+          >
+            Nome
+          </label>
+          <input
+            class="chakra-input css-14xgnea"
+            id="name"
+            name="name"
+            placeholder="Digite seu Nome"
+            type="name"
+          />
+        </div>
+        <div
+          class="chakra-form-control css-1kxonj9"
+          role="group"
+        >
+          <label
+            class="chakra-form__label css-bk1051"
+            for="email"
+            id="field-2-label"
+          >
+            Email
+          </label>
+          <input
+            class="chakra-input css-14xgnea"
+            id="email"
+            name="email"
+            placeholder="Digite seu Email"
+            type="email"
+          />
+        </div>
+        <div
+          class="chakra-form-control css-1kxonj9"
+          role="group"
+        >
+          <label
+            class="chakra-form__label css-bv8qsa"
+            for="message"
+            id="field-3-label"
+          >
+            Mensagem
+          </label>
+          <textarea
+            class="chakra-textarea css-1r5n2ve"
+            id="field-3"
+            name="message"
+            placeholder="Digite sua Mensagem"
+            type="message"
+          />
+        </div>
+        <button
+          class="chakra-button css-1i76mv4"
+          type="submit"
+        >
+          Enviar
+          <span
+            class="chakra-button__icon css-1hzyiq5"
+          >
+            <svg
+              aria-hidden="true"
+              class="chakra-icon css-onkibi"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                fill="currentColor"
+              />
+            </svg>
+          </span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+`;

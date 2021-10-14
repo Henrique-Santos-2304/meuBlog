@@ -1,4 +1,5 @@
 import { Container, Flex } from "@chakra-ui/react";
+import FormEmail from "components/FormEmail";
 
 const SectionProject = () => (
   <Container
@@ -8,7 +9,7 @@ const SectionProject = () => (
     bgGradient="linear(to-l,#00bf72 ,#008793 ,#004d7a , #051937)"
   >
     <Flex align="center" justify="center">
-      <h1>Será que vai</h1>
+      <FormEmail />
     </Flex>
   </Container>
 );

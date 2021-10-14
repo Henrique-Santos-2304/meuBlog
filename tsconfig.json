@@ -1,7 +1,14 @@
 {
   "exclude": ["node_modules"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/styles/*", "src/utils/testRenderTheme.js"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/styles/*",
+    "src/utils/testRenderTheme.js"
+  ],
   "compilerOptions": {
+    "noImplicitAny": true,
     "baseUrl": "src",
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
@@ -16,5 +23,5 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve"
-  },
+  }
 }
