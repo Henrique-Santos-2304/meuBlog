@@ -33,21 +33,21 @@ const FormEmail = () => {
           {/* Campo de Nome */}
           <Inputs
             txt="Nome"
-            type="name"
+            typeInput="name"
             registerer={register}
             err={formState.errors}
           />
 
           <Inputs
             txt="Email"
-            type="email"
+            typeInput="email"
             registerer={register}
             err={formState.errors}
           />
           {/* Campo de Mensagem  */}
           <TextAreas
             txt="Mensagem"
-            type="message"
+            typeInput="message"
             registerer={register}
             err={formState.errors}
           />
@@ -75,7 +75,3 @@ const FormEmail = () => {
 };
 
 export default FormEmail;
-// pattern: {
-//   value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-//   message: "invalid email address",
-// },

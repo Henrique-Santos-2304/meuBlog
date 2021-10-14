@@ -2,7 +2,8 @@
 
 exports[`<SectionProject /> should render  1`] = `
 .c0 {
-  width: 70vw;
+  padding: 5rem 0.5rem;
+  width: 80%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -18,7 +19,6 @@ exports[`<SectionProject /> should render  1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-bottom: 4rem;
 }
 
 <div>
@@ -55,7 +55,7 @@ exports[`<SectionProject /> should render  1`] = `
                 id="name"
                 name="name"
                 placeholder="Digite seu Nome"
-                type="name"
+                type="text"
               />
             </div>
             <div
@@ -74,7 +74,7 @@ exports[`<SectionProject /> should render  1`] = `
                 id="email"
                 name="email"
                 placeholder="Digite seu Email"
-                type="email"
+                type="text"
               />
             </div>
             <div

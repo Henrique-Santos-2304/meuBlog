@@ -5,31 +5,31 @@ import AlertIcons from "../AlertIcons";
 
 type IconsTypesProps = {
   txt: string;
-  type: string;
+  typeInput: string;
   registerer: UseFormRegister<FieldValues>;
   err: {
     [x: string]: any;
   };
 };
-const TextAreas = ({ txt, type, registerer, err }: IconsTypesProps) => {
+const TextAreas = ({ txt, typeInput, registerer, err }: IconsTypesProps) => {
   return (
     <FormControl>
       <FormLabel
         fontSize="3xl"
-        htmlFor={type}
+        htmlFor={typeInput}
         color="yellow.600"
         m="2rem 0 1rem 0.5rem"
       >
         {txt}
       </FormLabel>
       <Textarea
-        {...registerer(type, {
+        {...registerer(typeInput, {
           required: `Campo  Obrigatório`,
         })}
         placeholder={`Digite sua Mensagem`}
-        name={type}
+        name={typeInput}
         aria-label="Campo de Digitação de Mensagem"
-        type={type}
+        type={typeInput}
         h="20rem"
         p="1.3rem"
         variant="filed"
@@ -42,7 +42,7 @@ const TextAreas = ({ txt, type, registerer, err }: IconsTypesProps) => {
         _focus={{ border: "0.1rem solid orange" }}
         _hover={{ border: "0.1rem solid orange" }}
       />
-      {err[type] && <AlertIcons message={err[type].message} />}
+      {err[typeInput] && <AlertIcons message={err[typeInput].message} />}
     </FormControl>
   );
 };

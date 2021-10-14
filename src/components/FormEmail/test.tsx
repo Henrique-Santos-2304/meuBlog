@@ -77,6 +77,14 @@ describe("<FormEmail />", () => {
         value: "nome",
       },
     });
+    fireEvent.input(
+      screen.getByRole("textbox", { name: /campo de digitação de mensagem/i }),
+      {
+        target: {
+          value: "message",
+        },
+      }
+    );
     fireEvent.submit(screen.getByRole("button"));
 
     expect(await screen.findAllByRole("alert")).toHaveLength(1);
