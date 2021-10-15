@@ -23,7 +23,7 @@ exports[`Main should render  1`] = `
 
 <div>
    
-  <div
+  <main
     class="chakra-container css-1n49xi7"
   >
     <div
@@ -33,7 +33,8 @@ exports[`Main should render  1`] = `
         aria-label="Inicio com apresentação de um desenvolvedor Web"
         class="css-ggoolq"
       >
-        <div
+        <section
+          aria-label="Descrições de um Desenvolvedor FrontEnd"
           class="css-1eeojed"
         >
           <span
@@ -54,17 +55,18 @@ exports[`Main should render  1`] = `
           >
             Mobile, Web, Desktop
           </p>
-        </div>
-        <div
+        </section>
+        <section
+          aria-label="Foto de um Programador/ Desenvolvedor  "
           class="css-1odp1ew"
         >
           <img
             class="chakra-image css-14je8p7"
             src="https://res.cloudinary.com/defnibbpl/image/upload/v1633360607/large_henrique_techs_89a8aae1bc.jpg"
           />
-        </div>
+        </section>
       </div>
     </div>
-  </div>
+  </main>
 </div>
 `;

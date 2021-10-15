@@ -56,7 +56,8 @@ exports[`<BoxMain /> should render  1`] = `
 
 <div>
    
-  <div
+  <section
+    aria-label="Descrições de um Desenvolvedor FrontEnd"
     class="css-1eeojed"
   >
     <span
@@ -186,6 +187,6 @@ exports[`<BoxMain /> should render  1`] = `
         </svg>
       </div>
     </nav>
-  </div>
+  </section>
 </div>
 `;

@@ -36,7 +36,8 @@ exports[`<ImageUserMain /> should render  1`] = `
 
 <div>
    
-  <div
+  <section
+    aria-label="Foto de um Programador/ Desenvolvedor  "
     class="css-1odp1ew"
   >
     <img
@@ -152,6 +153,6 @@ exports[`<ImageUserMain /> should render  1`] = `
         </svg>
       </div>
     </nav>
-  </div>
+  </section>
 </div>
 `;

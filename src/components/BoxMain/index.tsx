@@ -7,10 +7,12 @@ const BoxMain = () => {
   const [isLargerThan768] = useMediaQuery("(min-width: 768px)");
   return (
     <Flex
+      as="section"
       align="center"
       direction="column"
       mt={["1rem", null, "-5rem"]}
       mb="3rem"
+      aria-label="Descrições de um Desenvolvedor FrontEnd"
     >
       <S.Span></S.Span>
       <Heading

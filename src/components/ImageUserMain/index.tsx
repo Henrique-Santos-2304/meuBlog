@@ -7,10 +7,12 @@ const ImageUserMain = () => {
   const [isGreatherThan767] = useMediaQuery("(max-width: 767px)");
   return (
     <Flex
+      as="section"
       align="center"
       justify="center"
       direction="column"
       mt={["1rem", null, "-5rem"]}
+      aria-label="Foto de um Programador/ Desenvolvedor  "
     >
       <Img
         boxShadow="0 0 20px red, 0 0 20px white"
