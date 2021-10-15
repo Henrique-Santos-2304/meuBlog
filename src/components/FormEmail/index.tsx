@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable prettier/prettier */
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 import * as S from "./styles";
 import { useRef } from "react";
@@ -15,7 +13,7 @@ const FormEmail = () => {
   const { handleSubmit, register, formState } = useForm();
   const formRef = useRef<HTMLFormElement>(null);
 
-  const sendData = () => {
+  const onSubmit = async () => {
     emailjs
       .sendForm(
         "service_ijjwv7k",
@@ -24,28 +22,25 @@ const FormEmail = () => {
         "user_mB0pVxnJ1ebEVquIzWsUn"
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        function (response) {
+          console.log("SUCCESS!", response.status, response.text);
           toast({
-            title: "Enviado!",
+            title: "Enviado com sucesso",
             status: "success",
             duration: 3000,
             isClosable: true,
           });
         },
-        (error) => {
-          console.log(error.text);
+        function (error) {
+          console.log("FAILED...", error);
           toast({
-            title: "Erro ao enviar!",
+            title: "Erro!Por favor verifique seus dados",
             status: "error",
             duration: 3000,
             isClosable: true,
           });
         }
       );
-  };
-  const onSubmit = () => {
-    sendData();
   };
   return (
     <Flex direction="column" align="center" justify="center">
