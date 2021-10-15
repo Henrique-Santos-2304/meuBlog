@@ -28,6 +28,7 @@
     "@chakra-ui/react": "^1.6.9",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
+    "emailjs-com": "^3.2.0",
     "framer-motion": "^4",
     "fs": "^0.0.1-security",
     "next": "11.1.2",

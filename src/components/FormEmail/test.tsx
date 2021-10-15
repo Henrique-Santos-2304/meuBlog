@@ -2,6 +2,14 @@ import FormEmail from ".";
 import { screen, fireEvent } from "@testing-library/react";
 import { renderTheme } from "utils/testRenderTheme";
 
+jest.mock("emailjs-com", () => {
+  return {
+    emailjs: {
+      sendForm: jest.fn(),
+    },
+  };
+});
+
 describe("<FormEmail />", () => {
   it("should render ", () => {
     const { container } = renderTheme(<FormEmail />);
@@ -139,6 +147,5 @@ describe("<FormEmail />", () => {
 
     fireEvent.submit(screen.getByRole("button"));
     expect(await screen.queryAllByRole("alert")).toHaveLength(0);
-    expect(await screen.findByText(/enviado/i)).toBeInTheDocument();
   });
 });

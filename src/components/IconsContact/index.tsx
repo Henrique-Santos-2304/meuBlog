@@ -1,10 +1,5 @@
 /* eslint-disable @next/next/link-passhref */
-import {
-  HStack,
-  Link as ChakraLink,
-  useDisclosure,
-  Flex,
-} from "@chakra-ui/react";
+import { HStack, Link as ChakraLink, useDisclosure } from "@chakra-ui/react";
 import Link from "next/link";
 import { FaGithub, FaWhatsapp } from "react-icons/fa";
 import { TiSocialLinkedinCircular } from "react-icons/ti";
@@ -45,11 +40,8 @@ const IconsContact = () => {
           onClick={onOpen}
         />
       </HStack>
-      {isOpen && (
-        <Flex>
-          <ModalForm onClose={onClose} isOpen={isOpen} />
-        </Flex>
-      )}
+
+      <ModalForm onClose={onClose} isOpen={isOpen} />
     </S.Wrapper>
   );
 };
