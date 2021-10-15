@@ -118,7 +118,7 @@ describe("<FormEmail />", () => {
     expect(await screen.findAllByRole("alert")).toHaveLength(1);
   });
 
-  it("should have sent message when the data is valid", async () => {
+  it("should have sent message Sucess when the data is valid", async () => {
     const mockEmaijs = mocked(emailjs);
 
     renderTheme(<FormEmail />);
@@ -151,7 +151,7 @@ describe("<FormEmail />", () => {
 
     expect(await screen.findByText(/Enviado com sucesso/i)).toBeInTheDocument();
   });
-  it("should have sent message when the data is invalid", async () => {
+  it("should have sent message error when the data is invalid", async () => {
     const mockEmaijs = mocked(emailjs);
 
     renderTheme(<FormEmail />);

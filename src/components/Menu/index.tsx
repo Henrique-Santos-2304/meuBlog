@@ -16,22 +16,28 @@ type menuIsOpeCloseProps = {
 const Menu = ({ isOpen, onClose }: menuIsOpeCloseProps) => {
   return (
     <>
-      <Drawer onClose={onClose} isOpen={isOpen} size="md">
+      <Drawer onClose={onClose} isOpen={isOpen} size="lg">
         <DrawerOverlay />
         <DrawerContent
-          transition="all .2s linear"
+          transition="all .4s linear"
           aria-label="menu de navegação aberto ou fechado"
+          color="gray.100"
+          bg="blackAlpha.800"
+          border="0.3rem solid orange"
+          borderRight="0"
+          borderTopLeftRadius="2rem"
+          borderBottomLeftRadius="2rem"
+          my="10vh"
         >
           <DrawerCloseButton
-            all="reset"
+            size="lg"
+            p="1rem"
             title="Feche o Menu"
             aria-label="Botão para fechar um menu"
-            transition="all .4s ease-in-out"
             color="red"
             rounded="full"
-            mt="0.4rem"
+            m="1.2rem"
             _focus={{ border: "none" }}
-            _hover={{ fontSize: "1.6rem" }}
           />
 
           <DrawerBody>

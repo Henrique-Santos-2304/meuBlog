@@ -1,11 +1,16 @@
 import styled, { css } from "styled-components";
 
-export const Navigation = styled.nav``;
+export const Navigation = styled.nav`
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
 export const WrapperLink = styled.div`
   ${({ theme }) => css`
-    font-size: ${theme.font.sizes.xlarge};
+    font-size: 2.4rem;
     position: relative;
-    padding: 2.7rem 1rem;
+    letter-spacing: 0.125rem;
 
     a {
       text-decoration: none;

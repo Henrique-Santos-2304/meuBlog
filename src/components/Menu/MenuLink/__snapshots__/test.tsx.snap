@@ -2,18 +2,37 @@
 
 exports[`<MenuLink /> should render  1`] = `
 .c0 {
-  font-size: 2.0rem;
-  position: relative;
-  padding: 2.7rem 1rem;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
-.c0 a {
+.c1 {
+  font-size: 2.4rem;
+  position: relative;
+  -webkit-letter-spacing: 0.125rem;
+  -moz-letter-spacing: 0.125rem;
+  -ms-letter-spacing: 0.125rem;
+  letter-spacing: 0.125rem;
+}
+
+.c1 a {
   -webkit-text-decoration: none;
   text-decoration: none;
   padding: 1rem 2rem;
 }
 
-.c0 a:hover:after {
+.c1 a:hover:after {
   content: "";
   position: absolute;
   bottom: 1.6rem;
@@ -28,13 +47,13 @@ exports[`<MenuLink /> should render  1`] = `
 <div>
    
   <nav
-    class=""
+    class="c0"
   >
     <div
-      class="css-4ukgkt"
+      class="chakra-stack css-ov3c59"
     >
       <div
-        class="c0"
+        class="c1"
       >
         <a
           href="/"
@@ -43,7 +62,7 @@ exports[`<MenuLink /> should render  1`] = `
         </a>
       </div>
       <div
-        class="c0"
+        class="c1"
       >
         <a
           href="/projects"
@@ -52,7 +71,7 @@ exports[`<MenuLink /> should render  1`] = `
         </a>
       </div>
       <div
-        class="c0"
+        class="c1"
       >
         <a
           href="/about"
@@ -61,7 +80,7 @@ exports[`<MenuLink /> should render  1`] = `
         </a>
       </div>
       <div
-        class="c0"
+        class="c1"
       >
         <a
           href="/contact"

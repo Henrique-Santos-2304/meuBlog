@@ -22,8 +22,7 @@ const FormEmail = () => {
         "user_mB0pVxnJ1ebEVquIzWsUn"
       )
       .then(
-        function (response) {
-          console.log("SUCCESS!", response.status, response.text);
+        function () {
           toast({
             title: "Enviado com sucesso",
             status: "success",
@@ -31,8 +30,7 @@ const FormEmail = () => {
             isClosable: true,
           });
         },
-        function (error) {
-          console.log("FAILED...", error);
+        function () {
           toast({
             title: "Erro!Por favor verifique seus dados",
             status: "error",
@@ -42,6 +40,7 @@ const FormEmail = () => {
         }
       );
   };
+
   return (
     <Flex direction="column" align="center" justify="center">
       <S.Form onSubmit={handleSubmit(onSubmit)} ref={formRef}>
