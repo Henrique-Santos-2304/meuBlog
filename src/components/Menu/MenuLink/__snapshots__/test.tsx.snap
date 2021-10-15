@@ -35,7 +35,7 @@ exports[`<MenuLink /> should render  1`] = `
 .c1 a:hover:after {
   content: "";
   position: absolute;
-  bottom: 1.6rem;
+  top: 5rem;
   right: 0;
   height: 0.5rem;
   border-radius: 0.6rem;
@@ -46,11 +46,11 @@ exports[`<MenuLink /> should render  1`] = `
 
 <div>
    
-  <nav
+  <div
     class="c0"
   >
     <div
-      class="chakra-stack css-ov3c59"
+      class="chakra-stack css-u7no08"
     >
       <div
         class="c1"
@@ -89,6 +89,6 @@ exports[`<MenuLink /> should render  1`] = `
         </a>
       </div>
     </div>
-  </nav>
+  </div>
 </div>
 `;

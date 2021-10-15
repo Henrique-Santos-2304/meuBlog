@@ -9,8 +9,7 @@ describe("<MenuLink />", () => {
   });
   it("should render Navigation and links ", () => {
     renderTheme(<MenuLink />);
-    const navigation = screen.getByRole("navigation", { hidden: true });
-    expect(navigation).toBeInTheDocument();
+
     expect(
       screen.getByRole("link", {
         name: /inicio/i,

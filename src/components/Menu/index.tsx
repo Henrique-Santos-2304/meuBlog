@@ -40,7 +40,7 @@ const Menu = ({ isOpen, onClose }: menuIsOpeCloseProps) => {
             _focus={{ border: "none" }}
           />
 
-          <DrawerBody>
+          <DrawerBody as="nav">
             <MenuLinks onClose={onClose} />
           </DrawerBody>
         </DrawerContent>

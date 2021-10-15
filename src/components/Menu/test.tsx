@@ -1,4 +1,5 @@
 import Menu from ".";
+import { screen } from "@testing-library/react";
 import { renderTheme } from "utils/testRenderTheme";
 
 describe("<Menu />", () => {
@@ -8,5 +9,7 @@ describe("<Menu />", () => {
   });
   it("should render ", () => {
     renderTheme(<Menu isOpen onClose={() => false} />);
+    const navigation = screen.getByRole("navigation", { hidden: true });
+    expect(navigation).toBeInTheDocument();
   });
 });

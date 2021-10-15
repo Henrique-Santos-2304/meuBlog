@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-export const Navigation = styled.nav`
+export const Navigation = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
@@ -19,7 +19,7 @@ export const WrapperLink = styled.div`
         :after {
           content: "";
           position: absolute;
-          bottom: 1.6rem;
+          top: 5rem;
           right: 0;
 
           height: 0.5rem;
