@@ -1,11 +1,10 @@
 import "match-media-mock";
-
-import SectionProject from ".";
+import Slides from ".";
 import { renderTheme } from "utils/testRenderTheme";
 
-describe("<SectionProject />", () => {
+describe("<Slides />", () => {
   it("should render ", () => {
-    const { container } = renderTheme(<SectionProject />);
+    const { container } = renderTheme(<Slides />);
     expect(container).toMatchSnapshot();
   });
 });

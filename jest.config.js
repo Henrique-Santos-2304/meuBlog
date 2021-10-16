@@ -17,7 +17,7 @@ module.exports = {
     "!src/utils/*/.ts(x)",
   ],
   setupFilesAfterEnv: ["<rootDir>/.jest/setup.ts"],
-  modulePaths: ["<rootDir>/src/"],
+  modulePaths: ["<rootDir>/src/", "<rootDir>/.jest"],
   globals: {
     "ts-jest": {
       // ...

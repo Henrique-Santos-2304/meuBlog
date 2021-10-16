@@ -28,6 +28,7 @@
     "@chakra-ui/react": "^1.6.9",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
+    "@types/react-slick": "^0.23.6",
     "emailjs-com": "^3.2.0",
     "framer-motion": "^4",
     "fs": "^0.0.1-security",
@@ -37,6 +38,7 @@
     "react-dom": "17.0.2",
     "react-hook-form": "^7.17.4",
     "react-icons": "^4.3.1",
+    "react-slick": "^0.28.1",
     "styled-components": "5.3.1",
     "styled-media-query": "^2.1.2"
   },
