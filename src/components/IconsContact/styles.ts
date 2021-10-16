@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-export const Wrapper = styled.nav`
+export const Li = styled.li`
   ${({ theme }) => css`
     svg {
       font-size: 3rem;

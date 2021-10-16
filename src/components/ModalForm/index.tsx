@@ -24,7 +24,7 @@ const ModalForm = ({ onClose, isOpen }: ModalType) => {
         bgGradient="linear(to-l,#00bf72 ,#008793 ,#004d7a , #051937)"
         borderRadius="2rem"
         boxShadow="0 0 20px gray"
-        trasnform="perspective(-20px)"
+        transform="perspective(-20px)"
       >
         <ModalCloseButton m="2rem" size="lg" color="orange" />
         <ModalBody>

@@ -13,7 +13,7 @@ const ContainerHeader = () => {
       p="0"
       bgGradient="linear(to-l,#00bf72 ,#008793 ,#004d7a , #051937)"
     >
-      <Container p="0" maxW="container.lg" direction="row" centerContent>
+      <Container p="0" maxW="container.lg" direction="row">
         <Flex
           w="100%"
           alignItems="center"

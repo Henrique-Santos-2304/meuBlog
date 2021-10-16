@@ -6,7 +6,7 @@ import ImageUserMain from "components/ImageUserMain";
 const Main = () => {
   return (
     <Container
-      as="main"
+      as="section"
       minH="82vh"
       maxW="full"
       bgGradient="linear(to-l,#00bf72 ,#008793 ,#004d7a , #051937)"

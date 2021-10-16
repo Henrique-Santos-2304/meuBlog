@@ -56,7 +56,7 @@ exports[`<BoxMain /> should render  1`] = `
 
 <div>
    
-  <section
+  <main
     aria-label="Descrições de um Desenvolvedor FrontEnd"
     class="css-1eeojed"
   >
@@ -78,11 +78,11 @@ exports[`<BoxMain /> should render  1`] = `
     >
       Mobile, Web, Desktop
     </p>
-    <nav
-      class="c1"
+    <ul
+      class="chakra-stack css-chsok2"
     >
-      <div
-        class="chakra-stack css-chsok2"
+      <li
+        class="c1"
       >
         <a
           aria-label="Link Para meu Github"
@@ -109,6 +109,10 @@ exports[`<BoxMain /> should render  1`] = `
             />
           </svg>
         </a>
+      </li>
+      <li
+        class="c1"
+      >
         <a
           aria-label="Link Para meu Linkedin"
           class="chakra-link css-f4h6uy"
@@ -138,6 +142,10 @@ exports[`<BoxMain /> should render  1`] = `
             </g>
           </svg>
         </a>
+      </li>
+      <li
+        class="c1"
+      >
         <a
           aria-label="Envio de mensagem no Whatsapp"
           class="chakra-link css-f4h6uy"
@@ -163,6 +171,10 @@ exports[`<BoxMain /> should render  1`] = `
             />
           </svg>
         </a>
+      </li>
+      <li
+        class="c1"
+      >
         <svg
           aria-label="Envio de email via site"
           fill="currentColor"
@@ -185,8 +197,8 @@ exports[`<BoxMain /> should render  1`] = `
             d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
           />
         </svg>
-      </div>
-    </nav>
-  </section>
+      </li>
+    </ul>
+  </main>
 </div>
 `;

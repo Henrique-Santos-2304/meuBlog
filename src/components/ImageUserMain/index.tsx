@@ -7,7 +7,7 @@ const ImageUserMain = () => {
   const [isGreatherThan767] = useMediaQuery("(max-width: 767px)");
   return (
     <Flex
-      as="section"
+      as="figure"
       align="center"
       justify="center"
       direction="column"
@@ -19,6 +19,7 @@ const ImageUserMain = () => {
         boxSize={["20rem", null, "22rem", "24rem"]}
         borderRadius="full"
         src="https://res.cloudinary.com/defnibbpl/image/upload/v1633360607/large_henrique_techs_89a8aae1bc.jpg"
+        alt="Foto de um desenvolvedor Front End"
       />
       {isGreatherThan767 && <IconsContact />}
     </Flex>

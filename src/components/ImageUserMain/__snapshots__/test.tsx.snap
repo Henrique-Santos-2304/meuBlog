@@ -36,19 +36,20 @@ exports[`<ImageUserMain /> should render  1`] = `
 
 <div>
    
-  <section
+  <figure
     aria-label="Foto de um Programador/ Desenvolvedor  "
     class="css-1odp1ew"
   >
     <img
+      alt="Foto de um desenvolvedor Front End"
       class="chakra-image css-14je8p7"
       src="https://res.cloudinary.com/defnibbpl/image/upload/v1633360607/large_henrique_techs_89a8aae1bc.jpg"
     />
-    <nav
-      class="c0"
+    <ul
+      class="chakra-stack css-chsok2"
     >
-      <div
-        class="chakra-stack css-chsok2"
+      <li
+        class="c0"
       >
         <a
           aria-label="Link Para meu Github"
@@ -75,6 +76,10 @@ exports[`<ImageUserMain /> should render  1`] = `
             />
           </svg>
         </a>
+      </li>
+      <li
+        class="c0"
+      >
         <a
           aria-label="Link Para meu Linkedin"
           class="chakra-link css-f4h6uy"
@@ -104,6 +109,10 @@ exports[`<ImageUserMain /> should render  1`] = `
             </g>
           </svg>
         </a>
+      </li>
+      <li
+        class="c0"
+      >
         <a
           aria-label="Envio de mensagem no Whatsapp"
           class="chakra-link css-f4h6uy"
@@ -129,6 +138,10 @@ exports[`<ImageUserMain /> should render  1`] = `
             />
           </svg>
         </a>
+      </li>
+      <li
+        class="c0"
+      >
         <svg
           aria-label="Envio de email via site"
           fill="currentColor"
@@ -151,8 +164,8 @@ exports[`<ImageUserMain /> should render  1`] = `
             d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
           />
         </svg>
-      </div>
-    </nav>
-  </section>
+      </li>
+    </ul>
+  </figure>
 </div>
 `;
