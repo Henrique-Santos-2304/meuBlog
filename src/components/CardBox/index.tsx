@@ -23,7 +23,7 @@ const CardBox = ({ url, title, subDescription }: imageProps) => {
       <Headings
         msg={title}
         color={"orange"}
-        margin="1.6rem auto"
+        margins="1.6rem auto"
         padding="1rem"
       />
       <Text

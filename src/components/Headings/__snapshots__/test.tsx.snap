@@ -4,7 +4,7 @@ exports[`<Heading /> should render  1`] = `
 <div>
    
   <h2
-    class="chakra-heading css-gejyqc"
+    class="chakra-heading css-g7025u"
   >
     teste
   </h2>

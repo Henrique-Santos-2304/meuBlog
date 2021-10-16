@@ -40,7 +40,7 @@ exports[`<CarBox /> should render  1`] = `
       src="test.jpg"
     />
     <h2
-      class="chakra-heading css-jq91fo"
+      class="chakra-heading css-vqu1z5"
     >
       minha foto
     </h2>
