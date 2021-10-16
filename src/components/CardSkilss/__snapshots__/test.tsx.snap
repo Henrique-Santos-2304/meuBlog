@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CardSkilss /> should render  1`] = `
+<div>
+   
+  <div
+    class="css-5adb0e"
+  >
+    <div
+      class=""
+      id="title"
+    >
+      <img
+        class="chakra-image css-14841x3"
+      />
+    </div>
+    <p
+      class="chakra-text css-czffx7"
+    />
+  </div>
+</div>
+`;

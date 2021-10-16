@@ -46,7 +46,7 @@ exports[`<ImageUserMain /> should render  1`] = `
       src="https://res.cloudinary.com/defnibbpl/image/upload/v1633360607/large_henrique_techs_89a8aae1bc.jpg"
     />
     <ul
-      class="chakra-stack css-chsok2"
+      class="chakra-stack css-15v4vh6"
     >
       <li
         class="c0"

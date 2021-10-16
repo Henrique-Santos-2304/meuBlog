@@ -74,9 +74,9 @@ exports[`<MenuLink /> should render  1`] = `
         class="c1"
       >
         <a
-          href="/about"
+          href="/skilss"
         >
-          Sobre
+          Habilidades
         </a>
       </div>
       <div

@@ -30,7 +30,7 @@ const SectionProject = () => {
             <Headings
               msg={"Meus projetos"}
               color={"orange"}
-              margins="2rem auto 7rem"
+              margins="-2rem auto 4rem"
               fontSize="3.2rem"
               padding="1.2rem"
             />

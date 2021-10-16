@@ -14,7 +14,7 @@ const MenuLinks = ({ onClose }: ButtonProps) => (
         <Link href="/projects">Projetos</Link>
       </S.WrapperLink>
       <S.WrapperLink>
-        <Link href="/about">Sobre</Link>
+        <Link href="/skilss">Habilidades</Link>
       </S.WrapperLink>
       <S.WrapperLink>
         <Link href="/contact">Contato</Link>

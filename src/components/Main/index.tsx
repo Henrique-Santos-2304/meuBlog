@@ -7,11 +7,11 @@ const Main = () => {
   return (
     <Container
       as="section"
-      minH="82vh"
+      minH="80vh"
       maxW="full"
       bgGradient="linear(to-l,#00bf72 ,#008793 ,#004d7a , #051937)"
     >
-      <Container maxW="container.lg" px="1rem" h="82vh">
+      <Container maxW="container.lg" px="1rem" h="80vh">
         <Flex
           align="center"
           justify={["center", null, "space-around"]}

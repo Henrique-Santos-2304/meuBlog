@@ -15,8 +15,8 @@ const CardBox = ({ url, title, subDescription }: imageProps) => {
       h={["46rem", null, "51rem"]}
       bg="blackAlpha.400"
       borderRadius="1rem"
-      p="1rem"
-      mx="1rem"
+      p={["1.4rem"]}
+      mx={["0.5rem", "1rem"]}
       position="relative"
     >
       <Image src={url} borderRadius="1rem" h="22rem" w="100%" />

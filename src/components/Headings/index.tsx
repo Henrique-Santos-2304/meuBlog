@@ -3,9 +3,9 @@ import { Heading } from "@chakra-ui/react";
 type headeingProps = {
   msg?: string;
   color?: string;
-  margins?: string;
-  padding?: string;
-  fontSize?: string;
+  margins?: string | string[];
+  padding?: string | string[];
+  fontSize?: string | string[];
 };
 const Headings = ({
   msg,

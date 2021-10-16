@@ -1,0 +1,662 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Skilss /> should render  1`] = `
+<div>
+   
+  <div
+    class="chakra-container css-1n49xi7"
+  >
+    <div
+      class="css-k008qs"
+    >
+      <div
+        class="chakra-container css-z8m5pk"
+      >
+        <h2
+          class="chakra-heading css-agqm26"
+        >
+          Habilidades
+        </h2>
+        <div
+          class="slick-slider slick-initialized"
+          dir="ltr"
+        >
+          <button
+            class="slick-arrow slick-prev slick-disabled"
+            data-role="none"
+            style="display: block;"
+            type="button"
+          >
+             
+            Previous
+          </button>
+          <div
+            class="slick-list"
+          >
+            <div
+              class="slick-track"
+              style="opacity: 1; transform: translate3d(0px, 0px, 0px);"
+            >
+              <div
+                aria-hidden="false"
+                class="slick-slide slick-active slick-current"
+                data-index="0"
+                style="outline: none; width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="css-5adb0e"
+                  >
+                    <div
+                      class=""
+                      id="title"
+                    >
+                      <img
+                        alt="Python"
+                        class="chakra-image css-14841x3"
+                        src="https://res.cloudinary.com/defnibbpl/image/upload/v1634416786/1024px-Python-logo-notext_jsr03y.png"
+                      />
+                    </div>
+                    <p
+                      class="chakra-text css-czffx7"
+                    >
+                      Python
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="false"
+                class="slick-slide slick-active"
+                data-index="1"
+                style="outline: none; width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="css-5adb0e"
+                  >
+                    <div
+                      class=""
+                      id="title"
+                    >
+                      <img
+                        alt="JavaScript"
+                        class="chakra-image css-14841x3"
+                        src="https://res.cloudinary.com/defnibbpl/image/upload/v1634417394/javascript-icon_zaobje.svg"
+                      />
+                    </div>
+                    <p
+                      class="chakra-text css-czffx7"
+                    >
+                      JavaScript
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="false"
+                class="slick-slide slick-active"
+                data-index="2"
+                style="outline: none; width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="css-5adb0e"
+                  >
+                    <div
+                      class=""
+                      id="title"
+                    >
+                      <img
+                        alt="Typescript"
+                        class="chakra-image css-14841x3"
+                        src="https://res.cloudinary.com/defnibbpl/image/upload/v1634416790/typescript_c5xdpy.svg"
+                      />
+                    </div>
+                    <p
+                      class="chakra-text css-czffx7"
+                    >
+                      Typescript
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="false"
+                class="slick-slide slick-active"
+                data-index="3"
+                style="outline: none; width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="css-5adb0e"
+                  >
+                    <div
+                      class=""
+                      id="title"
+                    >
+                      <img
+                        alt="HTML"
+                        class="chakra-image css-14841x3"
+                        src="https://res.cloudinary.com/defnibbpl/image/upload/v1634417749/w3_html5-icon_sviivv.svg"
+                      />
+                    </div>
+                    <p
+                      class="chakra-text css-czffx7"
+                    >
+                      HTML
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="false"
+                class="slick-slide slick-active"
+                data-index="4"
+                style="outline: none; width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="css-5adb0e"
+                  >
+                    <div
+                      class=""
+                      id="title"
+                    >
+                      <img
+                        alt="React"
+                        class="chakra-image css-14841x3"
+                        src="https://res.cloudinary.com/defnibbpl/image/upload/v1634416789/react_eugvgw.svg"
+                      />
+                    </div>
+                    <p
+                      class="chakra-text css-czffx7"
+                    >
+                      React
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide"
+                data-index="5"
+                style="outline: none; width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="css-5adb0e"
+                  >
+                    <div
+                      class=""
+                      id="title"
+                    >
+                      <img
+                        alt="Next.Js"
+                        class="chakra-image css-14841x3"
+                        src="https://res.cloudinary.com/defnibbpl/image/upload/v1634416788/nextjs_jbhm7d.svg"
+                      />
+                    </div>
+                    <p
+                      class="chakra-text css-czffx7"
+                    >
+                      Next.Js
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide"
+                data-index="6"
+                style="outline: none; width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="css-5adb0e"
+                  >
+                    <div
+                      class=""
+                      id="title"
+                    >
+                      <img
+                        alt="Jest"
+                        class="chakra-image css-14841x3"
+                        src="https://res.cloudinary.com/defnibbpl/image/upload/v1634416787/jest_yvhqf3.svg"
+                      />
+                    </div>
+                    <p
+                      class="chakra-text css-czffx7"
+                    >
+                      Jest
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide"
+                data-index="7"
+                style="outline: none; width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="css-5adb0e"
+                  >
+                    <div
+                      class=""
+                      id="title"
+                    >
+                      <img
+                        alt="Cypress"
+                        class="chakra-image css-14841x3"
+                        src="https://res.cloudinary.com/defnibbpl/image/upload/v1634416786/cypress_bmhnah.svg"
+                      />
+                    </div>
+                    <p
+                      class="chakra-text css-czffx7"
+                    >
+                      Cypress
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide"
+                data-index="8"
+                style="outline: none; width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="css-5adb0e"
+                  >
+                    <div
+                      class=""
+                      id="title"
+                    >
+                      <img
+                        alt="Testing Library"
+                        class="chakra-image css-14841x3"
+                        src="https://res.cloudinary.com/defnibbpl/image/upload/v1634416789/rtl_i3scd8.svg"
+                      />
+                    </div>
+                    <p
+                      class="chakra-text css-czffx7"
+                    >
+                      Testing Library
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide"
+                data-index="9"
+                style="outline: none; width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="css-5adb0e"
+                  >
+                    <div
+                      class=""
+                      id="title"
+                    >
+                      <img
+                        alt="Storybook"
+                        class="chakra-image css-14841x3"
+                        src="https://res.cloudinary.com/defnibbpl/image/upload/v1634416789/storybook_q1s5cl.svg"
+                      />
+                    </div>
+                    <p
+                      class="chakra-text css-czffx7"
+                    >
+                      Storybook
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide"
+                data-index="10"
+                style="outline: none; width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="css-5adb0e"
+                  >
+                    <div
+                      class=""
+                      id="title"
+                    >
+                      <img
+                        alt="Strapi"
+                        class="chakra-image css-14841x3"
+                        src="https://res.cloudinary.com/defnibbpl/image/upload/v1634416790/strapi_e1wlna.svg"
+                      />
+                    </div>
+                    <p
+                      class="chakra-text css-czffx7"
+                    >
+                      Strapi
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide"
+                data-index="11"
+                style="outline: none; width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="css-5adb0e"
+                  >
+                    <div
+                      class=""
+                      id="title"
+                    >
+                      <img
+                        alt="Apolo"
+                        class="chakra-image css-14841x3"
+                        src="https://res.cloudinary.com/defnibbpl/image/upload/v1634416786/apollo_qhtdll.svg"
+                      />
+                    </div>
+                    <p
+                      class="chakra-text css-czffx7"
+                    >
+                      Apolo
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide"
+                data-index="12"
+                style="outline: none; width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="css-5adb0e"
+                  >
+                    <div
+                      class=""
+                      id="title"
+                    >
+                      <img
+                        alt="GraphQl"
+                        class="chakra-image css-14841x3"
+                        src="https://res.cloudinary.com/defnibbpl/image/upload/v1634416786/graphql_c3ix6o.svg"
+                      />
+                    </div>
+                    <p
+                      class="chakra-text css-czffx7"
+                    >
+                      GraphQl
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="slick-arrow slick-next"
+            data-role="none"
+            style="display: block;"
+            type="button"
+          >
+             
+            Next
+          </button>
+          <ul
+            class="slick-dots"
+            style="display: block;"
+          >
+            <li
+              class="slick-active"
+            >
+              <button>
+                1
+              </button>
+            </li>
+            <li
+              class=""
+            >
+              <button>
+                2
+              </button>
+            </li>
+            <li
+              class=""
+            >
+              <button>
+                3
+              </button>
+            </li>
+            <li
+              class=""
+            >
+              <button>
+                4
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="slick-slider slick-initialized"
+          dir="ltr"
+        >
+          <button
+            class="slick-arrow slick-prev slick-disabled"
+            data-role="none"
+            style="display: block;"
+            type="button"
+          >
+             
+            Previous
+          </button>
+          <div
+            class="slick-list"
+          >
+            <div
+              class="slick-track"
+              style="opacity: 1; transform: translate3d(0px, 0px, 0px);"
+            >
+              <div
+                aria-hidden="false"
+                class="slick-slide slick-active slick-current"
+                data-index="0"
+                style="outline: none; width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="css-5adb0e"
+                  >
+                    <div
+                      class=""
+                      id="title"
+                    >
+                      <img
+                        alt="Styled Components"
+                        class="chakra-image css-14841x3"
+                        src="https://res.cloudinary.com/defnibbpl/image/upload/v1634417550/styled-components-1_kdt29i.svg"
+                      />
+                    </div>
+                    <p
+                      class="chakra-text css-czffx7"
+                    >
+                      Styled Components
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="false"
+                class="slick-slide slick-active"
+                data-index="1"
+                style="outline: none; width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="css-5adb0e"
+                  >
+                    <div
+                      class=""
+                      id="title"
+                    >
+                      <img
+                        alt="Bootstrap"
+                        class="chakra-image css-14841x3"
+                        src="https://res.cloudinary.com/defnibbpl/image/upload/v1634416786/Bootstrap_logo_utfaxr.svg"
+                      />
+                    </div>
+                    <p
+                      class="chakra-text css-czffx7"
+                    >
+                      Bootstrap
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="false"
+                class="slick-slide slick-active"
+                data-index="2"
+                style="outline: none; width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="css-5adb0e"
+                  >
+                    <div
+                      class=""
+                      id="title"
+                    >
+                      <img
+                        alt="Chakra-Ui"
+                        class="chakra-image css-14841x3"
+                        src="https://res.cloudinary.com/defnibbpl/image/upload/v1634416786/54212428_dpejja.png"
+                      />
+                    </div>
+                    <p
+                      class="chakra-text css-czffx7"
+                    >
+                      Chakra-Ui
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="false"
+                class="slick-slide slick-active"
+                data-index="3"
+                style="outline: none; width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="css-5adb0e"
+                  >
+                    <div
+                      class=""
+                      id="title"
+                    >
+                      <img
+                        alt="Tailwind-Css"
+                        class="chakra-image css-14841x3"
+                        src="https://res.cloudinary.com/defnibbpl/image/upload/v1634417414/tailwindcss-icon_1_xozsfd.svg"
+                      />
+                    </div>
+                    <p
+                      class="chakra-text css-czffx7"
+                    >
+                      Tailwind-Css
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="false"
+                class="slick-slide slick-active"
+                data-index="4"
+                style="outline: none; width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="css-5adb0e"
+                  >
+                    <div
+                      class=""
+                      id="title"
+                    >
+                      <img
+                        alt="Css"
+                        class="chakra-image css-14841x3"
+                        src="https://res.cloudinary.com/defnibbpl/image/upload/v1634417704/w3_css-icon_ijitjf.svg"
+                      />
+                    </div>
+                    <p
+                      class="chakra-text css-czffx7"
+                    >
+                      Css
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="slick-arrow slick-next"
+            data-role="none"
+            style="display: block;"
+            type="button"
+          >
+             
+            Next
+          </button>
+          <ul
+            class="slick-dots"
+            style="display: block;"
+          >
+            <li
+              class="slick-active"
+            >
+              <button>
+                1
+              </button>
+            </li>
+            <li
+              class=""
+            >
+              <button>
+                2
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

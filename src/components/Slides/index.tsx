@@ -38,33 +38,41 @@ function SampleNextArrow(props: {
 const Slides = () => {
   const settings = {
     dots: true,
-    infinite: false,
-    speed: 800,
-    slidesToShow: 2.4,
-    slidesToScroll: 2,
+    centerMode: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    cssEase: "linear",
+    speed: 1000,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    initialSlide: 2,
     responsive: [
       {
         breakpoint: 1100,
         settings: {
-          slidesToShow: 2.2,
-          slidesToScroll: 2,
+          slidesToShow: 2,
+          slidesToScroll: 1,
           initialSlide: 2,
           arrows: false,
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 650,
         settings: {
-          slidesToShow: 2.2,
-          slidesToScroll: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
           initialSlide: 2,
+          arrows: false,
         },
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1.1,
+          slidesToShow: 1.02,
+          centerMode: false,
           slidesToScroll: 1,
+          initialSlide: 2,
           arrows: false,
         },
       },

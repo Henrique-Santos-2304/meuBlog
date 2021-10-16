@@ -23,7 +23,7 @@ describe("<MenuLink />", () => {
     ).toBeInTheDocument();
     expect(
       screen.getByRole("link", {
-        name: /sobre/i,
+        name: /habilidades/i,
       })
     ).toBeInTheDocument();
     expect(
@@ -48,9 +48,9 @@ describe("<MenuLink />", () => {
 
     expect(
       screen.getByRole("link", {
-        name: /sobre/i,
+        name: /habilidades/i,
       })
-    ).toHaveAttribute("href", "/about");
+    ).toHaveAttribute("href", "/skilss");
 
     expect(
       screen.getByRole("link", {

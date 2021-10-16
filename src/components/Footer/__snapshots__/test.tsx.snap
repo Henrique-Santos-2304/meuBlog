@@ -4,14 +4,14 @@ exports[`<Footer /> should render  1`] = `
 <div>
    
   <div
-    class="chakra-container css-gnbstb"
+    class="chakra-container css-7lkdpn"
   >
     <div
       class="chakra-container css-10gf8jm"
     >
       <p
         aria-label="Criador do Design e do Site"
-        class="chakra-text css-1bg3qoe"
+        class="chakra-text css-18zn9rd"
         title="Created By"
       >
         Criado por 
