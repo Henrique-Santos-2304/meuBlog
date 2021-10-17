@@ -25,7 +25,7 @@ const Inputs = ({ txt, typeInput, registerer, err }: IconsTypesProps) => {
   return (
     <FormControl>
       <FormLabel
-        fontSize="2xl"
+        fontSize="xl"
         htmlFor={typeInput}
         color="yellow.600"
         ml="0.5rem"
@@ -39,6 +39,7 @@ const Inputs = ({ txt, typeInput, registerer, err }: IconsTypesProps) => {
         type="text"
         placeholder={`Digite seu ${txt}`}
         _focus={{ borderColor: "orange" }}
+        _hover={{ borderColor: "orange" }}
         {...registerer(typeInput, emailPattern)}
         fontSize="2xl"
         borderRadius="1rem"

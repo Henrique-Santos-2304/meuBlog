@@ -117,7 +117,7 @@ exports[`<ImageUserMain /> should render  1`] = `
       >
         <a
           aria-label="Link Para meu Github"
-          class="chakra-link css-f4h6uy"
+          class="chakra-link css-djs5yv"
           href="https://github.com/Henrique-Santos-2304"
           rel="noopener noreferrer"
           target="_blank"
@@ -146,7 +146,7 @@ exports[`<ImageUserMain /> should render  1`] = `
       >
         <a
           aria-label="Link Para meu Linkedin"
-          class="chakra-link css-f4h6uy"
+          class="chakra-link css-djs5yv"
           href="https://www.linkedin.com/in/henriquewebdeveloper/"
           rel="noopener noreferrer"
           target="_blank"
@@ -179,7 +179,7 @@ exports[`<ImageUserMain /> should render  1`] = `
       >
         <a
           aria-label="Envio de mensagem no Whatsapp"
-          class="chakra-link css-f4h6uy"
+          class="chakra-link css-djs5yv"
           href="https://api.whatsapp.com/send?1=pt_br&phone=5511966365190"
           rel="noopener noreferrer"
           target="_blank"

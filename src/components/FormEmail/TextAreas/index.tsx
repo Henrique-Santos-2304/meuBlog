@@ -14,7 +14,7 @@ type IconsTypesProps = {
 const TextAreas = ({ txt, typeInput, registerer, err }: IconsTypesProps) => {
   return (
     <FormControl>
-      <FormLabel fontSize="2xl" htmlFor={typeInput} color="yellow.600">
+      <FormLabel fontSize="xl" htmlFor={typeInput} color="yellow.600">
         {txt}
       </FormLabel>
       <Textarea
@@ -25,7 +25,7 @@ const TextAreas = ({ txt, typeInput, registerer, err }: IconsTypesProps) => {
         name={typeInput}
         aria-label="Campo de Digitação de Mensagem"
         type={typeInput}
-        h="17rem"
+        h="15rem"
         p="1.3rem"
         variant="filed"
         bg="blackAlpha.300"

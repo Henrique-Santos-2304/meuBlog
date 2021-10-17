@@ -14,7 +14,11 @@ const IconsContact = () => {
       <HStack spacing="0.8rem" mb="1rem">
         <S.Li>
           <Link href="https://github.com/Henrique-Santos-2304" passHref>
-            <ChakraLink isExternal aria-label="Link Para meu Github">
+            <ChakraLink
+              isExternal
+              aria-label="Link Para meu Github"
+              _focus={{ border: "0" }}
+            >
               <FaGithub id="github" title="/Henrique-Santos-2304" />
             </ChakraLink>
           </Link>
@@ -24,7 +28,11 @@ const IconsContact = () => {
             href="https://www.linkedin.com/in/henriquewebdeveloper/"
             passHref
           >
-            <ChakraLink isExternal aria-label="Link Para meu Linkedin">
+            <ChakraLink
+              isExternal
+              aria-label="Link Para meu Linkedin"
+              _focus={{ border: "0" }}
+            >
               <TiSocialLinkedinCircular
                 id="linkedin"
                 title="in/henriquewebdeveloper/"
@@ -37,7 +45,11 @@ const IconsContact = () => {
             href="https://api.whatsapp.com/send?1=pt_br&phone=5511966365190"
             passHref
           >
-            <ChakraLink isExternal aria-label="Envio de mensagem no Whatsapp">
+            <ChakraLink
+              isExternal
+              aria-label="Envio de mensagem no Whatsapp"
+              _focus={{ border: "0" }}
+            >
               <FaWhatsapp id="whatsapp" title="11-96636.5190" />
             </ChakraLink>
           </Link>

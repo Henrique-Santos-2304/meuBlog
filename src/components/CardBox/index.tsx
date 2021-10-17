@@ -44,7 +44,6 @@ const CardBox = ({ url, title, subDescription }: imageProps) => {
             borderRadius="0.7rem"
             textAlign="center"
             fontSize={["1.2rem", null, null, "1.4rem"]}
-            // p={["1rem ", "1.5rem 1rem", "1.5rem", "2rem"]}
             _hover={{ border: "0.1rem solid white" }}
           >
             Ver projeto

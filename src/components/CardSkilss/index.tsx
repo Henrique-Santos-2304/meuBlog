@@ -15,7 +15,6 @@ const CardSkilss = ({ url, title }: cardsFrameworks) => (
     bg="whiteAlpha.200"
     transition="transform .4s linear"
     _hover={{ transform: "translate(-7%, -7%)" }}
-    isCentered
     cursor="pointer"
   >
     <Image
