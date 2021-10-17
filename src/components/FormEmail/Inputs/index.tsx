@@ -25,7 +25,7 @@ const Inputs = ({ txt, typeInput, registerer, err }: IconsTypesProps) => {
   return (
     <FormControl>
       <FormLabel
-        fontSize="3xl"
+        fontSize="2xl"
         htmlFor={typeInput}
         color="yellow.600"
         ml="0.5rem"
@@ -35,17 +35,16 @@ const Inputs = ({ txt, typeInput, registerer, err }: IconsTypesProps) => {
       <Input
         isRequired={false}
         variant="flushed"
-        p="1rem"
         textAlign="center"
         type="text"
         placeholder={`Digite seu ${txt}`}
         _focus={{ borderColor: "orange" }}
         {...registerer(typeInput, emailPattern)}
-        fontSize="3xl"
+        fontSize="2xl"
         borderRadius="1rem"
         color="gray.100"
         id={typeInput}
-        h="4rem"
+        h="2.6rem"
       />
       {err[typeInput] && <AlertIcons message={err[typeInput].message} />}
     </FormControl>

@@ -15,7 +15,7 @@ const ModalForm = ({ onClose, isOpen }: ModalType) => {
     <Modal
       onClose={onClose}
       isOpen={isOpen}
-      size="3xl"
+      size="2xl"
       isCentered
       motionPreset="slideInRight"
     >
@@ -24,7 +24,7 @@ const ModalForm = ({ onClose, isOpen }: ModalType) => {
         bgGradient="linear(to-l,#00bf72 ,#008793 ,#004d7a , #051937)"
         borderRadius="2rem"
         boxShadow="0 0 20px gray"
-        transform="perspective(-20px)"
+        transform="perspective(-40px)"
       >
         <ModalCloseButton m="2rem" size="lg" color="orange" />
         <ModalBody>

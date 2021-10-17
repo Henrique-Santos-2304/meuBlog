@@ -40,19 +40,6 @@ export const image = [
     url: "https://res.cloudinary.com/defnibbpl/image/upload/v1634416789/storybook_q1s5cl.svg",
     title: "Storybook",
   },
-  {
-    url: "https://res.cloudinary.com/defnibbpl/image/upload/v1634416790/strapi_e1wlna.svg",
-    title: "Strapi",
-  },
-
-  {
-    url: "https://res.cloudinary.com/defnibbpl/image/upload/v1634416786/apollo_qhtdll.svg",
-    title: "Apolo",
-  },
-  {
-    url: "https://res.cloudinary.com/defnibbpl/image/upload/v1634416786/graphql_c3ix6o.svg",
-    title: "GraphQl",
-  },
 ];
 export const stylesImg = [
   {
@@ -74,5 +61,18 @@ export const stylesImg = [
   {
     url: "https://res.cloudinary.com/defnibbpl/image/upload/v1634417704/w3_css-icon_ijitjf.svg",
     title: "Css",
+  },
+  {
+    url: "https://res.cloudinary.com/defnibbpl/image/upload/v1634416790/strapi_e1wlna.svg",
+    title: "Strapi",
+  },
+
+  {
+    url: "https://res.cloudinary.com/defnibbpl/image/upload/v1634416786/apollo_qhtdll.svg",
+    title: "Apolo",
+  },
+  {
+    url: "https://res.cloudinary.com/defnibbpl/image/upload/v1634416786/graphql_c3ix6o.svg",
+    title: "GraphQl",
   },
 ];

@@ -1,6 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<SlideSkilss /> should render  1`] = `
+.c0 {
+  bottom: -1rem;
+}
+
+.c0 ul:last-child {
+  color: orange;
+}
+
+.c0 ul li {
+  color: orange;
+}
+
+.c0 ul li.slick-active button::before {
+  color: orange;
+}
+
+.c0 ul li button::before {
+  font-size: 1.4rem;
+}
+
 <div>
    
   <div
@@ -32,20 +52,15 @@ exports[`<SlideSkilss /> should render  1`] = `
         >
           <div>
             <div
-              class="css-5adb0e"
+              class="css-x5fiqn"
             >
-              <div
-                class=""
-                id="title"
-              >
-                <img
-                  alt="Python"
-                  class="chakra-image css-14841x3"
-                  src="https://res.cloudinary.com/defnibbpl/image/upload/v1634416786/1024px-Python-logo-notext_jsr03y.png"
-                />
-              </div>
+              <img
+                alt="Python"
+                class="chakra-image css-1xbzop4"
+                src="https://res.cloudinary.com/defnibbpl/image/upload/v1634416786/1024px-Python-logo-notext_jsr03y.png"
+              />
               <p
-                class="chakra-text css-czffx7"
+                class="chakra-text css-18unoc9"
               >
                 Python
               </p>
@@ -61,20 +76,15 @@ exports[`<SlideSkilss /> should render  1`] = `
         >
           <div>
             <div
-              class="css-5adb0e"
+              class="css-x5fiqn"
             >
-              <div
-                class=""
-                id="title"
-              >
-                <img
-                  alt="JavaScript"
-                  class="chakra-image css-14841x3"
-                  src="https://res.cloudinary.com/defnibbpl/image/upload/v1634417394/javascript-icon_zaobje.svg"
-                />
-              </div>
+              <img
+                alt="JavaScript"
+                class="chakra-image css-1xbzop4"
+                src="https://res.cloudinary.com/defnibbpl/image/upload/v1634417394/javascript-icon_zaobje.svg"
+              />
               <p
-                class="chakra-text css-czffx7"
+                class="chakra-text css-18unoc9"
               >
                 JavaScript
               </p>
@@ -90,20 +100,15 @@ exports[`<SlideSkilss /> should render  1`] = `
         >
           <div>
             <div
-              class="css-5adb0e"
+              class="css-x5fiqn"
             >
-              <div
-                class=""
-                id="title"
-              >
-                <img
-                  alt="Typescript"
-                  class="chakra-image css-14841x3"
-                  src="https://res.cloudinary.com/defnibbpl/image/upload/v1634416790/typescript_c5xdpy.svg"
-                />
-              </div>
+              <img
+                alt="Typescript"
+                class="chakra-image css-1xbzop4"
+                src="https://res.cloudinary.com/defnibbpl/image/upload/v1634416790/typescript_c5xdpy.svg"
+              />
               <p
-                class="chakra-text css-czffx7"
+                class="chakra-text css-18unoc9"
               >
                 Typescript
               </p>
@@ -119,20 +124,15 @@ exports[`<SlideSkilss /> should render  1`] = `
         >
           <div>
             <div
-              class="css-5adb0e"
+              class="css-x5fiqn"
             >
-              <div
-                class=""
-                id="title"
-              >
-                <img
-                  alt="HTML"
-                  class="chakra-image css-14841x3"
-                  src="https://res.cloudinary.com/defnibbpl/image/upload/v1634417749/w3_html5-icon_sviivv.svg"
-                />
-              </div>
+              <img
+                alt="HTML"
+                class="chakra-image css-1xbzop4"
+                src="https://res.cloudinary.com/defnibbpl/image/upload/v1634417749/w3_html5-icon_sviivv.svg"
+              />
               <p
-                class="chakra-text css-czffx7"
+                class="chakra-text css-18unoc9"
               >
                 HTML
               </p>
@@ -148,20 +148,15 @@ exports[`<SlideSkilss /> should render  1`] = `
         >
           <div>
             <div
-              class="css-5adb0e"
+              class="css-x5fiqn"
             >
-              <div
-                class=""
-                id="title"
-              >
-                <img
-                  alt="React"
-                  class="chakra-image css-14841x3"
-                  src="https://res.cloudinary.com/defnibbpl/image/upload/v1634416789/react_eugvgw.svg"
-                />
-              </div>
+              <img
+                alt="React"
+                class="chakra-image css-1xbzop4"
+                src="https://res.cloudinary.com/defnibbpl/image/upload/v1634416789/react_eugvgw.svg"
+              />
               <p
-                class="chakra-text css-czffx7"
+                class="chakra-text css-18unoc9"
               >
                 React
               </p>
@@ -177,20 +172,15 @@ exports[`<SlideSkilss /> should render  1`] = `
         >
           <div>
             <div
-              class="css-5adb0e"
+              class="css-x5fiqn"
             >
-              <div
-                class=""
-                id="title"
-              >
-                <img
-                  alt="Next.Js"
-                  class="chakra-image css-14841x3"
-                  src="https://res.cloudinary.com/defnibbpl/image/upload/v1634416788/nextjs_jbhm7d.svg"
-                />
-              </div>
+              <img
+                alt="Next.Js"
+                class="chakra-image css-1xbzop4"
+                src="https://res.cloudinary.com/defnibbpl/image/upload/v1634416788/nextjs_jbhm7d.svg"
+              />
               <p
-                class="chakra-text css-czffx7"
+                class="chakra-text css-18unoc9"
               >
                 Next.Js
               </p>
@@ -206,20 +196,15 @@ exports[`<SlideSkilss /> should render  1`] = `
         >
           <div>
             <div
-              class="css-5adb0e"
+              class="css-x5fiqn"
             >
-              <div
-                class=""
-                id="title"
-              >
-                <img
-                  alt="Jest"
-                  class="chakra-image css-14841x3"
-                  src="https://res.cloudinary.com/defnibbpl/image/upload/v1634416787/jest_yvhqf3.svg"
-                />
-              </div>
+              <img
+                alt="Jest"
+                class="chakra-image css-1xbzop4"
+                src="https://res.cloudinary.com/defnibbpl/image/upload/v1634416787/jest_yvhqf3.svg"
+              />
               <p
-                class="chakra-text css-czffx7"
+                class="chakra-text css-18unoc9"
               >
                 Jest
               </p>
@@ -235,20 +220,15 @@ exports[`<SlideSkilss /> should render  1`] = `
         >
           <div>
             <div
-              class="css-5adb0e"
+              class="css-x5fiqn"
             >
-              <div
-                class=""
-                id="title"
-              >
-                <img
-                  alt="Cypress"
-                  class="chakra-image css-14841x3"
-                  src="https://res.cloudinary.com/defnibbpl/image/upload/v1634416786/cypress_bmhnah.svg"
-                />
-              </div>
+              <img
+                alt="Cypress"
+                class="chakra-image css-1xbzop4"
+                src="https://res.cloudinary.com/defnibbpl/image/upload/v1634416786/cypress_bmhnah.svg"
+              />
               <p
-                class="chakra-text css-czffx7"
+                class="chakra-text css-18unoc9"
               >
                 Cypress
               </p>
@@ -264,20 +244,15 @@ exports[`<SlideSkilss /> should render  1`] = `
         >
           <div>
             <div
-              class="css-5adb0e"
+              class="css-x5fiqn"
             >
-              <div
-                class=""
-                id="title"
-              >
-                <img
-                  alt="Testing Library"
-                  class="chakra-image css-14841x3"
-                  src="https://res.cloudinary.com/defnibbpl/image/upload/v1634416789/rtl_i3scd8.svg"
-                />
-              </div>
+              <img
+                alt="Testing Library"
+                class="chakra-image css-1xbzop4"
+                src="https://res.cloudinary.com/defnibbpl/image/upload/v1634416789/rtl_i3scd8.svg"
+              />
               <p
-                class="chakra-text css-czffx7"
+                class="chakra-text css-18unoc9"
               >
                 Testing Library
               </p>
@@ -293,109 +268,17 @@ exports[`<SlideSkilss /> should render  1`] = `
         >
           <div>
             <div
-              class="css-5adb0e"
+              class="css-x5fiqn"
             >
-              <div
-                class=""
-                id="title"
-              >
-                <img
-                  alt="Storybook"
-                  class="chakra-image css-14841x3"
-                  src="https://res.cloudinary.com/defnibbpl/image/upload/v1634416789/storybook_q1s5cl.svg"
-                />
-              </div>
+              <img
+                alt="Storybook"
+                class="chakra-image css-1xbzop4"
+                src="https://res.cloudinary.com/defnibbpl/image/upload/v1634416789/storybook_q1s5cl.svg"
+              />
               <p
-                class="chakra-text css-czffx7"
+                class="chakra-text css-18unoc9"
               >
                 Storybook
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          aria-hidden="true"
-          class="slick-slide"
-          data-index="10"
-          style="outline: none; width: 0px;"
-          tabindex="-1"
-        >
-          <div>
-            <div
-              class="css-5adb0e"
-            >
-              <div
-                class=""
-                id="title"
-              >
-                <img
-                  alt="Strapi"
-                  class="chakra-image css-14841x3"
-                  src="https://res.cloudinary.com/defnibbpl/image/upload/v1634416790/strapi_e1wlna.svg"
-                />
-              </div>
-              <p
-                class="chakra-text css-czffx7"
-              >
-                Strapi
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          aria-hidden="true"
-          class="slick-slide"
-          data-index="11"
-          style="outline: none; width: 0px;"
-          tabindex="-1"
-        >
-          <div>
-            <div
-              class="css-5adb0e"
-            >
-              <div
-                class=""
-                id="title"
-              >
-                <img
-                  alt="Apolo"
-                  class="chakra-image css-14841x3"
-                  src="https://res.cloudinary.com/defnibbpl/image/upload/v1634416786/apollo_qhtdll.svg"
-                />
-              </div>
-              <p
-                class="chakra-text css-czffx7"
-              >
-                Apolo
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          aria-hidden="true"
-          class="slick-slide"
-          data-index="12"
-          style="outline: none; width: 0px;"
-          tabindex="-1"
-        >
-          <div>
-            <div
-              class="css-5adb0e"
-            >
-              <div
-                class=""
-                id="title"
-              >
-                <img
-                  alt="GraphQl"
-                  class="chakra-image css-14841x3"
-                  src="https://res.cloudinary.com/defnibbpl/image/upload/v1634416786/graphql_c3ix6o.svg"
-                />
-              </div>
-              <p
-                class="chakra-text css-czffx7"
-              >
-                GraphQl
               </p>
             </div>
           </div>
@@ -411,39 +294,35 @@ exports[`<SlideSkilss /> should render  1`] = `
        
       Next
     </button>
-    <ul
-      class="slick-dots"
-      style="display: block;"
+    <div
+      class="c0 slick-dots"
     >
-      <li
-        class="slick-active"
-      >
-        <button>
-          1
-        </button>
-      </li>
-      <li
-        class=""
-      >
-        <button>
-          2
-        </button>
-      </li>
-      <li
-        class=""
-      >
-        <button>
-          3
-        </button>
-      </li>
-      <li
-        class=""
-      >
-        <button>
-          4
-        </button>
-      </li>
-    </ul>
+      <ul>
+         
+        <li
+          class="slick-active"
+        >
+          <button>
+            1
+          </button>
+        </li>
+        <li
+          class=""
+        >
+          <button>
+            2
+          </button>
+        </li>
+        <li
+          class=""
+        >
+          <button>
+            3
+          </button>
+        </li>
+         
+      </ul>
+    </div>
   </div>
   <div
     class="slick-slider slick-initialized"
@@ -474,20 +353,15 @@ exports[`<SlideSkilss /> should render  1`] = `
         >
           <div>
             <div
-              class="css-5adb0e"
+              class="css-x5fiqn"
             >
-              <div
-                class=""
-                id="title"
-              >
-                <img
-                  alt="Styled Components"
-                  class="chakra-image css-14841x3"
-                  src="https://res.cloudinary.com/defnibbpl/image/upload/v1634417550/styled-components-1_kdt29i.svg"
-                />
-              </div>
+              <img
+                alt="Styled Components"
+                class="chakra-image css-1xbzop4"
+                src="https://res.cloudinary.com/defnibbpl/image/upload/v1634417550/styled-components-1_kdt29i.svg"
+              />
               <p
-                class="chakra-text css-czffx7"
+                class="chakra-text css-18unoc9"
               >
                 Styled Components
               </p>
@@ -503,20 +377,15 @@ exports[`<SlideSkilss /> should render  1`] = `
         >
           <div>
             <div
-              class="css-5adb0e"
+              class="css-x5fiqn"
             >
-              <div
-                class=""
-                id="title"
-              >
-                <img
-                  alt="Bootstrap"
-                  class="chakra-image css-14841x3"
-                  src="https://res.cloudinary.com/defnibbpl/image/upload/v1634416786/Bootstrap_logo_utfaxr.svg"
-                />
-              </div>
+              <img
+                alt="Bootstrap"
+                class="chakra-image css-1xbzop4"
+                src="https://res.cloudinary.com/defnibbpl/image/upload/v1634416786/Bootstrap_logo_utfaxr.svg"
+              />
               <p
-                class="chakra-text css-czffx7"
+                class="chakra-text css-18unoc9"
               >
                 Bootstrap
               </p>
@@ -532,20 +401,15 @@ exports[`<SlideSkilss /> should render  1`] = `
         >
           <div>
             <div
-              class="css-5adb0e"
+              class="css-x5fiqn"
             >
-              <div
-                class=""
-                id="title"
-              >
-                <img
-                  alt="Chakra-Ui"
-                  class="chakra-image css-14841x3"
-                  src="https://res.cloudinary.com/defnibbpl/image/upload/v1634416786/54212428_dpejja.png"
-                />
-              </div>
+              <img
+                alt="Chakra-Ui"
+                class="chakra-image css-1xbzop4"
+                src="https://res.cloudinary.com/defnibbpl/image/upload/v1634416786/54212428_dpejja.png"
+              />
               <p
-                class="chakra-text css-czffx7"
+                class="chakra-text css-18unoc9"
               >
                 Chakra-Ui
               </p>
@@ -561,20 +425,15 @@ exports[`<SlideSkilss /> should render  1`] = `
         >
           <div>
             <div
-              class="css-5adb0e"
+              class="css-x5fiqn"
             >
-              <div
-                class=""
-                id="title"
-              >
-                <img
-                  alt="Tailwind-Css"
-                  class="chakra-image css-14841x3"
-                  src="https://res.cloudinary.com/defnibbpl/image/upload/v1634417414/tailwindcss-icon_1_xozsfd.svg"
-                />
-              </div>
+              <img
+                alt="Tailwind-Css"
+                class="chakra-image css-1xbzop4"
+                src="https://res.cloudinary.com/defnibbpl/image/upload/v1634417414/tailwindcss-icon_1_xozsfd.svg"
+              />
               <p
-                class="chakra-text css-czffx7"
+                class="chakra-text css-18unoc9"
               >
                 Tailwind-Css
               </p>
@@ -590,22 +449,89 @@ exports[`<SlideSkilss /> should render  1`] = `
         >
           <div>
             <div
-              class="css-5adb0e"
+              class="css-x5fiqn"
             >
-              <div
-                class=""
-                id="title"
-              >
-                <img
-                  alt="Css"
-                  class="chakra-image css-14841x3"
-                  src="https://res.cloudinary.com/defnibbpl/image/upload/v1634417704/w3_css-icon_ijitjf.svg"
-                />
-              </div>
+              <img
+                alt="Css"
+                class="chakra-image css-1xbzop4"
+                src="https://res.cloudinary.com/defnibbpl/image/upload/v1634417704/w3_css-icon_ijitjf.svg"
+              />
               <p
-                class="chakra-text css-czffx7"
+                class="chakra-text css-18unoc9"
               >
                 Css
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          aria-hidden="true"
+          class="slick-slide"
+          data-index="5"
+          style="outline: none; width: 0px;"
+          tabindex="-1"
+        >
+          <div>
+            <div
+              class="css-x5fiqn"
+            >
+              <img
+                alt="Strapi"
+                class="chakra-image css-1xbzop4"
+                src="https://res.cloudinary.com/defnibbpl/image/upload/v1634416790/strapi_e1wlna.svg"
+              />
+              <p
+                class="chakra-text css-18unoc9"
+              >
+                Strapi
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          aria-hidden="true"
+          class="slick-slide"
+          data-index="6"
+          style="outline: none; width: 0px;"
+          tabindex="-1"
+        >
+          <div>
+            <div
+              class="css-x5fiqn"
+            >
+              <img
+                alt="Apolo"
+                class="chakra-image css-1xbzop4"
+                src="https://res.cloudinary.com/defnibbpl/image/upload/v1634416786/apollo_qhtdll.svg"
+              />
+              <p
+                class="chakra-text css-18unoc9"
+              >
+                Apolo
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          aria-hidden="true"
+          class="slick-slide"
+          data-index="7"
+          style="outline: none; width: 0px;"
+          tabindex="-1"
+        >
+          <div>
+            <div
+              class="css-x5fiqn"
+            >
+              <img
+                alt="GraphQl"
+                class="chakra-image css-1xbzop4"
+                src="https://res.cloudinary.com/defnibbpl/image/upload/v1634416786/graphql_c3ix6o.svg"
+              />
+              <p
+                class="chakra-text css-18unoc9"
+              >
+                GraphQl
               </p>
             </div>
           </div>
@@ -621,25 +547,35 @@ exports[`<SlideSkilss /> should render  1`] = `
        
       Next
     </button>
-    <ul
-      class="slick-dots"
-      style="display: block;"
+    <div
+      class="c0 slick-dots"
     >
-      <li
-        class="slick-active"
-      >
-        <button>
-          1
-        </button>
-      </li>
-      <li
-        class=""
-      >
-        <button>
-          2
-        </button>
-      </li>
-    </ul>
+      <ul>
+         
+        <li
+          class="slick-active"
+        >
+          <button>
+            1
+          </button>
+        </li>
+        <li
+          class=""
+        >
+          <button>
+            2
+          </button>
+        </li>
+        <li
+          class=""
+        >
+          <button>
+            3
+          </button>
+        </li>
+         
+      </ul>
+    </div>
   </div>
 </div>
 `;

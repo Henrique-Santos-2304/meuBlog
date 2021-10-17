@@ -11,7 +11,7 @@ const IconsContact = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
-      <HStack as="ul" spacing="1.8rem" mb="1rem">
+      <HStack spacing="0.8rem" mb="1rem">
         <S.Li>
           <Link href="https://github.com/Henrique-Santos-2304" passHref>
             <ChakraLink isExternal aria-label="Link Para meu Github">
@@ -51,7 +51,6 @@ const IconsContact = () => {
           />
         </S.Li>
       </HStack>
-
       <ModalForm onClose={onClose} isOpen={isOpen} />
     </>
   );

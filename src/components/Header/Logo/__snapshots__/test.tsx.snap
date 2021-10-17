@@ -13,12 +13,13 @@ exports[`<Logo /> should render  1`] = `
 }
 
 .c1 span {
-  color: #C11010;
+  color: #E8EB33;
 }
 
 <div>
    
   <div
+    aria-label="Logo de Web Dev"
     class="c0"
   >
     <div

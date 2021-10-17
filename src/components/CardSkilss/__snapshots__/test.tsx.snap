@@ -4,18 +4,13 @@ exports[`<CardSkilss /> should render  1`] = `
 <div>
    
   <div
-    class="css-5adb0e"
+    class="css-x5fiqn"
   >
-    <div
-      class=""
-      id="title"
-    >
-      <img
-        class="chakra-image css-14841x3"
-      />
-    </div>
+    <img
+      class="chakra-image css-1xbzop4"
+    />
     <p
-      class="chakra-text css-czffx7"
+      class="chakra-text css-18unoc9"
     />
   </div>
 </div>

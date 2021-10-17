@@ -20,17 +20,17 @@ const Skilss = () => (
       />
     </Head>
     <Container
-      minH="82vh"
+      h="80vh"
       maxW="full"
       bgGradient="linear(to-l,#00bf72 ,#008793 ,#004d7a , #051937)"
     >
       <Flex centerContent>
-        <Container maxW={["container.sm", "container.lg"]} h="100%">
+        <Container maxW={["container.sm", "container.md"]} h="100%">
           <Headings
             msg={"Habilidades"}
             color={"orange"}
-            margins="-2rem auto 4rem"
-            fontSize="3.2rem"
+            margins="-1rem auto 2rem"
+            fontSize="2.4rem"
             padding="1.2rem"
           />
           <SlideSkilss />

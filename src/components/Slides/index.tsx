@@ -54,11 +54,11 @@ const Slides = () => {
           slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 2,
-          arrows: false,
+          arrows: true,
         },
       },
       {
-        breakpoint: 650,
+        breakpoint: 620,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -67,7 +67,7 @@ const Slides = () => {
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 380,
         settings: {
           slidesToShow: 1.02,
           centerMode: false,

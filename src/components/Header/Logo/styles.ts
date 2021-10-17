@@ -10,7 +10,7 @@ export const PreText = styled.p`
     font-size: 4.5rem;
     color: ${theme.colors.white};
     span {
-      color: ${theme.colors.red800};
+      color: ${theme.colors.yellow};
     }
   `}
 `;

@@ -6,7 +6,7 @@ type ButtonProps = { onClose?: () => void };
 
 const MenuLinks = ({ onClose }: ButtonProps) => (
   <S.Navigation onClick={onClose}>
-    <VStack spacing="6.5rem">
+    <VStack spacing="6rem">
       <S.WrapperLink>
         <Link href="/">Inicio</Link>
       </S.WrapperLink>

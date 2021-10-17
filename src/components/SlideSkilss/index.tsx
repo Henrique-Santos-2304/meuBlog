@@ -1,7 +1,9 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react";
 import Slider from "react-slick";
 import { image, stylesImg } from "components/CardSkilss/cards";
 import CardSkilss from "components/CardSkilss";
+import * as S from "./styles";
 
 const SlideSkilss = () => {
   const settings = {
@@ -9,31 +11,41 @@ const SlideSkilss = () => {
     infinite: false,
     speed: 500,
     slidesToScroll: 3,
-    slidesToShow: 4.4,
+    slidesToShow: 4.8,
     arrows: true,
     responsive: [
       {
         breakpoint: 1100,
         settings: {
-          slidesToShow: 4.4,
+          slidesToShow: 5.4,
           slidesToScroll: 1,
           initialSlide: 2,
-          arrows: false,
+          arrows: true,
         },
       },
+
       {
         breakpoint: 850,
         settings: {
-          slidesToShow: 3.4,
+          slidesToShow: 4.8,
           slidesToScroll: 1,
           initialSlide: 2,
           arrows: false,
         },
       },
       {
-        breakpoint: 610,
+        breakpoint: 700,
         settings: {
-          slidesToShow: 2.5,
+          slidesToShow: 4.2,
+          slidesToScroll: 1,
+          initialSlide: 2,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 560,
+        settings: {
+          slidesToShow: 3.9,
           slidesToScroll: 1,
           initialSlide: 2,
           arrows: false,
@@ -43,13 +55,27 @@ const SlideSkilss = () => {
       {
         breakpoint: 450,
         settings: {
-          slidesToShow: 1.8,
+          slidesToShow: 3.2,
+          slidesToScroll: 1,
+          initialSlide: 2,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 350,
+        settings: {
+          slidesToShow: 2.4,
           slidesToScroll: 1,
           initialSlide: 2,
           arrows: false,
         },
       },
     ],
+    appendDots: (dots: any) => (
+      <S.Dots>
+        <ul> {dots} </ul>
+      </S.Dots>
+    ),
   };
   return (
     <>

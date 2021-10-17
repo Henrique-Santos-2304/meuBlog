@@ -12,26 +12,28 @@ type imageProps = {
 const CardBox = ({ url, title, subDescription }: imageProps) => {
   return (
     <Box
-      h={["46rem", null, "51rem"]}
+      h="34rem"
       bg="blackAlpha.400"
       borderRadius="1rem"
-      p={["1.4rem"]}
+      p={["2rem", "1rem"]}
       mx={["0.5rem", "1rem"]}
       position="relative"
     >
-      <Image src={url} borderRadius="1rem" h="22rem" w="100%" />
+      <Image src={url} borderRadius="1rem" h="15rem" w="100%" />
       <Headings
         msg={title}
         color={"orange"}
-        margins="1.6rem auto"
+        margins="1rem auto"
         padding="1rem"
+        fontSize="1.6rem"
       />
       <Text
         color="gray.100"
-        my="1rem"
-        maxH={["7rem", null, "9rem"]}
+        my="0.4rem"
+        maxH="6rem"
         overflow="hidden"
-        fontSize={["1.6rem", null, null, "2.1rem"]}
+        lineHeight="2.2rem"
+        fontSize={["1.4rem", null, null, "1.8rem"]}
       >
         {subDescription}
       </Text>
@@ -40,11 +42,9 @@ const CardBox = ({ url, title, subDescription }: imageProps) => {
           <Button
             colorScheme="green"
             borderRadius="0.7rem"
-            transition="border .5s ease-in-out"
             textAlign="center"
-            fontSize={["1.2rem", "1.4rem", "1.6rem"]}
-            fontStyle="italic"
-            p={["1rem ", "1.5rem 1rem", "1.5rem", "2rem"]}
+            fontSize={["1.2rem", null, null, "1.4rem"]}
+            // p={["1rem ", "1.5rem 1rem", "1.5rem", "2rem"]}
             _hover={{ border: "0.1rem solid white" }}
           >
             Ver projeto
@@ -52,17 +52,10 @@ const CardBox = ({ url, title, subDescription }: imageProps) => {
           <Button
             bg="blackAlpha.600"
             borderRadius="0.7rem"
-            transition="border .4s ease-in-out"
             color="gray.100"
             _hover={{ border: "0.1rem solid white" }}
-            fontSize={["1.2rem", "1.4rem", "1.6rem"]}
-            fontStyle="italic"
-            p={["1rem ", "1.5rem 1rem", "1.5rem", "2rem"]}
-            leftIcon={
-              <S.Icon>
-                <FaGithub />
-              </S.Icon>
-            }
+            fontSize={["1.2rem", null, null, "1.4rem"]}
+            leftIcon={<FaGithub />}
           >
             Ver Código
           </Button>

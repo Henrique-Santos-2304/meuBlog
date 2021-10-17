@@ -21,17 +21,21 @@ const SectionProject = () => {
         />
       </Head>
       <Container
-        minH="82vh"
+        h="80vh"
         maxW="full"
         bgGradient="linear(to-l,#00bf72 ,#008793 ,#004d7a , #051937)"
       >
         <Flex centerContent>
-          <Container maxW="container.lg" h="100%">
+          <Container
+            maxW="container.md"
+            h="100%"
+            p={[" 0 0.4rem", null, "0.4rem", "0 6rem"]}
+          >
             <Headings
               msg={"Meus projetos"}
               color={"orange"}
-              margins="-2rem auto 4rem"
-              fontSize="3.2rem"
+              margins="0 auto 3rem"
+              fontSize="2.6rem"
               padding="1.2rem"
             />
             <Slides />

@@ -11,4 +11,9 @@ describe("<Logo />", () => {
     renderTheme(<Logo />);
     expect(screen.getByLabelText(/logo dev/i)).toBeInTheDocument();
   });
+  it("should have a text Web Dev  ", () => {
+    renderTheme(<Logo />);
+    expect(screen.getByText(/web/i)).toBeInTheDocument();
+    expect(screen.getByText(/dev/i)).toBeInTheDocument();
+  });
 });

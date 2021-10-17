@@ -1,40 +1,44 @@
-import * as S from "./styles";
-import { Box, Image, Text } from "@chakra-ui/react";
+import { Flex, Image, Text } from "@chakra-ui/react";
 
 type cardsFrameworks = {
   url: string;
   title: string;
 };
 const CardSkilss = ({ url, title }: cardsFrameworks) => (
-  <Box
-    w={["16rem", "16rem", null, "18rem"]}
-    h="20rem"
-    m="4rem auto"
-    p="1rem"
+  <Flex
+    h="11.5rem"
+    m="4rem 1rem"
+    direction="column"
+    align="center"
+    justify="center"
     borderRadius="1rem"
     bg="whiteAlpha.200"
+    transition="transform .4s linear"
+    _hover={{ transform: "translate(-7%, -7%)" }}
+    isCentered
+    cursor="pointer"
   >
-    <S.Identity id="title">
-      <Image
-        src={url}
-        alt={title}
-        w="100%"
-        h={["12rem"]}
-        m="0 auto"
-        borderRadius="2rem"
-        p="1rem"
-      />
-    </S.Identity>
+    <Image
+      src={url}
+      alt={title}
+      w="80%"
+      h="7rem"
+      m="0 auto"
+      borderRadius="2rem"
+      p="1rem"
+    />
     <Text
       textAlign="center"
-      mt="1.5rem"
+      mt="0.2rem"
+      p="0 0.4rem"
       color="gray.100"
       fontWeight="500"
-      fontSize={["1.4rem", "1.6rem", "1.8rem"]}
+      lineHeight="1.6rem"
+      fontSize={["1.1rem", "1.2rem", "1.4rem"]}
     >
       {title}
     </Text>
-  </Box>
+  </Flex>
 );
 
 export default CardSkilss;

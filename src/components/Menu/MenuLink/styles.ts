@@ -8,7 +8,7 @@ export const Navigation = styled.div`
 `;
 export const WrapperLink = styled.div`
   ${({ theme }) => css`
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     position: relative;
     letter-spacing: 0.125rem;
 
@@ -19,12 +19,12 @@ export const WrapperLink = styled.div`
         :after {
           content: "";
           position: absolute;
-          top: 5rem;
+          top: 4rem;
           right: 0;
 
           height: 0.5rem;
           border-radius: 0.6rem;
-          background: ${theme.colors.red800};
+          background: ${theme.colors.yellow};
           animation: hoverAnimation 0.5s forwards;
         }
       }

@@ -18,7 +18,7 @@ exports[`<MenuLink /> should render  1`] = `
 }
 
 .c1 {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   position: relative;
   -webkit-letter-spacing: 0.125rem;
   -moz-letter-spacing: 0.125rem;
@@ -35,11 +35,11 @@ exports[`<MenuLink /> should render  1`] = `
 .c1 a:hover:after {
   content: "";
   position: absolute;
-  top: 5rem;
+  top: 4rem;
   right: 0;
   height: 0.5rem;
   border-radius: 0.6rem;
-  background: #C11010;
+  background: #E8EB33;
   -webkit-animation: hoverAnimation 0.5s forwards;
   animation: hoverAnimation 0.5s forwards;
 }
@@ -50,7 +50,7 @@ exports[`<MenuLink /> should render  1`] = `
     class="c0"
   >
     <div
-      class="chakra-stack css-u7no08"
+      class="chakra-stack css-1epo9ut"
     >
       <div
         class="c1"

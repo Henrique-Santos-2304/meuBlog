@@ -1,15 +1,81 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<BoxMain /> should render  1`] = `
-.c1 svg {
-  font-size: 3rem;
+.c1 {
+  position: relative;
   border-radius: 50%;
-  cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
-.c1 svg::hover {
-  -webkit-filter: brightness(0.8);
-  filter: brightness(0.8);
+.c1:hover {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  margin: 0 1rem;
+}
+
+.c1:hover svg {
+  font-size: 2rem;
+}
+
+.c1:hover svg#github {
+  font-size: 1.8rem;
+}
+
+.c1:hover svg#linkedin {
+  font-size: 2rem;
+}
+
+.c1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top right,#a2afb3 20%,#47494f,#111 70%);
+  box-shadow: 0 0 20px orange;
+  z-index: -1;
+  border-radius: 50%;
+  -webkit-transform: translate(100%,100%);
+  -ms-transform: translate(100%,100%);
+  transform: translate(100%,100%);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.c1::before a {
+  color: white;
+}
+
+.c1:hover::before {
+  -webkit-transform: translate(0);
+  -ms-transform: translate(0);
+  transform: translate(0);
+  -webkit-animation: animate 0.4s linear;
+  animation: animate 0.4s linear;
+}
+
+.c1 svg {
+  cursor: pointer;
+  font-size: 2.4rem;
+  border-radius: 50%;
 }
 
 .c1 svg#github {
@@ -20,17 +86,15 @@ exports[`<BoxMain /> should render  1`] = `
 
 .c1 svg#linkedin {
   color: #E5E7EB;
-  font-size: 3.6rem;
+  font-size: 2.8rem;
 }
 
 .c1 svg#email {
   color: #E8EB33;
-  font-size: 3.2rem;
 }
 
 .c1 svg#whatsapp {
   color: #53c65f;
-  font-size: 3.2rem;
   border-radius: none;
 }
 
@@ -56,32 +120,32 @@ exports[`<BoxMain /> should render  1`] = `
 
 <div>
    
-  <main
+  <section
     aria-label="Descrições de um Desenvolvedor FrontEnd"
-    class="css-1eeojed"
+    class="css-uq49qi"
   >
     <span
       class="c0"
     />
     <h1
-      class="chakra-heading css-1a4xx1o"
+      class="chakra-heading css-1h7yta2"
     >
       Henrique dos Santos
     </h1>
     <h4
-      class="chakra-heading css-1jbs7el"
+      class="chakra-heading css-1j4rsuz"
     >
       Desenvolvedor FrontEnd
     </h4>
     <p
-      class="chakra-text css-1npyosg"
+      class="chakra-text css-4kc1zr"
     >
       Mobile, Web, Desktop
     </p>
-    <ul
-      class="chakra-stack css-15v4vh6"
+    <div
+      class="chakra-stack css-1f741yc"
     >
-      <li
+      <div
         class="c1"
       >
         <a
@@ -109,8 +173,8 @@ exports[`<BoxMain /> should render  1`] = `
             />
           </svg>
         </a>
-      </li>
-      <li
+      </div>
+      <div
         class="c1"
       >
         <a
@@ -142,8 +206,8 @@ exports[`<BoxMain /> should render  1`] = `
             </g>
           </svg>
         </a>
-      </li>
-      <li
+      </div>
+      <div
         class="c1"
       >
         <a
@@ -171,8 +235,8 @@ exports[`<BoxMain /> should render  1`] = `
             />
           </svg>
         </a>
-      </li>
-      <li
+      </div>
+      <div
         class="c1"
       >
         <svg
@@ -197,8 +261,8 @@ exports[`<BoxMain /> should render  1`] = `
             d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
           />
         </svg>
-      </li>
-    </ul>
-  </main>
+      </div>
+    </div>
+  </section>
 </div>
 `;

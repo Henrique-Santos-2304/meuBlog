@@ -11,12 +11,13 @@ const ImageUserMain = () => {
       align="center"
       justify="center"
       direction="column"
-      mt={["1rem", null, "-5rem"]}
+      mt={["-2rem", null, "-5rem"]}
       aria-label="Foto de um Programador/ Desenvolvedor  "
     >
       <Img
         boxShadow="0 0 20px red, 0 0 20px white"
-        boxSize={["20rem", null, "22rem", "24rem"]}
+        mb="3rem"
+        boxSize={["16rem", null, "18rem"]}
         borderRadius="full"
         src="https://res.cloudinary.com/defnibbpl/image/upload/v1633360607/large_henrique_techs_89a8aae1bc.jpg"
         alt="Foto de um desenvolvedor Front End"

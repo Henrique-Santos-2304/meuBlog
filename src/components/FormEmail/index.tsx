@@ -42,7 +42,7 @@ const FormEmail = () => {
   };
 
   return (
-    <Flex direction="column" align="center" justify="center">
+    <Flex direction="column" align="center" justify="center" w="100%">
       <S.Form onSubmit={handleSubmit(onSubmit)} ref={formRef}>
         <VStack spacing={12} w="100%">
           {/* Campo de Nome */}
@@ -73,10 +73,10 @@ const FormEmail = () => {
             colorScheme="yellow"
             borderRadius="1rem"
             variant="outline"
-            fontSize="2xl"
-            size="lg"
-            w="13rem"
-            h="4.8rem"
+            fontSize="xl"
+            size="md"
+            w="9rem"
+            h="3.2rem"
             mt={4}
             _hover={{ filter: "brightness(0.8)" }}
             isLoading={formState.isSubmitting}

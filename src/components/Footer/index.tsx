@@ -3,7 +3,7 @@ import { Text, Container } from "@chakra-ui/react";
 const Footer = () => (
   <Container
     maxW="full"
-    height="5vh"
+    height="6vh"
     bgGradient="linear(to-l,#00bf72 ,#008793 ,#004d7a , #051937)"
   >
     <Container>
