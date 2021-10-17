@@ -1,5 +1,6 @@
 import * as S from "./styles";
 import { FaWhatsapp } from "react-icons/fa";
+import Head from "next/head";
 import Link from "next/link";
 import { Container, Flex, Link as ChakraLink } from "@chakra-ui/react";
 import FormEmail from "components/FormEmail";
@@ -7,6 +8,29 @@ import Headings from "components/Headings";
 
 const SectionContact = () => (
   <>
+    <Head>
+      <title>Entre em Contato </title>
+      <link rel="shortcut icon" href="/img/hero-illustration.svg" />
+      <link rel="apple-touch-icon" href="/img/hero-illustration.svg" />
+      <link rel="manifest" href="/manifest.json" />
+      <meta
+        name="description"
+        content="Entre em contato comigo a fim de realizar um
+        orçamento ou efetuar uma propsta de trabalho de Desenvolvimento de
+         Sites, Aplicativos, etc... "
+      />
+      <link
+        rel="stylesheet"
+        type="text/css"
+        charSet="UTF-8"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+      />
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+      />
+    </Head>
     <Container
       maxW="full"
       h="80vh"

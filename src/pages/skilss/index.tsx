@@ -6,7 +6,15 @@ import Headings from "components/Headings";
 const Skilss = () => (
   <>
     <Head>
-      <title>Projetos Henrique dos Santos</title>
+      <title>Minha Habilidade, Portfólion Henrique</title>
+      <link rel="shortcut icon" href="/img/hero-illustration.svg" />
+      <link rel="apple-touch-icon" href="/img/hero-illustration.svg" />
+      <link rel="manifest" href="/manifest.json" />
+      <meta
+        name="description"
+        content="Página destinada a destacar minhas habilidades e
+        conhecimentos sobre Desenvolvimento e Programação"
+      />
       <link
         rel="stylesheet"
         type="text/css"
