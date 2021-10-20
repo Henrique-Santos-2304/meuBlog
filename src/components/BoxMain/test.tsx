@@ -12,13 +12,21 @@ jest.mock("@chakra-ui/react", () => {
     useMediaQuery: jest.fn().mockImplementation(() => [true]),
   };
 });
+const mock = {
+  data: {
+    name: "Henrique dos Santos",
+    profission: "Desenvolvedor FrontEnd",
+    platform: "Web, Mobile, Desktop",
+    linksSocials: [],
+  },
+};
 describe("<BoxMain />", () => {
   it("should render ", () => {
-    const { container } = renderTheme(<BoxMain />);
+    const { container } = renderTheme(<BoxMain {...mock} />);
     expect(container).toMatchSnapshot();
   });
   it("should render ", () => {
-    renderTheme(<BoxMain />);
+    renderTheme(<BoxMain {...mock} />);
     expect(
       screen.getByRole("heading", {
         name: /henrique dos santos/i,
@@ -32,7 +40,7 @@ describe("<BoxMain />", () => {
   });
 
   it("should have as link for my Contacts and portfólio ", () => {
-    renderTheme(<BoxMain />);
+    renderTheme(<BoxMain {...mock} />);
     expect(screen.getByLabelText(/Link Para meu Github/i)).toBeInTheDocument();
     expect(
       screen.queryByLabelText(/Link Para meu Linkedin/i)

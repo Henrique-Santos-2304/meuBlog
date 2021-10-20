@@ -105,9 +105,10 @@ exports[`<ImageUserMain /> should render  1`] = `
     class="css-13xvqr"
   >
     <img
-      alt="Foto de um desenvolvedor Front End"
+      alt="photo"
+      aria-label="uma img qualquer"
       class="chakra-image css-o9mf2l"
-      src="https://res.cloudinary.com/defnibbpl/image/upload/v1633360607/large_henrique_techs_89a8aae1bc.jpg"
+      src="img.imagen.png"
     />
     <div
       class="chakra-stack css-1f741yc"

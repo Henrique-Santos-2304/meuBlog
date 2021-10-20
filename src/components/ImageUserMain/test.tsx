@@ -12,17 +12,28 @@ jest.mock("@chakra-ui/react", () => {
   };
 });
 
+const mock = {
+  data: {
+    alt: "photo",
+    ariaLabel: "uma img qualquer",
+    imageUser: {
+      name: "photo",
+      url: "img.imagen.png",
+    },
+  },
+};
+
 describe("<ImageUserMain />", () => {
   it("should render ", () => {
-    const { container } = renderTheme(<ImageUserMain />);
+    const { container } = renderTheme(<ImageUserMain {...mock} />);
     expect(container).toMatchSnapshot();
   });
   it("should have a image on the screen ", () => {
-    renderTheme(<ImageUserMain />);
+    renderTheme(<ImageUserMain {...mock} />);
     expect(screen.getByRole("img")).toBeInTheDocument();
   });
   it("should have as link for my Contacts and portfólio ", () => {
-    renderTheme(<ImageUserMain />);
+    renderTheme(<ImageUserMain {...mock} />);
     expect(screen.getByLabelText(/Link Para meu Github/i)).toBeInTheDocument();
     expect(
       screen.queryByLabelText(/Link Para meu Linkedin/i)

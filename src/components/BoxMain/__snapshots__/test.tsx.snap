@@ -1,6 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<BoxMain /> should render  1`] = `
+.c0 {
+  width: 100%;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.c0:after {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  content: "";
+  width: 30%;
+  height: 0.6rem;
+  background: #E8EB33;
+  border-radius: 2rem;
+}
+
 .c1 {
   position: relative;
   border-radius: 50%;
@@ -98,26 +118,6 @@ exports[`<BoxMain /> should render  1`] = `
   border-radius: none;
 }
 
-.c0 {
-  width: 100%;
-  position: relative;
-  margin-bottom: 2rem;
-}
-
-.c0:after {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  content: "";
-  width: 30%;
-  height: 0.6rem;
-  background: #E8EB33;
-  border-radius: 2rem;
-}
-
 <div>
    
   <section
@@ -140,7 +140,7 @@ exports[`<BoxMain /> should render  1`] = `
     <p
       class="chakra-text css-4kc1zr"
     >
-      Mobile, Web, Desktop
+      Web, Mobile, Desktop
     </p>
     <div
       class="chakra-stack css-1f741yc"

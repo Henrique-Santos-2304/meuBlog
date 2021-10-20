@@ -1,9 +1,15 @@
-import { Flex, Heading, Text, useMediaQuery } from "@chakra-ui/react";
-import IconsContact from "components/IconsContact";
-import theme from "styles/theme";
 import * as S from "./styles";
+import { queryHome_home_boxMain } from "graphql/typesFinal/queryHome";
 
-const BoxMain = () => {
+import { Flex, Heading, Text, useMediaQuery } from "@chakra-ui/react";
+
+import theme from "styles/theme";
+import IconsContact from "components/IconsContact";
+
+type props = {
+  data: queryHome_home_boxMain;
+};
+const BoxMain = ({ data }: props) => {
   const [isLargerThan768] = useMediaQuery("(min-width: 768px)");
   return (
     <Flex
@@ -22,7 +28,7 @@ const BoxMain = () => {
         color="yellow.400"
         fontFamily={theme.font.family.GrechenFuemen}
       >
-        Henrique dos Santos
+        {data.name}
       </Heading>
       <Heading
         as="h4"
@@ -33,7 +39,7 @@ const BoxMain = () => {
         fontStyle="italic"
         fontFamily={theme.font.family.Poppins}
       >
-        Desenvolvedor FrontEnd
+        {data.profission}
       </Heading>
       <Text
         color="gray.100"
@@ -42,7 +48,7 @@ const BoxMain = () => {
         mb="2rem"
         fontFamily={theme.font.family.Poppins}
       >
-        Mobile, Web, Desktop
+        {data.platform}
       </Text>
       {isLargerThan768 && <IconsContact />}
     </Flex>

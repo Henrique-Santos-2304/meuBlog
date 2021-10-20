@@ -1,9 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
 import { Flex, useMediaQuery } from "@chakra-ui/react";
 import { Img } from "@chakra-ui/react";
+
+import { queryHome_home_userImage } from "graphql/typesFinal/queryHome";
+
 import IconsContact from "components/IconsContact";
 
-const ImageUserMain = () => {
+type props = {
+  data: queryHome_home_userImage;
+};
+
+const ImageUserMain = ({ data }: props) => {
   const [isGreatherThan767] = useMediaQuery("(max-width: 767px)");
   return (
     <Flex
@@ -19,8 +26,9 @@ const ImageUserMain = () => {
         mb="3rem"
         boxSize={["16rem", null, "18rem"]}
         borderRadius="full"
-        src="https://res.cloudinary.com/defnibbpl/image/upload/v1633360607/large_henrique_techs_89a8aae1bc.jpg"
-        alt="Foto de um desenvolvedor Front End"
+        src={data.imageUser.url}
+        alt={data.alt}
+        aria-label={data.ariaLabel}
       />
       {isGreatherThan767 && <IconsContact />}
     </Flex>

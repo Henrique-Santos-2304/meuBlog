@@ -1,22 +1,35 @@
 import { Container, Flex } from "@chakra-ui/react";
 import Head from "next/head";
+
+import { initializeApollo } from "utils/apollo";
+import { GET_HOME } from "graphql/queries/Home";
+
 import BoxMain from "components/BoxMain";
 import ImageUserMain from "components/ImageUserMain";
+import { GetStaticProps } from "next";
 
-export default function Home() {
+import {
+  queryHome,
+  queryHome_home_userImage,
+  queryHome_home_boxMain,
+  queryHome_home_metaTagsIcons,
+} from "graphql/generated/queryHome";
+
+type props = {
+  boxMain: queryHome_home_boxMain;
+  imageUser: queryHome_home_userImage;
+  metaTagsIcons: queryHome_home_metaTagsIcons;
+};
+
+export default function Home({ boxMain, imageUser, metaTagsIcons }: props) {
   return (
     <>
       <Head>
-        <title>React Avançado - Boilerplate</title>
-        <link rel="shortcut icon" href="/img/hero-illustration.svg" />
-        <link rel="apple-touch-icon" href="/img/hero-illustration.svg" />
+        <title>{metaTagsIcons.titlePage}</title>
+        <link rel="shortcut icon" href={metaTagsIcons.iconPage[0].url} />
+        <link rel="apple-touch-icon" href={metaTagsIcons.iconPage[0].url} />
         <link rel="manifest" href="/manifest.json" />
-        <title>Portfólio de Henrique dos Santos</title>
-        <meta
-          name="description"
-          content="Uma Págins de descrição sobre um desenvovledor FrontEnd,
-          com contato e imagem de apresentação"
-        />
+        <meta name="description" content={metaTagsIcons.titlePage} />
       </Head>
       <Container
         as="section"
@@ -32,11 +45,28 @@ export default function Home() {
             direction={["column", null, "row"]}
             aria-label="Página Inicial com apresentação de um desenvolvedor Web"
           >
-            <BoxMain />
-            <ImageUserMain />
+            <BoxMain data={boxMain} />
+            <ImageUserMain data={imageUser} />
           </Flex>
         </Container>
       </Container>
     </>
   );
 }
+
+export const getStaticProps: GetStaticProps = async () => {
+  const apolloClient = initializeApollo();
+
+  const { data } = await apolloClient.query<queryHome>({
+    query: GET_HOME,
+  });
+  return {
+    props: {
+      metaTagsIcons: data.home.metaTagsIcons,
+      boxMain: data.home.boxMain,
+      imageUser: data.home.userImage,
+      initialApolloState: apolloClient.cache.extract(),
+      revalidate: 60 * 60 * 24,
+    },
+  };
+};
