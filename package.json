@@ -30,7 +30,7 @@
     "@apollo/client": "^3.4.16",
     "@chakra-ui/core": "^0.8.0",
     "@chakra-ui/icons": "^1.0.15",
-    "@chakra-ui/react": "^1.6.9",
+    "@chakra-ui/react": "^1.6.10",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "@types/react-slick": "^0.23.6",
