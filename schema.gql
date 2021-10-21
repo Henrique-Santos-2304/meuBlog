@@ -825,6 +825,7 @@ type ComponentSectionBoxMain {
   profission: String!
   platform: String!
   linksSocials: [ComponentSectionLinksSocials]
+  email: ComponentSectionEmail
 }
 
 input ComponentSectionBoxMainInput {
@@ -832,6 +833,7 @@ input ComponentSectionBoxMainInput {
   profission: String!
   platform: String!
   linksSocials: [ComponentSectionLinksSocialInput]
+  email: ComponentSectionEmailInput
 }
 
 input editComponentSectionBoxMainInput {
@@ -840,6 +842,7 @@ input editComponentSectionBoxMainInput {
   profission: String
   platform: String
   linksSocials: [editComponentSectionLinksSocialInput]
+  email: editComponentSectionEmailInput
 }
 
 type ComponentSectionButtons {
@@ -911,6 +914,27 @@ input editComponentSectionCardSlideInput {
   imageFront: editComponentSectionUserImageInput
 }
 
+type ComponentSectionEmail {
+  id: ID!
+  _id: ID!
+  email: String!
+  ariaLabel: String!
+  title: String
+}
+
+input ComponentSectionEmailInput {
+  email: String!
+  ariaLabel: String!
+  title: String
+}
+
+input editComponentSectionEmailInput {
+  id: ID
+  email: String
+  ariaLabel: String
+  title: String
+}
+
 type ComponentSectionInputs {
   id: ID!
   _id: ID!
@@ -941,12 +965,16 @@ type ComponentSectionLinksSocials {
   title: String!
   url: String
   imageIcon: UploadFile
+  name: String
+  ariaLabel: String
 }
 
 input ComponentSectionLinksSocialInput {
   title: String!
   url: String
   imageIcon: ID
+  name: String
+  ariaLabel: String
 }
 
 input editComponentSectionLinksSocialInput {
@@ -954,6 +982,8 @@ input editComponentSectionLinksSocialInput {
   title: String
   url: String
   imageIcon: ID
+  name: String
+  ariaLabel: String
 }
 
 type ComponentSectionLogo {
@@ -1115,7 +1145,7 @@ input editComponentSectionUserImageInput {
   imageUser: ID
 }
 
-union Morph = UsersPermissionsMe | UsersPermissionsMeRole | UsersPermissionsLoginPayload | UserPermissionsPasswordPayload | Contact | updateContactPayload | deleteContactPayload | Footer | updateFooterPayload | deleteFooterPayload | Header | updateHeaderPayload | deleteHeaderPayload | Home | updateHomePayload | deleteHomePayload | ProjectsPreview | updateProjectsPreviewPayload | deleteProjectsPreviewPayload | SectionHabilities | updateSectionHabilityPayload | deleteSectionHabilityPayload | I18NLocale | UploadFile | UploadFileConnection | UploadFileAggregator | UploadFileAggregatorSum | UploadFileAggregatorAvg | UploadFileAggregatorMin | UploadFileAggregatorMax | UploadFileGroupBy | UploadFileConnectionId | UploadFileConnection_id | UploadFileConnectionCreatedAt | UploadFileConnectionUpdatedAt | UploadFileConnectionName | UploadFileConnectionAlternativeText | UploadFileConnectionCaption | UploadFileConnectionWidth | UploadFileConnectionHeight | UploadFileConnectionFormats | UploadFileConnectionHash | UploadFileConnectionExt | UploadFileConnectionMime | UploadFileConnectionSize | UploadFileConnectionUrl | UploadFileConnectionPreviewUrl | UploadFileConnectionProvider | UploadFileConnectionProvider_metadata | deleteFilePayload | UsersPermissionsPermission | UsersPermissionsRole | UsersPermissionsRoleConnection | UsersPermissionsRoleAggregator | UsersPermissionsRoleGroupBy | UsersPermissionsRoleConnectionId | UsersPermissionsRoleConnection_id | UsersPermissionsRoleConnectionName | UsersPermissionsRoleConnectionDescription | UsersPermissionsRoleConnectionType | createRolePayload | updateRolePayload | deleteRolePayload | UsersPermissionsUser | UsersPermissionsUserConnection | UsersPermissionsUserAggregator | UsersPermissionsUserGroupBy | UsersPermissionsUserConnectionId | UsersPermissionsUserConnection_id | UsersPermissionsUserConnectionCreatedAt | UsersPermissionsUserConnectionUpdatedAt | UsersPermissionsUserConnectionUsername | UsersPermissionsUserConnectionEmail | UsersPermissionsUserConnectionProvider | UsersPermissionsUserConnectionConfirmed | UsersPermissionsUserConnectionBlocked | UsersPermissionsUserConnectionRole | createUserPayload | updateUserPayload | deleteUserPayload | ComponentSectionBoxMain | ComponentSectionButtons | ComponentSectionCardBoxSkilss | ComponentSectionCardSlides | ComponentSectionInputs | ComponentSectionLinksSocials | ComponentSectionLogo | ComponentSectionMenuLink | ComponentSectionMenu | ComponentSectionMetaTagsAndIcons | ComponentSectionSectionProjectPreview | ComponentSectionSkilssSections | ComponentSectionUserImage
+union Morph = UsersPermissionsMe | UsersPermissionsMeRole | UsersPermissionsLoginPayload | UserPermissionsPasswordPayload | Contact | updateContactPayload | deleteContactPayload | Footer | updateFooterPayload | deleteFooterPayload | Header | updateHeaderPayload | deleteHeaderPayload | Home | updateHomePayload | deleteHomePayload | ProjectsPreview | updateProjectsPreviewPayload | deleteProjectsPreviewPayload | SectionHabilities | updateSectionHabilityPayload | deleteSectionHabilityPayload | I18NLocale | UploadFile | UploadFileConnection | UploadFileAggregator | UploadFileAggregatorSum | UploadFileAggregatorAvg | UploadFileAggregatorMin | UploadFileAggregatorMax | UploadFileGroupBy | UploadFileConnectionId | UploadFileConnection_id | UploadFileConnectionCreatedAt | UploadFileConnectionUpdatedAt | UploadFileConnectionName | UploadFileConnectionAlternativeText | UploadFileConnectionCaption | UploadFileConnectionWidth | UploadFileConnectionHeight | UploadFileConnectionFormats | UploadFileConnectionHash | UploadFileConnectionExt | UploadFileConnectionMime | UploadFileConnectionSize | UploadFileConnectionUrl | UploadFileConnectionPreviewUrl | UploadFileConnectionProvider | UploadFileConnectionProvider_metadata | deleteFilePayload | UsersPermissionsPermission | UsersPermissionsRole | UsersPermissionsRoleConnection | UsersPermissionsRoleAggregator | UsersPermissionsRoleGroupBy | UsersPermissionsRoleConnectionId | UsersPermissionsRoleConnection_id | UsersPermissionsRoleConnectionName | UsersPermissionsRoleConnectionDescription | UsersPermissionsRoleConnectionType | createRolePayload | updateRolePayload | deleteRolePayload | UsersPermissionsUser | UsersPermissionsUserConnection | UsersPermissionsUserAggregator | UsersPermissionsUserGroupBy | UsersPermissionsUserConnectionId | UsersPermissionsUserConnection_id | UsersPermissionsUserConnectionCreatedAt | UsersPermissionsUserConnectionUpdatedAt | UsersPermissionsUserConnectionUsername | UsersPermissionsUserConnectionEmail | UsersPermissionsUserConnectionProvider | UsersPermissionsUserConnectionConfirmed | UsersPermissionsUserConnectionBlocked | UsersPermissionsUserConnectionRole | createUserPayload | updateUserPayload | deleteUserPayload | ComponentSectionBoxMain | ComponentSectionButtons | ComponentSectionCardBoxSkilss | ComponentSectionCardSlides | ComponentSectionEmail | ComponentSectionInputs | ComponentSectionLinksSocials | ComponentSectionLogo | ComponentSectionMenuLink | ComponentSectionMenu | ComponentSectionMetaTagsAndIcons | ComponentSectionSectionProjectPreview | ComponentSectionSkilssSections | ComponentSectionUserImage
 
 input InputID {
   id: ID!

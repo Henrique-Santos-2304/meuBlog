@@ -2,15 +2,26 @@
 import { Flex, useMediaQuery } from "@chakra-ui/react";
 import { Img } from "@chakra-ui/react";
 
-import { queryHome_home_userImage } from "graphql/typesFinal/queryHome";
+import {
+  queryHome_home_userImage,
+  queryHome_home_boxMain,
+} from "graphql/typesFinal/queryHome";
 
 import IconsContact from "components/IconsContact";
 
 type props = {
   data: queryHome_home_userImage;
+  links: queryHome_home_boxMain;
 };
 
-const ImageUserMain = ({ data }: props) => {
+const ImageUserMain = (props: props) => {
+  const { data, links } = props;
+
+  const iconLink = {
+    linksSocials: links.linksSocials,
+    email: links.email,
+  };
+
   const [isGreatherThan767] = useMediaQuery("(max-width: 767px)");
   return (
     <Flex
@@ -30,7 +41,7 @@ const ImageUserMain = ({ data }: props) => {
         alt={data.alt}
         aria-label={data.ariaLabel}
       />
-      {isGreatherThan767 && <IconsContact />}
+      {isGreatherThan767 && <IconsContact contacts={iconLink} />}
     </Flex>
   );
 };

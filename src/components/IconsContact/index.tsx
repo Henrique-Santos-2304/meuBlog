@@ -6,59 +6,48 @@ import { TiSocialLinkedinCircular } from "react-icons/ti";
 import { MdEmail } from "react-icons/md";
 import * as S from "./styles";
 import ModalForm from "components/ModalForm";
+import {
+  queryHome_home_boxMain_email,
+  queryHome_home_boxMain_linksSocials,
+} from "graphql/typesFinal/queryHome";
 
-const IconsContact = () => {
+type propsContacts = {
+  contacts: {
+    email: queryHome_home_boxMain_email;
+    linksSocials: queryHome_home_boxMain_linksSocials[];
+  };
+};
+const IconsContact = ({ contacts }: propsContacts) => {
+  console.log(contacts);
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const iconReturn = (id: string, title: string) => {
+    if (id === "github") return <FaGithub id={id} title={title} />;
+    if (id === "linkedin")
+      return <TiSocialLinkedinCircular id={id} title={title} />;
+    if (id === "whatsapp") return <FaWhatsapp id={id} title={title} />;
+  };
   return (
     <>
       <HStack spacing="0.8rem" mb="1rem">
-        <S.Li>
-          <Link href="https://github.com/Henrique-Santos-2304" passHref>
-            <ChakraLink
-              isExternal
-              aria-label="Link Para meu Github"
-              _focus={{ border: "0" }}
-            >
-              <FaGithub id="github" title="/Henrique-Santos-2304" />
-            </ChakraLink>
-          </Link>
-        </S.Li>
-        <S.Li>
-          <Link
-            href="https://www.linkedin.com/in/henriquewebdeveloper/"
-            passHref
-          >
-            <ChakraLink
-              isExternal
-              aria-label="Link Para meu Linkedin"
-              _focus={{ border: "0" }}
-            >
-              <TiSocialLinkedinCircular
-                id="linkedin"
-                title="in/henriquewebdeveloper/"
-              />
-            </ChakraLink>
-          </Link>
-        </S.Li>
-        <S.Li>
-          <Link
-            href="https://api.whatsapp.com/send?1=pt_br&phone=5511966365190"
-            passHref
-          >
-            <ChakraLink
-              isExternal
-              aria-label="Envio de mensagem no Whatsapp"
-              _focus={{ border: "0" }}
-            >
-              <FaWhatsapp id="whatsapp" title="11-96636.5190" />
-            </ChakraLink>
-          </Link>
-        </S.Li>
+        {contacts.linksSocials.map((icons) => (
+          <S.Li key={icons.name}>
+            <Link href={icons.url} passHref>
+              <ChakraLink
+                isExternal
+                aria-label={icons.ariaLabel}
+                _focus={{ border: "0" }}
+              >
+                {iconReturn(icons.name, icons.title)}
+              </ChakraLink>
+            </Link>
+          </S.Li>
+        ))}
+
         <S.Li>
           <MdEmail
-            id="email"
-            title="henrique.multitech@gmail.com"
-            aria-label="Envio de email via site"
+            id={contacts.email.title}
+            title={contacts.email.email}
+            aria-label={contacts.email.ariaLabel}
             onClick={onOpen}
           />
         </S.Li>

@@ -46,7 +46,7 @@ export default function Home({ boxMain, imageUser, metaTagsIcons }: props) {
             aria-label="Página Inicial com apresentação de um desenvolvedor Web"
           >
             <BoxMain data={boxMain} />
-            <ImageUserMain data={imageUser} />
+            <ImageUserMain data={imageUser} links={boxMain} />
           </Flex>
         </Container>
       </Container>

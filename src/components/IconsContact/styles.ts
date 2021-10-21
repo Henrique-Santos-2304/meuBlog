@@ -68,6 +68,14 @@ export const Li = styled.div`
         border-radius: none;
       }
     }
+
+    img {
+      &#whatsapp {
+        svg {
+          color: green;
+        }
+      }
+    }
     @keyframes animate {
       0%,
       100% {

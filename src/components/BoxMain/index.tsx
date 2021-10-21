@@ -11,6 +11,10 @@ type props = {
 };
 const BoxMain = ({ data }: props) => {
   const [isLargerThan768] = useMediaQuery("(min-width: 768px)");
+  const iconLink = {
+    linksSocials: data.linksSocials,
+    email: data.email,
+  };
   return (
     <Flex
       as="section"
@@ -50,7 +54,7 @@ const BoxMain = ({ data }: props) => {
       >
         {data.platform}
       </Text>
-      {isLargerThan768 && <IconsContact />}
+      {isLargerThan768 && <IconsContact contacts={iconLink} />}
     </Flex>
   );
 };

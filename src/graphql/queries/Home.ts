@@ -15,12 +15,21 @@ export const GET_HOME = gql`
         name
         profission
         platform
-        linksSocials {
+        email {
+          email
+          ariaLabel
           title
+          id
+        }
+        linksSocials {
           url
+          title
           imageIcon {
+            alternativeText
             url
           }
+          name
+          ariaLabel
         }
       }
       userImage {

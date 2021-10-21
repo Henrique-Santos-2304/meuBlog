@@ -18,6 +18,12 @@ const mock = {
     profission: "Desenvolvedor FrontEnd",
     platform: "Web, Mobile, Desktop",
     linksSocials: [],
+    email: {
+      title: "icons",
+      email: "henrique.multitech@gmail.com",
+      ariaLabel: "Envio de email via site",
+      id: "name",
+    },
   },
 };
 describe("<BoxMain />", () => {
@@ -36,20 +42,6 @@ describe("<BoxMain />", () => {
       screen.getByRole("heading", {
         name: /Desenvolvedor FrontEnd/i,
       })
-    ).toBeInTheDocument();
-  });
-
-  it("should have as link for my Contacts and portfólio ", () => {
-    renderTheme(<BoxMain {...mock} />);
-    expect(screen.getByLabelText(/Link Para meu Github/i)).toBeInTheDocument();
-    expect(
-      screen.queryByLabelText(/Link Para meu Linkedin/i)
-    ).toBeInTheDocument();
-    expect(
-      screen.queryByLabelText(/Envio de email via site/i)
-    ).toBeInTheDocument();
-    expect(
-      screen.queryByLabelText(/Envio de mensagem no Whatsapp/i)
     ).toBeInTheDocument();
   });
 });

@@ -19,16 +19,27 @@ export interface queryHome_home_metaTagsIcons {
   iconPage: queryHome_home_metaTagsIcons_iconPage[];
 }
 
+export interface queryHome_home_boxMain_email {
+  __typename?: "ComponentSectionEmail";
+  email: string;
+  ariaLabel: string;
+  title: string;
+  id: string;
+}
+
 export interface queryHome_home_boxMain_linksSocials_imageIcon {
   __typename?: "UploadFile";
+  alternativeText: string;
   url: string;
 }
 
 export interface queryHome_home_boxMain_linksSocials {
   __typename?: "ComponentSectionLinksSocials";
-  title: string;
   url: string;
+  title: string;
   imageIcon: queryHome_home_boxMain_linksSocials_imageIcon;
+  name: string;
+  ariaLabel: string;
 }
 
 export interface queryHome_home_boxMain {
@@ -36,6 +47,7 @@ export interface queryHome_home_boxMain {
   name: string;
   profission: string;
   platform: string;
+  email: queryHome_home_boxMain_email;
   linksSocials: queryHome_home_boxMain_linksSocials[];
 }
 

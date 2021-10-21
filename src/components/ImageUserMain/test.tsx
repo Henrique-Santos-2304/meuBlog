@@ -21,6 +21,18 @@ const mock = {
       url: "img.imagen.png",
     },
   },
+  links: {
+    name: "Henrique dos Santos",
+    profission: "Desenvolvedor FrontEnd",
+    platform: "Web, Mobile, Desktop",
+    linksSocials: [],
+    email: {
+      title: "icons",
+      email: "henrique.multitech@gmail.com",
+      ariaLabel: "Envio de email via site",
+      id: "name",
+    },
+  },
 };
 
 describe("<ImageUserMain />", () => {
@@ -31,15 +43,5 @@ describe("<ImageUserMain />", () => {
   it("should have a image on the screen ", () => {
     renderTheme(<ImageUserMain {...mock} />);
     expect(screen.getByRole("img")).toBeInTheDocument();
-  });
-  it("should have as link for my Contacts and portfólio ", () => {
-    renderTheme(<ImageUserMain {...mock} />);
-    expect(screen.getByLabelText(/Link Para meu Github/i)).toBeInTheDocument();
-    expect(
-      screen.queryByLabelText(/Link Para meu Linkedin/i)
-    ).toBeInTheDocument();
-    expect(
-      screen.queryByLabelText(/Envio de email via site/i)
-    ).toBeInTheDocument();
   });
 });
