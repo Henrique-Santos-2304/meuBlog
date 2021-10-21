@@ -1,14 +1,12 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import CardBox from "components/CardBox";
+import { cardSlidesProps } from "graphql/typesFinal/queryProjects";
 import React from "react";
 import Slider from "react-slick";
-import { images } from "../../pages/projects/images/images";
 import * as S from "./styles";
 
-type imageProps = {
-  url: string;
-  title: string;
-  subDescription: string;
+type props = {
+  cardsSlides: cardSlidesProps[];
 };
 function SamplePrevArrow(props: {
   className?: string;
@@ -35,7 +33,7 @@ function SampleNextArrow(props: {
     <S.Icons className={className} style={{ ...style }} onClick={onClick} />
   );
 }
-const Slides = () => {
+const Slides = ({ cardsSlides }: props) => {
   const settings = {
     dots: true,
     centerMode: true,
@@ -44,23 +42,25 @@ const Slides = () => {
     autoplaySpeed: 3000,
     cssEase: "linear",
     speed: 1000,
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 2,
+    arrows: true,
     responsive: [
-      {
-        breakpoint: 1100,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          initialSlide: 2,
-          arrows: true,
-        },
-      },
       {
         breakpoint: 620,
         settings: {
           slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 2,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 550,
+        settings: {
+          slidesToShow: 1.03,
+          centerMode: false,
           slidesToScroll: 1,
           initialSlide: 2,
           arrows: false,
@@ -88,12 +88,14 @@ const Slides = () => {
 
   return (
     <Slider {...settings}>
-      {images.map((image: imageProps, index) => (
+      {cardsSlides.map((cards, index) => (
         <CardBox
           key={index}
-          url={image.url}
-          title={image.title}
-          subDescription={image.subDescription}
+          url={cards.imageFront.imageUser.url}
+          title={cards.title}
+          subDescription={cards.miniDescription}
+          alt={cards.imageFront.alt}
+          buttons={cards.buttons}
         />
       ))}
     </Slider>

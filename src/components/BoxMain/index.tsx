@@ -19,14 +19,16 @@ const BoxMain = ({ data }: props) => {
     <Flex
       as="section"
       align="center"
+      justify="center"
       direction="column"
       mt="-5rem"
       mb="3rem"
-      aria-label="Descrições de um Desenvolvedor FrontEnd"
+      aria-Label="Descrições de um Desenvolvedor FrontEnd"
     >
       <S.Span></S.Span>
       <Heading
         as="h1"
+        textAlign="center"
         fontSize={["2.8rem", null, "3.2rem"]}
         isTruncated
         color="yellow.400"
@@ -36,6 +38,7 @@ const BoxMain = ({ data }: props) => {
       </Heading>
       <Heading
         as="h4"
+        textAlign="center"
         fontSize={["1.4rem", null, "1.7rem"]}
         isTruncated
         m="0.5rem 1rem"
@@ -46,6 +49,7 @@ const BoxMain = ({ data }: props) => {
         {data.profission}
       </Heading>
       <Text
+        textAlign="center"
         color="gray.100"
         fontStyle="italic"
         fontSize={["1.2rem", null, "1.4rem"]}

@@ -2,6 +2,8 @@ import SlideSkilss from "components/SlideSkilss";
 import Head from "next/head";
 import { Container, Flex } from "@chakra-ui/react";
 import Headings from "components/Headings";
+import { initializeApollo } from "utils/apollo";
+import { GET_FOOTER } from "graphql/queries/Footer";
 
 const Skilss = () => (
   <>
@@ -49,3 +51,12 @@ const Skilss = () => (
 );
 
 export default Skilss;
+
+export const getServerSideProps = async () => {
+  const apolloClient = initializeApollo();
+
+  const { data } = await apolloClient.query({
+    query: GET_FOOTER,
+  });
+  console.log(data);
+};

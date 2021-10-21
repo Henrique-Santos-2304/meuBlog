@@ -1,6 +1,7 @@
 import ImageUserMain from ".";
 import { screen } from "@testing-library/react";
 import { renderTheme } from "utils/testRenderTheme";
+import { mockTypes } from "./mockTypes";
 
 jest.mock("@chakra-ui/react", () => {
   const originalModule = jest.requireActual("@chakra-ui/react");
@@ -12,36 +13,13 @@ jest.mock("@chakra-ui/react", () => {
   };
 });
 
-const mock = {
-  data: {
-    alt: "photo",
-    ariaLabel: "uma img qualquer",
-    imageUser: {
-      name: "photo",
-      url: "img.imagen.png",
-    },
-  },
-  links: {
-    name: "Henrique dos Santos",
-    profission: "Desenvolvedor FrontEnd",
-    platform: "Web, Mobile, Desktop",
-    linksSocials: [],
-    email: {
-      title: "icons",
-      email: "henrique.multitech@gmail.com",
-      ariaLabel: "Envio de email via site",
-      id: "name",
-    },
-  },
-};
-
 describe("<ImageUserMain />", () => {
   it("should render ", () => {
-    const { container } = renderTheme(<ImageUserMain {...mock} />);
+    const { container } = renderTheme(<ImageUserMain {...mockTypes} />);
     expect(container).toMatchSnapshot();
   });
   it("should have a image on the screen ", () => {
-    renderTheme(<ImageUserMain {...mock} />);
+    renderTheme(<ImageUserMain {...mockTypes} />);
     expect(screen.getByRole("img")).toBeInTheDocument();
   });
 });

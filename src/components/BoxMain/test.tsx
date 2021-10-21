@@ -2,6 +2,7 @@
 import BoxMain from ".";
 import { screen } from "@testing-library/react";
 import { renderTheme } from "utils/testRenderTheme";
+import { mockTypes } from "./mock";
 
 jest.mock("@chakra-ui/react", () => {
   const originalModule = jest.requireActual("@chakra-ui/react");
@@ -12,27 +13,14 @@ jest.mock("@chakra-ui/react", () => {
     useMediaQuery: jest.fn().mockImplementation(() => [true]),
   };
 });
-const mock = {
-  data: {
-    name: "Henrique dos Santos",
-    profission: "Desenvolvedor FrontEnd",
-    platform: "Web, Mobile, Desktop",
-    linksSocials: [],
-    email: {
-      title: "icons",
-      email: "henrique.multitech@gmail.com",
-      ariaLabel: "Envio de email via site",
-      id: "name",
-    },
-  },
-};
+
 describe("<BoxMain />", () => {
   it("should render ", () => {
-    const { container } = renderTheme(<BoxMain {...mock} />);
+    const { container } = renderTheme(<BoxMain {...mockTypes} />);
     expect(container).toMatchSnapshot();
   });
   it("should render ", () => {
-    renderTheme(<BoxMain {...mock} />);
+    renderTheme(<BoxMain {...mockTypes} />);
     expect(
       screen.getByRole("heading", {
         name: /henrique dos santos/i,

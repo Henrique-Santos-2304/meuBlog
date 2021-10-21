@@ -67,6 +67,8 @@ export interface queryHome_home_userImage {
 export interface queryHome_home {
   __typename?: "Home";
   title: string;
+  createdAt: string;
+  updatedAt: string;
   metaTagsIcons: queryHome_home_metaTagsIcons;
   boxMain: queryHome_home_boxMain;
   userImage: queryHome_home_userImage;

@@ -4,6 +4,8 @@ export const GET_HOME = gql`
   query queryHome {
     home {
       title
+      createdAt
+      updatedAt
       metaTagsIcons {
         titlePage
         iconPage {

@@ -21,7 +21,7 @@ type props = {
   metaTagsIcons: queryHome_home_metaTagsIcons;
 };
 
-export default function Home({ boxMain, imageUser, metaTagsIcons }: props) {
+const Home = ({ boxMain, imageUser, metaTagsIcons }: props) => {
   return (
     <>
       <Head>
@@ -52,8 +52,9 @@ export default function Home({ boxMain, imageUser, metaTagsIcons }: props) {
       </Container>
     </>
   );
-}
+};
 
+export default Home;
 export const getStaticProps: GetStaticProps = async () => {
   const apolloClient = initializeApollo();
 
@@ -66,7 +67,7 @@ export const getStaticProps: GetStaticProps = async () => {
       boxMain: data.home.boxMain,
       imageUser: data.home.userImage,
       initialApolloState: apolloClient.cache.extract(),
-      revalidate: 60 * 60 * 24,
+      revalidate: 60,
     },
   };
 };

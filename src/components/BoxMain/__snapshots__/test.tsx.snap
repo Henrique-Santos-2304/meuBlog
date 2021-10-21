@@ -126,23 +126,23 @@ exports[`<BoxMain /> should render  1`] = `
    
   <section
     aria-label="Descrições de um Desenvolvedor FrontEnd"
-    class="css-uq49qi"
+    class="css-1dxeksb"
   >
     <span
       class="c0"
     />
     <h1
-      class="chakra-heading css-1h7yta2"
+      class="chakra-heading css-iptj2e"
     >
       Henrique dos Santos
     </h1>
     <h4
-      class="chakra-heading css-1j4rsuz"
+      class="chakra-heading css-11nisu8"
     >
       Desenvolvedor FrontEnd
     </h4>
     <p
-      class="chakra-text css-4kc1zr"
+      class="chakra-text css-qc76t6"
     >
       Web, Mobile, Desktop
     </p>
