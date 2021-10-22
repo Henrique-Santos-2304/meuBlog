@@ -1,7 +1,7 @@
-import SlideSkilss from "components/SlideSkilss";
+import SlideSkilss from "components/PageSkills/SlideSkilss";
 import Head from "next/head";
 import { Container, Flex } from "@chakra-ui/react";
-import Headings from "components/Headings";
+import Headings from "components/globalComponents/Headings";
 import { initializeApollo } from "utils/apollo";
 import { GET_FOOTER } from "graphql/queries/Footer";
 

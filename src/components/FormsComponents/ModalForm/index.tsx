@@ -5,7 +5,7 @@ import {
   ModalCloseButton,
   ModalOverlay,
 } from "@chakra-ui/react";
-import FormEmail from "components/FormEmail";
+import FormEmail from "components/FormsComponents/FormEmail";
 type ModalType = {
   onClose: () => void;
   isOpen: boolean;

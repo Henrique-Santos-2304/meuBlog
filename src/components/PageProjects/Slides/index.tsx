@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import CardBox from "components/CardBox";
+import CardBox from "components/PageProjects/CardBox";
 import { cardSlidesProps } from "graphql/typesFinal/queryProjects";
 import React from "react";
 import Slider from "react-slick";

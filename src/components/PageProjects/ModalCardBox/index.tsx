@@ -12,14 +12,8 @@ import {
   ModalOverlay,
 } from "@chakra-ui/react";
 import { FaGithub } from "react-icons/fa";
+import { modalProps } from "./modalTypes";
 
-interface modalProps {
-  onClose: () => void;
-  isOpen: boolean;
-  subDescription: string;
-  title: string;
-  url: string;
-}
 export const ModalCardBox = ({
   onClose,
   isOpen,

@@ -3,8 +3,8 @@ import { FaWhatsapp } from "react-icons/fa";
 import Head from "next/head";
 import Link from "next/link";
 import { Container, Flex, Link as ChakraLink } from "@chakra-ui/react";
-import FormEmail from "components/FormEmail";
-import Headings from "components/Headings";
+import FormEmail from "components/FormsComponents/FormEmail";
+import Headings from "components/globalComponents/Headings";
 
 const SectionContact = () => (
   <>

@@ -1,6 +1,6 @@
 import { Container, Flex, useDisclosure } from "@chakra-ui/react";
 import ButtonMenu from "../ButtonMenu";
-import Menu from "components/Menu";
+import Menu from "components/globalComponents/Menu";
 import Logo from "../Logo";
 
 const ContainerHeader = () => {

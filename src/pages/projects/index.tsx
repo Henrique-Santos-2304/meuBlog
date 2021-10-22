@@ -7,8 +7,8 @@ import { GetStaticProps } from "next";
 import { initializeApollo } from "utils/apollo";
 import { GET_PROJECTS } from "graphql/queries/Projects";
 
-import Slides from "components/Slides";
-import Headings from "components/Headings";
+import Slides from "components/PageProjects/Slides";
+import Headings from "components/globalComponents/Headings";
 import {
   cardSlidesProps,
   metaDescriptionProps,
@@ -30,6 +30,8 @@ export default function SectionProject({
     <>
       <Head>
         <title>{metaDescription.titlePage}</title>
+        <link rel="shortcut icon" href={metaDescription.iconPage[0].url} />
+        <link rel="apple-touch-icon" href={metaDescription.iconPage[0].url} />
         <link
           rel="stylesheet"
           type="text/css"

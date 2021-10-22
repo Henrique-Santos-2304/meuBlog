@@ -7,11 +7,15 @@ exports[`<CardSkilss /> should render  1`] = `
     class="css-x5fiqn"
   >
     <img
+      alt="One Teste"
       class="chakra-image css-1xbzop4"
+      src="img.img.png"
     />
     <p
       class="chakra-text css-18unoc9"
-    />
+    >
+      One Teste
+    </p>
   </div>
 </div>
 `;

@@ -4,7 +4,7 @@ import { queryHome_home_boxMain } from "graphql/typesFinal/queryHome";
 import { Flex, Heading, Text, useMediaQuery } from "@chakra-ui/react";
 
 import theme from "styles/theme";
-import IconsContact from "components/IconsContact";
+import IconsContact from "components/PageHome/IconsContact";
 
 type props = {
   data: queryHome_home_boxMain;

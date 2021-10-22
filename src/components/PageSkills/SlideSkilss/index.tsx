@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react";
 import Slider from "react-slick";
-import { image, stylesImg } from "components/CardSkilss/cards";
-import CardSkilss from "components/CardSkilss";
+import { image, stylesImg } from "components/PageSkills/CardSkilss/cards";
+import CardSkilss from "components/PageSkills/CardSkilss";
 import * as S from "./styles";
 
 const SlideSkilss = () => {

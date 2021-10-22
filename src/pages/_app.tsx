@@ -9,7 +9,7 @@ import { useApollo } from "utils/apollo";
 import GlobalStyles from "styles/global";
 import theme from "styles/theme";
 import ContainerHeader from "components/Header/ContainerHeader";
-import Footer from "components/Footer";
+import Footer from "components/globalComponents/Footer";
 
 function App({ Component, pageProps }: AppProps) {
   const client = useApollo(pageProps.initialApoloState);

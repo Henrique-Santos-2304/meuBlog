@@ -12,7 +12,7 @@ import {
   queryHome_home_boxMain_linksSocials,
 } from "graphql/typesFinal/queryHome";
 
-import ModalForm from "components/ModalForm";
+import ModalForm from "components/FormsComponents/ModalForm";
 
 type propsContacts = {
   contacts: {

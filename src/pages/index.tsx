@@ -4,8 +4,8 @@ import Head from "next/head";
 import { initializeApollo } from "utils/apollo";
 import { GET_HOME } from "graphql/queries/Home";
 
-import BoxMain from "components/BoxMain";
-import ImageUserMain from "components/ImageUserMain";
+import BoxMain from "components/PageHome/BoxMain";
+import ImageUserMain from "components/PageHome/ImageUserMain";
 import { GetStaticProps } from "next";
 
 import {
