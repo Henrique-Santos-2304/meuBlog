@@ -157,9 +157,7 @@ exports[`<ImageUserMain /> should render  1`] = `
       alt="photo"
       aria-label="uma img qualquer"
       class="c1"
-      height="100"
       src="img.imagen.png"
-      width="100"
     />
     <div
       class="c2"

@@ -3,13 +3,13 @@ import * as S from "./styles";
 import { useDisclosure } from "@chakra-ui/react";
 import Link from "next/link";
 
+import ModalForm from "components/FormsComponents/ModalForm";
+import ICon from "../ICon";
+
 import {
   queryHome_home_boxMain_email,
   queryHome_home_boxMain_linksSocials,
 } from "graphql/typesFinal/queryHome";
-
-import ModalForm from "components/FormsComponents/ModalForm";
-import ICon from "../ICon";
 
 type propsContacts = {
   contacts: {
