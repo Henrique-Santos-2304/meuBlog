@@ -1,30 +1,30 @@
-import { Container, Flex, useDisclosure } from "@chakra-ui/react";
-import ButtonMenu from "../ButtonMenu";
+import * as S from "./styles";
+import { useDisclosure } from "@chakra-ui/react";
+
 import Menu from "components/globalComponents/Menu";
-import Logo from "../Logo";
+import Container from "components/globalComponents/Container";
 
 const ContainerHeader = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
-    <Container
-      maxW="full"
-      height="14vh"
-      zIndex="10"
-      p="0"
-      bgGradient="linear(to-l,#00bf72 ,#008793 ,#004d7a , #051937)"
-    >
-      <Container p="0" maxW="container.md" direction="row">
-        <Flex
-          w="100%"
-          alignItems="center"
-          px="2rem"
-          justifyContent="space-between"
+    <Container asHeight="medium">
+      <S.Wrapper>
+        <S.Logo aria-label="logo do site webdev">
+          <S.PreText>
+            Web<span>Dev</span>
+          </S.PreText>
+        </S.Logo>
+
+        <S.ButtonMenu
+          onClick={onOpen}
+          aria-label="Botão para abrir um menu de opções"
+          title="Abra o Menu"
         >
-          <Logo />
-          <ButtonMenu onOpen={onOpen} />
-          <Menu onClose={onClose} isOpen={isOpen} />
-        </Flex>
-      </Container>
+          <S.IconMenu />
+        </S.ButtonMenu>
+
+        <Menu onClose={onClose} isOpen={isOpen} />
+      </S.Wrapper>
     </Container>
   );
 };

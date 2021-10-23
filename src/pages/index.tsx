@@ -1,4 +1,4 @@
-import { Container, Flex } from "@chakra-ui/react";
+import * as S from "styles/home";
 import Head from "next/head";
 
 import { initializeApollo } from "utils/apollo";
@@ -6,6 +6,7 @@ import { GET_HOME } from "graphql/queries/Home";
 
 import BoxMain from "components/PageHome/BoxMain";
 import ImageUserMain from "components/PageHome/ImageUserMain";
+import Container from "components/globalComponents/Container";
 import { GetStaticProps } from "next";
 
 import {
@@ -31,24 +32,11 @@ const Home = ({ boxMain, imageUser, metaTagsIcons }: props) => {
         <link rel="manifest" href="/manifest.json" />
         <meta name="description" content={metaTagsIcons.titlePage} />
       </Head>
-      <Container
-        as="section"
-        maxW="full"
-        bgGradient="linear(to-l,#00bf72 ,#008793 ,#004d7a , #051937)"
-      >
-        <Container maxW="container.lg" px="1rem" h="80vh">
-          <Flex
-            align="center"
-            justify={["center", null, "space-around"]}
-            w="100%"
-            h="100%"
-            direction={["column", null, "row"]}
-            aria-label="Página Inicial com apresentação de um desenvolvedor Web"
-          >
-            <BoxMain data={boxMain} />
-            <ImageUserMain data={imageUser} links={boxMain} />
-          </Flex>
-        </Container>
+      <Container asHeight="full">
+        <S.Wrapper aria-label="Página Inicial com apresentação de um desenvolvedor Web">
+          <BoxMain data={boxMain} />
+          <ImageUserMain data={imageUser} links={boxMain} />
+        </S.Wrapper>
       </Container>
     </>
   );

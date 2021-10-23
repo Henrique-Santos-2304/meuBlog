@@ -1,10 +1,10 @@
-export const mockTypes = {
+export const mockTypesIconContacts = {
   contacts: {
     email: {
-      title: "icons",
+      title: "email",
       email: "henrique.multitech@gmail.com",
       ariaLabel: "Envio de email via site",
-      id: "name",
+      id: "email",
     },
     linksSocials: [
       {

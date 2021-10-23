@@ -33,7 +33,6 @@ exports[`<SectionContact /> should render  1`] = `
 
 .c1 a svg {
   font-size: 4rem;
-  color: #E5E7EB;
 }
 
 .c0 {
@@ -59,7 +58,7 @@ exports[`<SectionContact /> should render  1`] = `
 <div>
    
   <div
-    class="chakra-container css-p2xluk"
+    class="chakra-container css-xawjhy"
   >
     <div
       class="chakra-container css-ed19g4"

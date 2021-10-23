@@ -1,7 +1,7 @@
 import CardBox from ".";
-import { screen } from "@testing-library/react";
+import { fireEvent, screen } from "@testing-library/react";
 import { renderTheme } from "utils/testRenderTheme";
-import { mockTypesBoxCard } from "./mockTypesBoxCards";
+import { mockTypesBoxCard } from "./mockBoxCardsProps";
 
 describe("<CarBox />", () => {
   it("should render ", () => {
@@ -15,19 +15,23 @@ describe("<CarBox />", () => {
   it("should have a title on Card ", () => {
     renderTheme(<CardBox {...mockTypesBoxCard} />);
     expect(
-      screen.getByRole("heading", { name: /minha foto/i })
+      screen.getByRole("heading", { name: /projeto 1/i })
     ).toBeInTheDocument();
   });
-  it("should have a button to view full project ", () => {
+  it("should a modal of the description is show with button click", () => {
     renderTheme(<CardBox {...mockTypesBoxCard} />);
     expect(
-      screen.getByRole("button", { name: /ver projeto/i })
-    ).toBeInTheDocument();
-  });
-  it("should have a button to view a code of the project ", () => {
-    renderTheme(<CardBox {...mockTypesBoxCard} />);
+      screen.queryByLabelText(/descrição ds projeto selecionado/i)
+    ).not.toBeInTheDocument();
+
+    fireEvent.click(
+      screen.getByRole("button", {
+        name: /ver projeto/i,
+      })
+    );
+
     expect(
-      screen.getByRole("button", { name: /ver código/i })
+      screen.getByLabelText(/descrição do projeto selecionado/i)
     ).toBeInTheDocument();
   });
 });

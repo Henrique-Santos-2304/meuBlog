@@ -45,11 +45,11 @@ export default function SectionProject({
         />
       </Head>
       <Container
-        h="80vh"
+        minH="81vh"
         maxW="full"
         bgGradient="linear(to-l,#00bf72 ,#008793 ,#004d7a , #051937)"
       >
-        <Flex centerContent>
+        <Flex>
           <Container
             maxW="container.lg"
             h="100%"
@@ -58,17 +58,18 @@ export default function SectionProject({
             <Headings
               msg={title}
               color={"orange"}
-              margins={[
-                "-1rem auto 2rem",
-                "-1rem auto 2rem",
-                "-2rem auto 2rem",
-              ]}
+              margins="2rem auto 3rem"
               fontSize="2.6rem"
               padding="1.2rem"
             />
             <Slides cardsSlides={cardsSlides} />
           </Container>
         </Flex>
+        <Container
+          maxW="full"
+          h="5rem"
+          bgGradient="linear(to-l,#00bf72 ,#008793 ,#004d7a , #051937)"
+        />
       </Container>
     </>
   );

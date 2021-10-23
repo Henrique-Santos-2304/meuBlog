@@ -1,8 +1,5 @@
-export const mockTypesBoxCard = {
-  url: "img.png",
-  title: "minha foto",
-  subDescription: "description ",
-  alt: "um mini Slide",
+export const mockButtons = {
+  onOpen: jest.fn(),
   buttons: [
     {
       url: "codigo.com",

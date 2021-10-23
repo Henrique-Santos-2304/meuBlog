@@ -30,7 +30,7 @@ const Skilss = () => (
       />
     </Head>
     <Container
-      h="80vh"
+      minH="81vh"
       maxW="full"
       bgGradient="linear(to-l,#00bf72 ,#008793 ,#004d7a , #051937)"
     >
@@ -46,6 +46,11 @@ const Skilss = () => (
           <SlideSkilss />
         </Container>
       </Flex>
+      <Container
+        minH="5vh"
+        maxW="full"
+        bgGradient="linear(to-l,#00bf72 ,#008793 ,#004d7a , #051937)"
+      ></Container>
     </Container>
   </>
 );
@@ -58,5 +63,11 @@ export const getServerSideProps = async () => {
   const { data } = await apolloClient.query({
     query: GET_FOOTER,
   });
-  console.log(data);
+
+  return {
+    props: {
+      data,
+      revalidate: 60,
+    },
+  };
 };

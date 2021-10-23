@@ -2,12 +2,54 @@
 
 exports[`<BoxMain /> should render  1`] = `
 .c0 {
-  width: 100%;
-  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: -7rem;
   margin-bottom: 2rem;
 }
 
-.c0:after {
+.c2 {
+  font-size: calc(3.4rem + 1rem);
+  font-family: 'Tangerine',cursive;
+  text-align: center;
+  color: #F4F66F;
+}
+
+.c3 {
+  font-size: 1.8rem;
+  color: #f8f8f8;
+  margin-top: -1.3rem;
+}
+
+.c4 {
+  text-align: center;
+  font-family: 'Poppins',sans-serif;
+  font-size: 1.4rem;
+  font-style: italic;
+  color: #f8f8f8;
+  margin: 0.8rem 0 2rem;
+}
+
+.c1 {
+  width: 100%;
+  position: relative;
+  margin-bottom: 0.4rem;
+}
+
+.c1:after {
   position: absolute;
   top: 0;
   left: 50%;
@@ -17,15 +59,37 @@ exports[`<BoxMain /> should render  1`] = `
   content: "";
   width: 30%;
   height: 0.6rem;
-  background: #E8EB33;
+  background: #F4F66F;
   border-radius: 2rem;
 }
 
-.c1 {
-  position: relative;
+.c5 {
+  display: none;
+}
+
+.c6 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c7 {
   border-radius: 50%;
   width: 3rem;
   height: 3rem;
+  margin: -1rem 0.3rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -39,30 +103,32 @@ exports[`<BoxMain /> should render  1`] = `
   -ms-flex-align: center;
   align-items: center;
   overflow: hidden;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  position: relative;
+  cursor: pointer;
 }
 
-.c1:hover {
+.c7:hover {
   -webkit-transform: scale(1.5);
   -ms-transform: scale(1.5);
   transform: scale(1.5);
   margin: 0 1rem;
 }
 
-.c1:hover svg {
-  font-size: 2rem;
-}
-
-.c1:hover svg#github {
+.c7:hover svg {
   font-size: 1.8rem;
 }
 
-.c1:hover svg#linkedin {
-  font-size: 2rem;
+.c7:hover:hover::before {
+  -webkit-transform: translate(0);
+  -ms-transform: translate(0);
+  transform: translate(0);
+  -webkit-animation: hRyZbK 0.4s ease-in;
+  animation: hRyZbK 0.4s ease-in;
 }
 
-.c1::before {
+.c7:hover::before {
   content: "";
   position: absolute;
   top: 0;
@@ -70,112 +136,92 @@ exports[`<BoxMain /> should render  1`] = `
   width: 100%;
   height: 100%;
   background: linear-gradient(to top right,#a2afb3 20%,#47494f,#111 70%);
-  box-shadow: 0 0 20px orange;
   z-index: -1;
-  border-radius: 50%;
-  -webkit-transform: translate(100%,100%);
-  -ms-transform: translate(100%,100%);
-  transform: translate(100%,100%);
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  -webkit-transform: translate(50%,50%);
+  -ms-transform: translate(50%,50%);
+  transform: translate(50%,50%);
 }
 
-.c1::before a {
-  color: white;
-}
-
-.c1:hover::before {
-  -webkit-transform: translate(0);
-  -ms-transform: translate(0);
-  transform: translate(0);
-  -webkit-animation: animate 0.4s linear;
-  animation: animate 0.4s linear;
-}
-
-.c1 svg {
-  cursor: pointer;
+.c8 {
   font-size: 2.4rem;
   border-radius: 50%;
+  color: #F4F66F;
 }
 
-.c1 svg#github {
-  background: #000;
-  color: #E5E7EB;
-  border: 0.2rem solid #000;
+@media (min-width:767px) {
+  .c2 {
+    font-size: 5rem;
+  }
 }
 
-.c1 svg#linkedin {
-  color: #E5E7EB;
-  font-size: 2.8rem;
-}
-
-.c1 svg#email {
-  color: #E8EB33;
-}
-
-.c1 svg#whatsapp {
-  color: #53c65f;
-  border-radius: none;
-}
-
-.c1 img#whatsapp svg {
-  color: green;
+@media (min-width:767px) {
+  .c5 {
+    display: block;
+  }
 }
 
 <div>
    
-  <section
+  <main
     aria-label="Descrições de um Desenvolvedor FrontEnd"
-    class="css-1dxeksb"
+    class="c0"
   >
     <span
-      class="c0"
+      class="c1"
     />
     <h1
-      class="chakra-heading css-iptj2e"
+      class="c2"
     >
       Henrique dos Santos
     </h1>
-    <h4
-      class="chakra-heading css-11nisu8"
+    <h3
+      class="c3"
     >
       Desenvolvedor FrontEnd
-    </h4>
+    </h3>
     <p
-      class="chakra-text css-qc76t6"
+      class="c4"
     >
       Web, Mobile, Desktop
     </p>
     <div
-      class="chakra-stack css-1f741yc"
+      class="c5"
+      data-testid="media-query"
     >
       <div
-        class="c1"
+        class="c6"
       >
-        <svg
-          aria-label="Envio de email via site"
-          fill="currentColor"
-          height="1em"
-          id="icons"
-          stroke="currentColor"
-          stroke-width="0"
-          viewBox="0 0 24 24"
-          width="1em"
-          xmlns="http://www.w3.org/2000/svg"
+        <div
+          class="c7"
         >
-          <title>
-            henrique.multitech@gmail.com
-          </title>
-          <path
-            d="M0 0h24v24H0z"
-            fill="none"
-          />
-          <path
-            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-          />
-        </svg>
+          <svg
+            aria-label="Envio de email via site"
+            class="c8"
+            fill="currentColor"
+            height="1em"
+            id="icons"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>
+              henrique.multitech@gmail.com
+            </title>
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+            />
+          </svg>
+        </div>
       </div>
     </div>
-  </section>
+  </main>
 </div>
 `;

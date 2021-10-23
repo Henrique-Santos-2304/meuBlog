@@ -10,23 +10,30 @@ exports[`<CarBox /> should render  1`] = `
   transform: translateX(-50%);
 }
 
+@media (max-width:480px) {
+  .c0 {
+    bottom: 2rem;
+  }
+}
+
 <div>
    
   <div
-    class="css-1602cqj"
+    aria-label="cardsSlides"
+    class="css-ynmsq6"
   >
     <div
       class="css-11ycc92"
     >
       <h2
-        class="chakra-heading css-851v2m"
+        class="chakra-heading css-vc6aoc"
       >
-        minha foto
+        projeto 1
       </h2>
     </div>
     <img
       alt="um mini Slide"
-      class="chakra-image css-ykevq8"
+      class="chakra-image css-3fw5es"
       src="img.png"
     />
     <div
@@ -37,7 +44,7 @@ exports[`<CarBox /> should render  1`] = `
         role="group"
       >
         <button
-          class="chakra-button css-1g4m725"
+          class="chakra-button css-1ujc37h"
           type="button"
         >
           ver projeto
@@ -49,7 +56,7 @@ exports[`<CarBox /> should render  1`] = `
           target="_blank"
         >
           <button
-            class="chakra-button css-1anu6oo"
+            class="chakra-button css-tu4ob9"
             type="button"
           >
             <div

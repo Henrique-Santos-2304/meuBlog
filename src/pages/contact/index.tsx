@@ -33,7 +33,7 @@ const SectionContact = () => (
     </Head>
     <Container
       maxW="full"
-      h="80vh"
+      minH="81vh"
       bgGradient="linear(to-l,#00bf72 ,#008793 ,#004d7a , #051937)"
     >
       <Container maxW="container.md" centerContent>

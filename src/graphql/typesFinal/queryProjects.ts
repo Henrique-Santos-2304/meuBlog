@@ -13,11 +13,18 @@ export interface sectionProjectPreview {
   title: "Meus projetos";
 }
 
-interface buttonProps {
+export interface buttonProps {
   __typename?: any;
   label: string;
   url: string;
 }
+export type imageCardProps = {
+  url: string;
+  title: string;
+  subDescription: string;
+  alt: string;
+  buttons: buttonProps[];
+};
 export interface cardSlidesProps {
   miniDescription: string;
   title: string;

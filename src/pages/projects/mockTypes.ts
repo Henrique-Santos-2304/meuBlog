@@ -1,4 +1,4 @@
-import { mockTypes } from "components/PageProjects/Slides/mockTypes";
+import { mockTypes } from "components/PageProjects/Slides/mockSlidesProps";
 
 export const mockTypesProject = {
   title: "Meus Projetos",

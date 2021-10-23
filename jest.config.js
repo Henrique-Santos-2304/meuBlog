@@ -7,6 +7,7 @@ module.exports = {
   collectCoverage: true,
   collectCoverageFrom: [
     "src/**/*.ts(x)?",
+    "!src/**/types.ts(x)?",
     "!src/**/stories.tsx",
     "!src/**/_document.tsx",
     "!src/**/_app.tsx",
@@ -14,7 +15,7 @@ module.exports = {
     "!src/graphql/**",
     "!src/styles/*.ts",
     "!src/types/*.ts",
-    "!src/utils/*.ts(x)",
+    "!src/utils/**",
   ],
   setupFilesAfterEnv: ["<rootDir>/.jest/setup.ts"],
   modulePaths: ["<rootDir>/src/", "<rootDir>/.jest"],

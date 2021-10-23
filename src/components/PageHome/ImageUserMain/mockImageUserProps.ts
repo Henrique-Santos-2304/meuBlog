@@ -1,3 +1,5 @@
+import { mockTypesIconContacts } from "../IconsContact/mockIconsProps";
+
 export const mockTypes = {
   data: {
     alt: "photo",
@@ -11,7 +13,7 @@ export const mockTypes = {
     name: "Henrique dos Santos",
     profission: "Desenvolvedor FrontEnd",
     platform: "Web, Mobile, Desktop",
-    linksSocials: [],
+    linksSocials: [...mockTypesIconContacts.contacts.linksSocials],
     email: {
       title: "icons",
       email: "henrique.multitech@gmail.com",

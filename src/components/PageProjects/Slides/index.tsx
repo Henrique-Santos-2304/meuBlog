@@ -8,31 +8,7 @@ import * as S from "./styles";
 type props = {
   cardsSlides: cardSlidesProps[];
 };
-function SamplePrevArrow(props: {
-  className?: string;
-  style?: any;
-  onClick?: () => void;
-}) {
-  const { className, style, onClick } = props;
-  return (
-    <S.Icons
-      className={className}
-      style={{ ...style }}
-      onClick={onClick}
-      id="left"
-    />
-  );
-}
-function SampleNextArrow(props: {
-  className?: string;
-  style?: any;
-  onClick?: () => void;
-}) {
-  const { className, style, onClick } = props;
-  return (
-    <S.Icons className={className} style={{ ...style }} onClick={onClick} />
-  );
-}
+
 const Slides = ({ cardsSlides }: props) => {
   const settings = {
     dots: true,
@@ -45,7 +21,7 @@ const Slides = ({ cardsSlides }: props) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 2,
-    arrows: true,
+    arrows: false,
     responsive: [
       {
         breakpoint: 620,
@@ -53,7 +29,6 @@ const Slides = ({ cardsSlides }: props) => {
           slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 2,
-          arrows: false,
         },
       },
       {
@@ -63,27 +38,14 @@ const Slides = ({ cardsSlides }: props) => {
           centerMode: false,
           slidesToScroll: 1,
           initialSlide: 2,
-          arrows: false,
-        },
-      },
-      {
-        breakpoint: 380,
-        settings: {
-          slidesToShow: 1.02,
-          centerMode: false,
-          slidesToScroll: 1,
-          initialSlide: 2,
-          arrows: false,
         },
       },
     ],
     appendDots: (dots: any) => (
       <S.Dots>
-        <ul> {dots} </ul>
+        <ul aria-label="Botões para trocar as fotos"> {dots} </ul>
       </S.Dots>
     ),
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
   };
 
   return (

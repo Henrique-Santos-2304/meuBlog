@@ -2,7 +2,7 @@
 import BoxMain from ".";
 import { screen } from "@testing-library/react";
 import { renderTheme } from "utils/testRenderTheme";
-import { mockTypes } from "./mock";
+import { mockTypes } from "./mockBoxMain";
 
 jest.mock("@chakra-ui/react", () => {
   const originalModule = jest.requireActual("@chakra-ui/react");

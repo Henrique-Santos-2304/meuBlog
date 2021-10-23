@@ -3,20 +3,27 @@ import { Box, Image, Flex, useDisclosure } from "@chakra-ui/react";
 
 import { ModalCardBox } from "../ModalCardBox";
 import Headings from "components/globalComponents/Headings";
-import Buttons from "components/PageProjects/Buttons.ts";
-import { imageProps } from "./SlidesTypes";
+import Buttons from "components/PageProjects/Buttons";
+import { imageCardProps } from "graphql/typesFinal/queryProjects";
 
-const CardBox = ({ url, title, subDescription, alt, buttons }: imageProps) => {
+const CardBox = ({
+  url,
+  title,
+  subDescription,
+  alt,
+  buttons,
+}: imageCardProps) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
     <Box
-      h={["40rem", "40rem", "42rem", "48rem"]}
+      h={["35rem", "40rem", "44rem", "46rem"]}
       bg="blackAlpha.700"
-      p={["2rem", "6rem"]}
+      p={["3rem", "7rem"]}
       mx={["0.5rem", "1rem"]}
       position="relative"
       borderRadius="3.5rem"
+      aria-label="cardsSlides"
     >
       <Flex
         position="absolute"
@@ -25,19 +32,15 @@ const CardBox = ({ url, title, subDescription, alt, buttons }: imageProps) => {
         transform="translate(-50%)"
         borderRadius="4rem"
       >
-        <Headings
-          msg={title}
-          color="orange"
-          margins="1rem auto"
-          fontSize="2rem"
-        />
+        <Headings msg={title} color="gray.100" fontSize="2rem" />
       </Flex>
       <Image
         src={url}
         borderRadius="3rem"
         boxShadow="0 0 2rem white, 0 0 1rem orange"
-        w="100%"
-        h={["70%", "100%"]}
+        w={["90%", "100%"]}
+        h={["60%", "100%"]}
+        mx="auto"
         mt={["4rem", "0"]}
         alt={alt}
       />

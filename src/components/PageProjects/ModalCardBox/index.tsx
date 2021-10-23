@@ -12,7 +12,14 @@ import {
   ModalOverlay,
 } from "@chakra-ui/react";
 import { FaGithub } from "react-icons/fa";
-import { modalProps } from "./modalTypes";
+
+interface modalProps {
+  onClose: () => void;
+  isOpen: boolean;
+  subDescription: string;
+  title: string;
+  url: string;
+}
 
 export const ModalCardBox = ({
   onClose,
@@ -24,7 +31,12 @@ export const ModalCardBox = ({
   return (
     <Modal onClose={onClose} size="2xl" isOpen={isOpen} isCentered>
       <ModalOverlay />
-      <ModalContent bg="blackAlpha.700" p="3rem" borderRadius="2rem">
+      <ModalContent
+        bg="blackAlpha.700"
+        p="3rem"
+        borderRadius="2rem"
+        aria-label="descrição do projeto selecionado"
+      >
         <ModalHeader color="gray.100" fontSize="2.4rem" textAlign="center">
           {title}
         </ModalHeader>

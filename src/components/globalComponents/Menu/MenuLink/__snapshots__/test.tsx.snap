@@ -39,7 +39,6 @@ exports[`<MenuLink /> should render  1`] = `
   right: 0;
   height: 0.5rem;
   border-radius: 0.6rem;
-  background: #E8EB33;
   -webkit-animation: hoverAnimation 0.5s forwards;
   animation: hoverAnimation 0.5s forwards;
 }

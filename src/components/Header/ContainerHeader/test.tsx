@@ -10,11 +10,6 @@ describe("<ContainerHeader />", () => {
   });
   it("should have childrens in the header ", () => {
     renderTheme(<ContainerHeader />);
-    const button = screen.getByRole("button", {
-      name: /Botão para abrir um menu de opções/i,
-    });
-
-    expect(button).toBeInTheDocument();
     expect(screen.getByText(/web/i)).toBeInTheDocument();
     expect(screen.getByText(/dev/i)).toBeInTheDocument();
   });

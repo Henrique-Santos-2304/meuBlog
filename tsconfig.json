@@ -5,7 +5,8 @@
     "**/*.ts",
     "**/*.tsx",
     "src/styles/*",
-    "src/utils/testRenderTheme.js"
+    "src/utils/testRenderTheme.js",
+    "src/components/PageProjects/Slides/index.jsx"
   ],
   "compilerOptions": {
     "noImplicitAny": true,

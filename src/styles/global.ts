@@ -100,6 +100,7 @@ const GlobalStyles = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     margin: 0;
     padding: 0;
+    border: 0;
     box-sizing: border-box;
   }
 
@@ -111,7 +112,6 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     ${({ theme }) => css`
-      background: ${theme.colors.mainBg};
       font-size: ${theme.font.sizes.xlarge};
       font-family: ${theme.font.family.Poppins};
       ${media.lessThan("medium")`

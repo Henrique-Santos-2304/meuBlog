@@ -1,11 +1,7 @@
 /* eslint-disable @next/next/link-passhref */
 import * as S from "./styles";
-import { HStack, Link as ChakraLink, useDisclosure } from "@chakra-ui/react";
+import { useDisclosure } from "@chakra-ui/react";
 import Link from "next/link";
-
-import { FaGithub, FaWhatsapp } from "react-icons/fa";
-import { TiSocialLinkedinCircular } from "react-icons/ti";
-import { MdEmail } from "react-icons/md";
 
 import {
   queryHome_home_boxMain_email,
@@ -13,6 +9,7 @@ import {
 } from "graphql/typesFinal/queryHome";
 
 import ModalForm from "components/FormsComponents/ModalForm";
+import ICon from "../ICon";
 
 type propsContacts = {
   contacts: {
@@ -25,41 +22,26 @@ const IconsContact = ({ contacts }: propsContacts) => {
 
   return (
     <>
-      <HStack spacing="0.8rem" mb="1rem">
+      <S.WrapperIcons>
         {contacts.linksSocials.map((icons) => (
           <S.Li key={icons.name}>
             <Link href={icons.url} passHref>
-              <ChakraLink
-                isExternal
-                aria-label={icons.ariaLabel}
-                _focus={{ border: "0" }}
-              >
-                {icons.name === "github" && (
-                  <FaGithub id={icons.name} title={icons.title} />
-                )}
-                {icons.name === "linkedin" && (
-                  <TiSocialLinkedinCircular
-                    id={icons.name}
-                    title={icons.title}
-                  />
-                )}
-                {icons.name === "whatsapp" && (
-                  <FaWhatsapp id={icons.name} title={icons.title} />
-                )}
-              </ChakraLink>
+              <S.Ancorage aria-label={icons.ariaLabel}>
+                <ICon name={icons.name} title={icons.title} />
+              </S.Ancorage>
             </Link>
           </S.Li>
         ))}
 
         <S.Li>
-          <MdEmail
+          <S.EmailIcon
             id={contacts.email.title}
             title={contacts.email.email}
             aria-label={contacts.email.ariaLabel}
             onClick={onOpen}
           />
         </S.Li>
-      </HStack>
+      </S.WrapperIcons>
       <ModalForm onClose={onClose} isOpen={isOpen} />
     </>
   );

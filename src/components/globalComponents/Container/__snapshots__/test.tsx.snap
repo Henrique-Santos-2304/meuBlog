@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Container /> should render  1`] = `
+.c0 {
+  width: 100vw;
+  background-image: linear-gradient( to left,#00bf72,#008793,#004d7a,#051937 );
+}
+
+.c1 {
+  max-width: 86rem;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+<div>
+   
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    />
+  </div>
+</div>
+`;

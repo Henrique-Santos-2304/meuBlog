@@ -1,7 +1,7 @@
 import ImageUserMain from ".";
 import { screen } from "@testing-library/react";
 import { renderTheme } from "utils/testRenderTheme";
-import { mockTypes } from "./mockTypes";
+import { mockTypes } from "./mockImageUserProps";
 
 jest.mock("@chakra-ui/react", () => {
   const originalModule = jest.requireActual("@chakra-ui/react");

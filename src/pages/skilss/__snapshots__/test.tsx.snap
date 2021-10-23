@@ -24,7 +24,7 @@ exports[`<Skilss /> should render  1`] = `
 <div>
    
   <div
-    class="chakra-container css-p2xluk"
+    class="chakra-container css-xawjhy"
   >
     <div
       class="css-k008qs"
@@ -593,6 +593,9 @@ exports[`<Skilss /> should render  1`] = `
         </div>
       </div>
     </div>
+    <div
+      class="chakra-container css-v4nxjc"
+    />
   </div>
 </div>
 `;
