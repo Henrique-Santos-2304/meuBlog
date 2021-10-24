@@ -1,5 +1,4 @@
 import { createGlobalStyle, css } from "styled-components";
-import media from "styled-media-query";
 
 const GlobalStyles = createGlobalStyle`
 
@@ -113,12 +112,9 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     ${({ theme }) => css`
-      background: ${theme.colors.secondary}
-      font-size: ${theme.font.sizes.xlarge}
+      background: ${theme.colors.secondary};
+      font-size: ${theme.font.sizes.xlarge};
       font-family: ${theme.font.family.Poppins};
-      ${media.lessThan("medium")`
-      font-size: ${theme.font.sizes.small};
-      `}
     `}
   }
   h1,h2,h3,h4,h5,h6{
@@ -129,6 +125,7 @@ const GlobalStyles = createGlobalStyle`
   }
   button{
     cursor: pointer;
+    border: 0;
   }
   input{
     border: 0;
