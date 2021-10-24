@@ -113,7 +113,7 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     ${({ theme }) => css`
-      background: ${theme.colors.mainBg}
+      background: ${theme.colors.secondary}
       font-size: ${theme.font.sizes.xlarge}
       font-family: ${theme.font.family.Poppins};
       ${media.lessThan("medium")`
@@ -123,7 +123,7 @@ const GlobalStyles = createGlobalStyle`
   }
   h1,h2,h3,h4,h5,h6{
     ${({ theme }) => css`
-      font-size: ${theme.font.sizes.medium}
+      font-size: ${theme.font.sizes.medium};
       font-family: ${theme.font.family.Roboto};
     `}
   }

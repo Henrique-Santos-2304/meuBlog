@@ -3,6 +3,14 @@ export default {
     container: "100vw",
     containerContent: "78rem",
   },
+  media: {
+    small: "376px",
+    xsmall: "480px",
+    medium: "620px",
+    xmedium: "768px",
+    large: "980px",
+    full: "1128px",
+  },
   colors: {
     primary: "#f8f8f8",
     secondary: "#1e1e1e",
@@ -37,4 +45,4 @@ export default {
     xlarge: "4.8rem",
     xxlarge: "5.6rem",
   },
-};
+} as const;
