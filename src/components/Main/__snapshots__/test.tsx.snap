@@ -10,19 +10,116 @@ exports[`Header should render  1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.c1 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 1rem 2.9rem 1rem 1.4rem;
+  margin: 2.4rem 0 0 2rem;
+  background: rgba(255,255,255,0.15);
+  color: #1e1e1e;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  font-weight: 500;
+  border-radius: 2rem;
+}
+
+.c1::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 80%;
+  width: 0.3rem;
+  background: #b7f600;
+}
+
+.c3 {
+  text-align: start;
+  font-size: 2.3rem;
+  margin-left: 1.3rem;
+  font-weight: 300;
+}
+
+.c3 strong {
+  color: #b7f600;
+  font-style: italic;
+}
+
+.c5 {
+  width: 30rem;
+  height: 40rem;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+
+.c2 {
+  margin-left: 1.3rem;
+}
+
+.c2 span {
+  color: #b7f600;
+}
+
+.c4 {
+  margin-left: 1.3rem;
 }
 
 <div>
   <main
     class="c0"
-  />
+  >
+    <div
+      aria-label="Minha Apresentação"
+      class="c1"
+      data-testid="apresentation"
+    >
+      <p
+        class="c2"
+      >
+        Bem vindo(a),
+      </p>
+      <h1
+        class="c3"
+        title="Meu Nome"
+      >
+        Sou 
+        <strong>
+          Henrique
+        </strong>
+        ,
+      </h1>
+      <p
+        class="c4"
+      >
+        Desenvolvedor FrontEnd
+      </p>
+    </div>
+    <img
+      alt="Esse sou eu "
+      aria-label="Foto do Desenvolvedor dono do Portfólio"
+      class="c5"
+      src="https://res.cloudinary.com/defnibbpl/image/upload/v1635196480/HomeMobile_ox93w6.png"
+    />
+  </main>
 </div>
 `;

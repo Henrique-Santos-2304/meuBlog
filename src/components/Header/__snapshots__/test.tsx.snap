@@ -1,13 +1,122 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Header /> should render  1`] = `
+.c0 {
+  width: 100vw;
+}
+
+.c0 > div {
+  min-height: 5vh;
+}
+
+.c1 {
+  max-width: 78rem;
+  margin: 0 auto;
+}
+
+.c2 {
+  width: 100vw;
+  height: 12vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 3rem;
+}
+
+.c3 {
+  padding: 1.6rem;
+}
+
+.c4 {
+  font-size: 3.8rem;
+  font-family: 'Tangerine',cursive;
+  color: #b7f600;
+  position: relative;
+  font-weight: 800;
+}
+
+.c4 span {
+  color: #1e1e1e;
+}
+
+.c4::before {
+  content: "";
+  position: absolute;
+  bottom: -0.4rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 80%;
+  height: 0.3rem;
+  background: #b7f600;
+}
+
+.c5 {
+  font-size: 3.8rem;
+  color: #f8f8f8;
+}
+
 <div>
   <div
-    class=""
+    class="c0"
   >
-    <h1>
-      Header
-    </h1>
+    <div
+      class="c1"
+      data-testid="containerScreen"
+    >
+      <header
+        class="c2"
+      >
+        <a
+          aria-label="Logo do Portfólio"
+          class="c3"
+          href="#"
+          title="logo"
+        >
+          <p
+            class="c4"
+          >
+            Web
+            <span>
+              Dev
+            </span>
+          </p>
+        </a>
+        <svg
+          aria-label="Botão Para abrir o Menu"
+          class="c5"
+          fill="currentColor"
+          height="1em"
+          role="button"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>
+            Abrir Menu
+          </title>
+          <path
+            d="M0 0h24v24H0V0z"
+            fill="none"
+          />
+          <path
+            d="M11 18c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zm-2-8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 4c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+          />
+        </svg>
+      </header>
+    </div>
   </div>
 </div>
 `;

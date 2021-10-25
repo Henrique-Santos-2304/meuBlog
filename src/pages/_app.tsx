@@ -3,7 +3,6 @@ import Head from "next/head";
 import GlobalStyles from "styles/global";
 import { ThemeProvider } from "styled-components";
 import theme from "styles/theme";
-import React from "react";
 import Header from "components/Header";
 
 function App({ Component, pageProps }: AppProps) {

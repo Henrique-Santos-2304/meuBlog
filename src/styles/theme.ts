@@ -12,6 +12,10 @@ export default {
     full: "1128px",
   },
   colors: {
+    bgPrimary: "#75dcc6",
+    bgSecondary: "#486afe",
+    effectsPrimary: "#b7f600",
+
     primary: "#f8f8f8",
     secondary: "#1e1e1e",
   },
@@ -30,7 +34,7 @@ export default {
       xlarge: "2.0rem",
       xxlarge: "2.8rem",
       xbiglarge: "3rem",
-      xxbiglarge: "3.4rem",
+      xxbiglarge: "3.8rem",
     },
     light: 300,
     normal: 500,

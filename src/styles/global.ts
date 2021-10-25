@@ -112,7 +112,11 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     ${({ theme }) => css`
-      background: ${theme.colors.secondary};
+      background-image: linear-gradient(
+        to bottom right,
+        ${theme.colors.bgPrimary},
+        ${theme.colors.bgSecondary} 43%
+      );
       font-size: ${theme.font.sizes.xlarge};
       font-family: ${theme.font.family.Poppins};
     `}

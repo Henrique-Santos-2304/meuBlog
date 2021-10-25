@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Heading /> should render  1`] = `
+.c0 {
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: red;
+  padding: 2rem;
+  margin: 1rem;
+  font-size: 2.4rem;
+}
+
+.c0::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 70%;
+  height: 0.4rem;
+  border-radius: 2rem;
+  background: #f8f8f8;
+}
+
+<div>
+  <h1
+    class="c0"
+  >
+    teste
+  </h1>
+</div>
+`;

@@ -7,11 +7,9 @@ module.exports = withPWA({
     dest: "public",
     disable: !isProd,
   },
-});
-module.exports = {
   images: {
     loader: "cloudinary",
     path: "cloudinary://912718569476114:G144Qg_0V_mxQokPSIOQpWmoN54@defnibbpl",
     domains: ["res.cloudinary.com/"],
   },
-};
+});
