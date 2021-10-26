@@ -6,6 +6,7 @@ export type headeingProps = {
   marginText?: string | string[];
   paddingText?: string | string[];
   fontSizeText?: string | string[];
+  colorEffect?: string;
 };
 
 const Headings = ({
@@ -14,12 +15,14 @@ const Headings = ({
   marginText,
   paddingText,
   fontSizeText,
+  colorEffect,
 }: headeingProps) => (
   <S.Heading
     colorText={colorText}
     paddingText={paddingText}
     marginText={marginText}
     fontSizeText={fontSizeText}
+    colorEffect={colorEffect}
   >
     {msg}
   </S.Heading>

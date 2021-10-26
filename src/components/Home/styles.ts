@@ -1,12 +1,14 @@
 import styled, { css } from "styled-components";
+import Image from "next/image";
 
 export const MyDescription = styled.main`
   text-align: center;
   display: flex;
   flex-direction: column;
   width: 100vw;
-  height: 100vh;
+  height: 75vh;
 `;
+
 export const ContentDescription = styled.div`
   ${({ theme }) => css`
     width: max-content;
@@ -33,6 +35,16 @@ export const ContentDescription = styled.div`
     }
   `}
 `;
+
+export const Welcome = styled.p`
+  ${({ theme }) => css`
+    margin-left: 1.3rem;
+    span {
+      color: ${theme.colors.effectsPrimary};
+    }
+  `}
+`;
+
 export const Name = styled.h1.attrs({
   title: "Meu Nome",
 })`
@@ -47,21 +59,17 @@ export const Name = styled.h1.attrs({
     }
   `}
 `;
-export const PhotoUser = styled.img`
-  width: 30rem;
-  height: 40rem;
-  align-self: flex-end;
-  justify-self: flex-end;
-`;
-export const Welcome = styled.p`
-  ${({ theme }) => css`
-    margin-left: 1.3rem;
-    span {
-      color: ${theme.colors.effectsPrimary};
-    }
-  `}
-`;
 
 export const Dev = styled.p`
   margin-left: 1.3rem;
 `;
+
+export const PhotoContent = styled.div`
+  position: relative;
+  width: 30rem;
+  height: 44rem;
+  align-self: flex-end;
+  justify-self: flex-end;
+`;
+
+export const PhotoUser = styled(Image)``;

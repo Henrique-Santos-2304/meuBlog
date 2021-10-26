@@ -11,7 +11,7 @@ exports[`Header should render  1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   width: 100vw;
-  height: 100vh;
+  height: 75vh;
 }
 
 .c1 {
@@ -51,6 +51,14 @@ exports[`Header should render  1`] = `
   background: #b7f600;
 }
 
+.c2 {
+  margin-left: 1.3rem;
+}
+
+.c2 span {
+  color: #b7f600;
+}
+
 .c3 {
   text-align: start;
   font-size: 2.3rem;
@@ -63,25 +71,18 @@ exports[`Header should render  1`] = `
   font-style: italic;
 }
 
+.c4 {
+  margin-left: 1.3rem;
+}
+
 .c5 {
+  position: relative;
   width: 30rem;
-  height: 40rem;
+  height: 44rem;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
   justify-self: flex-end;
-}
-
-.c2 {
-  margin-left: 1.3rem;
-}
-
-.c2 span {
-  color: #b7f600;
-}
-
-.c4 {
-  margin-left: 1.3rem;
 }
 
 <div>
@@ -104,7 +105,7 @@ exports[`Header should render  1`] = `
       >
         Sou 
         <strong>
-          Henrique
+           Henrique
         </strong>
         ,
       </h1>
@@ -114,12 +115,24 @@ exports[`Header should render  1`] = `
         Desenvolvedor FrontEnd
       </p>
     </div>
-    <img
-      alt="Esse sou eu "
-      aria-label="Foto do Desenvolvedor dono do Portfólio"
+    <div
       class="c5"
-      src="https://res.cloudinary.com/defnibbpl/image/upload/v1635196480/HomeMobile_ox93w6.png"
-    />
+    >
+      <div
+        style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
+      >
+        <img
+          alt="Esse sou eu "
+          aria-label="Foto do Desenvolvedor dono do Portfólio"
+          class=""
+          data-nimg="fill"
+          decoding="async"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+        />
+        <noscript />
+      </div>
+    </div>
   </main>
 </div>
 `;

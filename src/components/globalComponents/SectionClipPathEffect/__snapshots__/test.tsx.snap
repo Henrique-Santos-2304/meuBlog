@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SectionClipPathEffect /> should render  1`] = `
+.c0 {
+  width: 100vw;
+  padding: 5rem 1rem;
+  background: white;
+  margin-top: -7rem;
+  -webkit-clip-path: polygon(0 0,100% 15%,100% 100%,0 85%);
+  clip-path: polygon(0 0,100% 15%,100% 100%,0 85%);
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <p>
+      Section Clip Path
+    </p>
+  </div>
+</div>
+`;

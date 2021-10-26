@@ -1,5 +1,12 @@
-import { createGlobalStyle, css } from "styled-components";
+import { createGlobalStyle, css, keyframes } from "styled-components";
 
+const animateGradient = keyframes`
+  from {
+    background-position: 0 0;
+  } to{
+    background-position: 100% 100%;
+  }
+`;
 const GlobalStyles = createGlobalStyle`
 
 /* Roboto */
@@ -117,6 +124,8 @@ const GlobalStyles = createGlobalStyle`
         ${theme.colors.bgPrimary},
         ${theme.colors.bgSecondary} 43%
       );
+      background-size: 200% 200%;
+      animation: ${animateGradient} 3s linear infinite alternate;
       font-size: ${theme.font.sizes.xlarge};
       font-family: ${theme.font.family.Poppins};
     `}
