@@ -1,4 +1,6 @@
+import "match-media-mock";
 import SectionProject from ".";
+
 import { renderTheme } from "utils/testRenderTheme";
 
 describe("<SectionProject />", () => {

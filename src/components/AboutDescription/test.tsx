@@ -2,16 +2,20 @@ import AboutDescription from ".";
 import { screen } from "@testing-library/react";
 import { renderTheme } from "utils/testRenderTheme";
 
+const mock = {
+  title: "seção1",
+  description: "Descrição da seção",
+};
 describe("<AboutDescription />", () => {
   it("should render ", () => {
-    const { container } = renderTheme(<AboutDescription />);
+    const { container } = renderTheme(<AboutDescription {...mock} />);
     expect(container).toMatchSnapshot();
   });
   it("should have a title section and myDescription text ", () => {
-    renderTheme(<AboutDescription />);
+    renderTheme(<AboutDescription {...mock} />);
 
     const title = screen.getByRole("heading", {
-      name: /um pouco sobre mim/i,
+      name: /seção1/i,
     });
 
     const myDescription = screen.getByLabelText(

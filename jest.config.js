@@ -11,10 +11,10 @@ module.exports = {
     "!src/components/**/style.ts",
     "!src/styles/*.ts",
     "!src/types/*.ts",
-    "!src/utils/*/.ts(x)",
+    "!src/utils/**",
   ],
   setupFilesAfterEnv: ["<rootDir>/.jest/setup.ts"],
-  modulePaths: ["<rootDir>/src/"],
+  modulePaths: ["<rootDir>/src/", "<rootDir>/.jest"],
   globals: {
     "ts-jest": {
       // ...

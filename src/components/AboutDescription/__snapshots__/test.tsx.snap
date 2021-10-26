@@ -31,7 +31,8 @@ exports[`<AboutDescription /> should render  1`] = `
   width: 100vw;
   padding: 5rem 1rem;
   background: white;
-  margin-top: -7rem;
+  margin-top: 0;
+  margin-bottom: 2.4rem;
   -webkit-clip-path: polygon(0 0,100% 15%,100% 100%,0 85%);
   clip-path: polygon(0 0,100% 15%,100% 100%,0 85%);
 }
@@ -56,6 +57,7 @@ exports[`<AboutDescription /> should render  1`] = `
 <div>
   <div
     class="c0"
+    data-testid="containerEffectClipPath"
   >
     <div
       class="c1"
@@ -63,21 +65,13 @@ exports[`<AboutDescription /> should render  1`] = `
       <h1
         class="c2"
       >
-        Um pouco sobre mim
+        seção1
       </h1>
       <p
         aria-label="Texto com a descrição do Programador"
         class="c3"
       >
-        Sou um Desenvolvedor a princípio Front End, com foco em
-        <strong>
-           React | Next.js
-        </strong>
-        , apaixonado pela Programação estou em constante aprendizado e desenvolvimento profissional sempre me atualizando, no momento crio projetos Pesssoais e freelances voltados a Desenvolvimento Web, mas ao mesmo tempo estudando sobre desenvolvimento Mobile com 
-        <strong>
-          React Native
-        </strong>
-         .
+        Descrição da seção
       </p>
     </div>
   </div>
