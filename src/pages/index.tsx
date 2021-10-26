@@ -1,9 +1,10 @@
-import AboutDescription from "components/AboutDescription";
+import AboutDescription from "components/globalComponents/AboutDescription";
 import Head from "next/head";
 import SectionHome from "components/Home";
 import SectionProject from "components/SectionProject/MainProject";
 
 import { about } from "utils/descriptionAbout/about";
+import SectionSkilss from "components/SectionSkilss/MainSkilss";
 
 export default function Home() {
   return (
@@ -41,6 +42,8 @@ export default function Home() {
       <AboutDescription {...about.aboutPersonal} mt="-7rem" />
       <SectionProject />
       <AboutDescription {...about.aboutProjects} mt="2rem" />
+      <SectionSkilss />
+      <AboutDescription {...about.aboutSkills} mt="3rem" />
     </>
   );
 }

@@ -7,6 +7,7 @@ const mockImage = {
   title: "LeScone",
   img: "https://res.cloudinary.com/defnibbpl/image/upload/v1634678383/Lescone_9fb07ad59b.gif",
   buttonCode: "https://github.com/Henrique-Santos-2304/Restaurante-LeScone",
+  marginBox: "1rem",
 };
 describe("<CardBox />", () => {
   it("should render ", () => {

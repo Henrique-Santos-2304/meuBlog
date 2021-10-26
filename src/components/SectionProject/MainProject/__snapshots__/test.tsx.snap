@@ -8,26 +8,6 @@ exports[`<SectionProject /> should render  1`] = `
   padding: 1rem 0 3rem;
 }
 
-.c10 {
-  bottom: -3rem;
-}
-
-.c10 ul:last-child {
-  color: #b7f600;
-}
-
-.c10 ul li {
-  color: #b7f600;
-}
-
-.c10 ul li.slick-active button::before {
-  color: #b7f600;
-}
-
-.c10 ul li button::before {
-  font-size: 2.3rem;
-}
-
 .c1 {
   position: relative;
   width: -webkit-max-content;
@@ -54,9 +34,9 @@ exports[`<SectionProject /> should render  1`] = `
   background: #b7f600;
 }
 
-.c2 {
+.c3 {
   width: 100vw;
-  margin-top: 2rem;
+  margin: 2rem 0 1rem;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -69,26 +49,26 @@ exports[`<SectionProject /> should render  1`] = `
   flex-direction: column;
 }
 
-.c3 {
+.c4 {
   width: 100%;
   padding: 0.9rem 0;
   background: rgba(0,0,0,0.84);
 }
 
-.c4 {
+.c5 {
   text-align: center;
   font-size: 1.8rem;
   color: #b7f600;
   font-style: italic;
 }
 
-.c5 {
+.c6 {
   width: 100%;
   height: 30rem;
   position: relative;
 }
 
-.c6 {
+.c7 {
   width: 100%;
   padding: 2rem 0;
   background: rgba(0,0,0,0.84);
@@ -106,7 +86,7 @@ exports[`<SectionProject /> should render  1`] = `
   justify-content: space-evenly;
 }
 
-.c7 {
+.c8 {
   font-size: 1.4rem;
   font-weight: 700;
   color: #1e1e1e;
@@ -118,13 +98,13 @@ exports[`<SectionProject /> should render  1`] = `
   cursor: pointer;
 }
 
-.c7:hover {
+.c8:hover {
   -webkit-filter: brightness(0.7);
   filter: brightness(0.7);
   border: 0.1rem solid #f8f8f8;
 }
 
-.c8 {
+.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -141,9 +121,33 @@ exports[`<SectionProject /> should render  1`] = `
   color: #f8f8f8;
 }
 
-.c9 {
+.c10 {
   margin-right: 0.8rem;
   font-size: 1.8rem;
+}
+
+.c2 {
+  position: relative;
+}
+
+.c11 {
+  bottom: -2.4rem;
+}
+
+.c11 ul:last-child {
+  color: #b7f600;
+}
+
+.c11 ul li {
+  color: #b7f600;
+}
+
+.c11 ul li.slick-active button::before {
+  color: #b7f600;
+}
+
+.c11 ul li button::before {
+  font-size: 2.3rem;
 }
 
 <div>
@@ -156,7 +160,7 @@ exports[`<SectionProject /> should render  1`] = `
       Meus Projetos
     </h1>
     <div
-      class="slick-slider slick-initialized"
+      class="slick-slider c2 slick-initialized"
       dir="ltr"
     >
       <div
@@ -175,21 +179,21 @@ exports[`<SectionProject /> should render  1`] = `
           >
             <div>
               <div
-                class="c2"
+                aria-label="Titulo do projeto"
+                class="c3"
               >
                 <header
-                  aria-label="Titulo do projeto"
-                  class="c3"
+                  class="c4"
                 >
                   <h1
-                    class="c4"
+                    class="c5"
                   >
                     LeScone
                   </h1>
                 </header>
                 <div
                   aria-label="Imagem do projeto"
-                  class="c5"
+                  class="c6"
                 >
                   <div
                     style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
@@ -205,11 +209,11 @@ exports[`<SectionProject /> should render  1`] = `
                   </div>
                 </div>
                 <footer
-                  class="c6"
+                  class="c7"
                 >
                   <button
                     aria-label="Link para detalhes do Projeto"
-                    class="c7"
+                    class="c8"
                   >
                     Sobre
                   </button>
@@ -219,10 +223,10 @@ exports[`<SectionProject /> should render  1`] = `
                   >
                     <button
                       aria-label="Link para código do Projeto"
-                      class="c7 c8"
+                      class="c8 c9"
                     >
                       <svg
-                        class="c9"
+                        class="c10"
                         fill="currentColor"
                         height="1em"
                         stroke="currentColor"
@@ -251,21 +255,21 @@ exports[`<SectionProject /> should render  1`] = `
           >
             <div>
               <div
-                class="c2"
+                aria-label="Titulo do projeto"
+                class="c3"
               >
                 <header
-                  aria-label="Titulo do projeto"
-                  class="c3"
+                  class="c4"
                 >
                   <h1
-                    class="c4"
+                    class="c5"
                   >
                     Multitech
                   </h1>
                 </header>
                 <div
                   aria-label="Imagem do projeto"
-                  class="c5"
+                  class="c6"
                 >
                   <div
                     style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
@@ -281,11 +285,11 @@ exports[`<SectionProject /> should render  1`] = `
                   </div>
                 </div>
                 <footer
-                  class="c6"
+                  class="c7"
                 >
                   <button
                     aria-label="Link para detalhes do Projeto"
-                    class="c7"
+                    class="c8"
                   >
                     Sobre
                   </button>
@@ -295,10 +299,10 @@ exports[`<SectionProject /> should render  1`] = `
                   >
                     <button
                       aria-label="Link para código do Projeto"
-                      class="c7 c8"
+                      class="c8 c9"
                     >
                       <svg
-                        class="c9"
+                        class="c10"
                         fill="currentColor"
                         height="1em"
                         stroke="currentColor"
@@ -327,21 +331,21 @@ exports[`<SectionProject /> should render  1`] = `
           >
             <div>
               <div
-                class="c2"
+                aria-label="Titulo do projeto"
+                class="c3"
               >
                 <header
-                  aria-label="Titulo do projeto"
-                  class="c3"
+                  class="c4"
                 >
                   <h1
-                    class="c4"
+                    class="c5"
                   >
                     HdcAgency
                   </h1>
                 </header>
                 <div
                   aria-label="Imagem do projeto"
-                  class="c5"
+                  class="c6"
                 >
                   <div
                     style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
@@ -357,11 +361,11 @@ exports[`<SectionProject /> should render  1`] = `
                   </div>
                 </div>
                 <footer
-                  class="c6"
+                  class="c7"
                 >
                   <button
                     aria-label="Link para detalhes do Projeto"
-                    class="c7"
+                    class="c8"
                   >
                     Sobre
                   </button>
@@ -371,10 +375,10 @@ exports[`<SectionProject /> should render  1`] = `
                   >
                     <button
                       aria-label="Link para código do Projeto"
-                      class="c7 c8"
+                      class="c8 c9"
                     >
                       <svg
-                        class="c9"
+                        class="c10"
                         fill="currentColor"
                         height="1em"
                         stroke="currentColor"
@@ -397,7 +401,7 @@ exports[`<SectionProject /> should render  1`] = `
         </div>
       </div>
       <div
-        class="c10 slick-dots"
+        class="c11 slick-dots"
       >
         <ul
           aria-label="Botões para trocar as fotos"

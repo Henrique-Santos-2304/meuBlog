@@ -1,18 +1,18 @@
 import "match-media-mock";
+import SectionSkilss from ".";
 import { screen } from "@testing-library/react";
-import SectionProject from ".";
-
 import { renderTheme } from "utils/testRenderTheme";
 
-describe("<SectionProject />", () => {
+describe("<SectionSkilss />", () => {
   it("should render ", () => {
-    const { container } = renderTheme(<SectionProject />);
+    const { container } = renderTheme(<SectionSkilss />);
     expect(container).toMatchSnapshot();
   });
   it("should render ", () => {
-    renderTheme(<SectionProject />);
+    renderTheme(<SectionSkilss />);
+
     const title = screen.getByRole("heading", {
-      name: /meus projetos/i,
+      name: /minhas habilidades/i,
     });
 
     expect(title).toBeInTheDocument();

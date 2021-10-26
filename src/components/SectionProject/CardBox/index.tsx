@@ -5,10 +5,11 @@ type cardsSlides = {
   title: string;
   img: string;
   buttonCode: string;
+  marginBox: string;
 };
-const CardBox = ({ title, img, buttonCode }: cardsSlides) => (
-  <S.ContentSection>
-    <S.ContentTitle aria-label="Titulo do projeto">
+const CardBox = ({ title, img, buttonCode, marginBox }: cardsSlides) => (
+  <S.ContentSection marginBox={marginBox} aria-label="Titulo do projeto">
+    <S.ContentTitle>
       <S.TitleProject>{title}</S.TitleProject>
     </S.ContentTitle>
     <S.Wrapper aria-label="Imagem do projeto">

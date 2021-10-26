@@ -3,7 +3,7 @@
 exports[`<CardBox /> should render  1`] = `
 .c0 {
   width: 100vw;
-  margin-top: 2rem;
+  margin: 1rem;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -95,10 +95,10 @@ exports[`<CardBox /> should render  1`] = `
 
 <div>
   <div
+    aria-label="Titulo do projeto"
     class="c0"
   >
     <header
-      aria-label="Titulo do projeto"
       class="c1"
     >
       <h1

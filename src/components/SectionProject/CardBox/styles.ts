@@ -2,9 +2,12 @@ import styled, { css } from "styled-components";
 import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 
-export const ContentSection = styled.div`
+type marginProps = {
+  marginBox: string;
+};
+export const ContentSection = styled.div<marginProps>`
   width: 100vw;
-  margin-top: 2rem;
+  margin: ${({ marginBox }) => marginBox};
   height: max-content;
   display: flex;
   flex-direction: column;
