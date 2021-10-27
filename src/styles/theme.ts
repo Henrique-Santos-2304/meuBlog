@@ -15,6 +15,7 @@ export default {
     bgPrimary: "#75dcc6",
     bgSecondary: "#486afe",
     effectsPrimary: "#b7f600",
+    attention: "#D3D542",
 
     primary: "#f8f8f8",
     secondary: "#1e1e1e",

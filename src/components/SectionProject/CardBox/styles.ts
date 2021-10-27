@@ -27,8 +27,7 @@ export const TitleProject = styled.h1`
 `;
 export const Wrapper = styled.div`
   width: 100%;
-  height: 30rem;
-
+  height: 25rem;
   position: relative;
 `;
 

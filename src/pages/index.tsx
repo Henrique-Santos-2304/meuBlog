@@ -5,6 +5,7 @@ import SectionProject from "components/SectionProject/MainProject";
 
 import { about } from "utils/descriptionAbout/about";
 import SectionSkilss from "components/SectionSkilss/MainSkilss";
+import MainContact from "components/SectionContact/MainContact";
 
 export default function Home() {
   return (
@@ -44,6 +45,7 @@ export default function Home() {
       <AboutDescription {...about.aboutProjects} mt="2rem" />
       <SectionSkilss />
       <AboutDescription {...about.aboutSkills} mt="3rem" />
+      <MainContact />
     </>
   );
 }
