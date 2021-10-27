@@ -8,4 +8,11 @@ describe("<MainContact />", () => {
     expect(container).toMatchSnapshot();
     screen.logTestingPlaygroundURL();
   });
+  it("should render ", () => {
+    renderTheme(<MainContact />);
+    const title = screen.getByRole("heading", {
+      name: /contato/i,
+    });
+    expect(title).toBeInTheDocument();
+  });
 });

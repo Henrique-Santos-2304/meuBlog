@@ -86,10 +86,10 @@ exports[`Header should render  1`] = `
 }
 
 <div>
-  <main
+  <section
     class="c0"
   >
-    <div
+    <article
       aria-label="Minha Apresentação"
       class="c1"
       data-testid="apresentation"
@@ -114,8 +114,8 @@ exports[`Header should render  1`] = `
       >
         Desenvolvedor FrontEnd
       </p>
-    </div>
-    <div
+    </article>
+    <main
       class="c5"
     >
       <div
@@ -132,7 +132,7 @@ exports[`Header should render  1`] = `
         />
         <noscript />
       </div>
-    </div>
-  </main>
+    </main>
+  </section>
 </div>
 `;

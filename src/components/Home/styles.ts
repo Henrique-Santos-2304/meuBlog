@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 import Image from "next/image";
 
-export const MyDescription = styled.main`
+export const MyDescription = styled.section`
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -9,7 +9,7 @@ export const MyDescription = styled.main`
   height: 75vh;
 `;
 
-export const ContentDescription = styled.div`
+export const ContentDescription = styled.article`
   ${({ theme }) => css`
     width: max-content;
     padding: 1rem 2.9rem 1rem 1.4rem;
@@ -64,7 +64,7 @@ export const Dev = styled.p`
   margin-left: 1.3rem;
 `;
 
-export const PhotoContent = styled.div`
+export const PhotoContent = styled.main`
   position: relative;
   width: 30rem;
   height: 44rem;

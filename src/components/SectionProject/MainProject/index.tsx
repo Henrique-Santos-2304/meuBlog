@@ -7,11 +7,11 @@ import SliderPhoto from "components/globalComponents/SliderPhoto";
 
 const SectionProject = () => {
   return (
-    <S.Wrapper>
+    <S.Wrapper id="projects">
       <Headings
         msg="Meus Projetos"
         fontSizeText="2rem"
-        marginText="0 0 1.4rem 2rem"
+        marginText="0 0 1.4rem 3rem"
         aria-label="Titulo da seção"
       />
 

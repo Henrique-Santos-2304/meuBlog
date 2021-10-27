@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ContentSkilss = styled.div`
+export const ContentSkilss = styled.section`
   margin: 2rem 0;
 `;
 

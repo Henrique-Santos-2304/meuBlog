@@ -7,7 +7,7 @@ exports[`<FormEmail /> should render  1`] = `
 
 .c1 {
   padding: 3rem 0.5rem;
-  margin: 0 auto;
+  margin: -1rem auto;
   width: 80%;
   display: -webkit-box;
   display: -webkit-flex;

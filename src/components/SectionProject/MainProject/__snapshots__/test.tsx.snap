@@ -15,7 +15,7 @@ exports[`<SectionProject /> should render  1`] = `
   width: max-content;
   color: #f8f8f8;
   padding: 0;
-  margin: 0 0 1.4rem 2rem;
+  margin: 0 0 1.4rem 3rem;
   font-size: 2rem;
   font-family: "Roboto",monospace;
 }
@@ -151,8 +151,9 @@ exports[`<SectionProject /> should render  1`] = `
 }
 
 <div>
-  <div
+  <section
     class="c0"
+    id="projects"
   >
     <h1
       class="c1"
@@ -432,6 +433,6 @@ exports[`<SectionProject /> should render  1`] = `
         </ul>
       </div>
     </div>
-  </div>
+  </section>
 </div>
 `;

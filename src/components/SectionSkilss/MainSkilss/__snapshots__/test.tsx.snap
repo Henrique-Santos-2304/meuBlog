@@ -8,7 +8,7 @@ exports[`<SectionSkilss /> should render  1`] = `
   width: max-content;
   color: #f8f8f8;
   padding: 0;
-  margin: 0 0 2rem 2rem;
+  margin: 0 0 2rem 3rem;
   font-size: 2rem;
   font-family: "Roboto",monospace;
 }
@@ -146,8 +146,9 @@ exports[`<SectionSkilss /> should render  1`] = `
 }
 
 <div>
-  <div
+  <section
     class="c0"
+    id="skilss"
   >
     <h1
       class="c1"
@@ -793,6 +794,6 @@ exports[`<SectionSkilss /> should render  1`] = `
         </ul>
       </div>
     </div>
-  </div>
+  </section>
 </div>
 `;

@@ -18,7 +18,7 @@ export const ModalForm = styled.div`
 `;
 export const Form = styled.form`
   padding: 3rem 0.5rem;
-  margin: 0 auto;
+  margin: -1rem auto;
   width: 80%;
   display: flex;
   flex-direction: column;

@@ -6,13 +6,13 @@ import * as S from "./styles";
 const SectionSkilss = () => {
   return (
     <>
-      <S.ContentSkilss>
+      <S.ContentSkilss id="skilss">
         <Headings
           msg="Minhas Habilidades"
           colorEffect="#b7f600"
           colorText="#f8f8f8"
           fontSizeText="2rem"
-          marginText="0 0 2rem 2rem"
+          marginText="0 0 2rem 3rem"
           aria-label="Titulo da seção"
         />
         <SliderPhoto
