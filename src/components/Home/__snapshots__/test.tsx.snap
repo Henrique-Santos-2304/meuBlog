@@ -103,7 +103,7 @@ exports[`Header should render  1`] = `
         class="c3"
         title="Meu Nome"
       >
-        Sou 
+        Sou
         <strong>
            Henrique
         </strong>

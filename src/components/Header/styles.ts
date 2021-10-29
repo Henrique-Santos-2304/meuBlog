@@ -1,5 +1,4 @@
 import styled, { css } from "styled-components";
-import { MdDragIndicator } from "react-icons/md";
 
 export const WrapperHeader = styled.header`
   width: 100vw;
@@ -35,14 +34,5 @@ export const Logo = styled.p`
       height: 0.3rem;
       background: ${theme.colors.effectsPrimary};
     }
-  `}
-`;
-
-export const Icon = styled(MdDragIndicator).attrs({
-  title: "Abrir Menu",
-})`
-  ${({ theme }) => css`
-    font-size: ${theme.font.sizes.xxbiglarge};
-    color: ${theme.colors.primary};
   `}
 `;

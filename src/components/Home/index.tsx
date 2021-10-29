@@ -9,7 +9,8 @@ const Home = () => (
       >
         <S.Welcome>Bem vindo(a),</S.Welcome>
         <S.Name>
-          Sou <strong> Henrique</strong>,
+          Sou
+          <strong> Henrique</strong>,
         </S.Name>
         <S.Dev>Desenvolvedor FrontEnd</S.Dev>
       </S.ContentDescription>
