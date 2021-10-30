@@ -122,12 +122,12 @@ const GlobalStyles = createGlobalStyle`
   body {
     ${({ theme }) => css`
       background-image: linear-gradient(
-        to bottom right,
+        to right,
         ${theme.colors.bgPrimary},
-        ${theme.colors.bgSecondary} 43%
+        ${theme.colors.bgSecondary} 48%
       );
       background-size: 200% 200%;
-      animation: ${animateGradient} 3s linear infinite alternate;
+      animation: ${animateGradient} 4s linear infinite alternate;
       font-size: ${theme.font.sizes.xlarge};
       font-family: ${theme.font.family.Poppins};
     `}

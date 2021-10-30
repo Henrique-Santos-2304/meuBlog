@@ -55,6 +55,12 @@ exports[`<SliderPhoto /> should have cards slides  1`] = `
   position: relative;
 }
 
+@media (min-width:620px) {
+  .c0 {
+    border-radius: 2rem;
+  }
+}
+
 <div>
   <div
     class="slick-slider c0 slick-initialized"

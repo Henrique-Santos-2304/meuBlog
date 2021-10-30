@@ -3,31 +3,23 @@
 import CardBox from "components/SectionProject/CardBox";
 import BoxSkilss from "components/SectionSkilss/BoxSkilss";
 import * as S from "./styles";
+import { slideImageprops } from "types/typesComponents/typesSlide";
 
-type imagesProps = {
-  img: string;
-  title: string;
-  buttonCode?: string;
-};
-type slideImageprops = {
-  images: imagesProps[];
-  receptorCards: "skilss" | "projects";
-  slidesToShow: number;
-  marginBox: string;
-};
 const SliderPhoto = ({
   images,
   receptorCards,
   slidesToShow,
   marginBox,
+  responsive,
 }: slideImageprops) => {
   const settings = {
     dots: true,
     infinite: false,
-    speed: 500,
+    speed: 1000,
     slidesToShow: slidesToShow,
     slidesToScroll: 1,
     arrows: false,
+    responsive,
     appendDots: (dots: any) => (
       <S.Dots>
         <ul aria-label="Botões para trocar as fotos"> {dots} </ul>

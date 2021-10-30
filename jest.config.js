@@ -10,7 +10,7 @@ module.exports = {
     "!src/pages/index.tsx",
     "!src/components/**/style.ts",
     "!src/styles/*.ts",
-    "!src/types/*.ts",
+    "!src/types/**",
     "!src/utils/**",
   ],
   setupFilesAfterEnv: ["<rootDir>/.jest/setup.ts"],

@@ -2,7 +2,7 @@
 
 exports[`<ButtonToogleMenu /> should render  1`] = `
 .c0 {
-  color: #1e1e1e;
+  color: #f8f8f8;
   font-size: 2.8rem;
 }
 

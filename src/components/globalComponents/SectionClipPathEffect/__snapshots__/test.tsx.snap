@@ -3,7 +3,7 @@
 exports[`<SectionClipPathEffect /> should render  1`] = `
 .c0 {
   width: 100vw;
-  padding: 7rem 1rem;
+  padding: 2.4rem 1rem 4rem;
   background: white;
   margin-top: 0;
   margin-bottom: 2.4rem;
@@ -11,14 +11,35 @@ exports[`<SectionClipPathEffect /> should render  1`] = `
   clip-path: polygon(0 0,100% 15%,100% 100%,0 90%);
 }
 
+.c1 {
+  max-width: 85rem;
+  margin: 0 auto;
+}
+
+@media (min-width:620px) {
+  .c1 {
+    padding: 0 2.4rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    padding: 0 4.0rem;
+  }
+}
+
 <div>
   <div
     class="c0"
     data-testid="containerEffectClipPath"
   >
-    <p>
-      Section Clip Path
-    </p>
+    <div
+      class="c1"
+    >
+      <p>
+        Section Clip Path
+      </p>
+    </div>
   </div>
 </div>
 `;

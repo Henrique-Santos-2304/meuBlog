@@ -10,11 +10,11 @@ exports[`<Header /> should render  1`] = `
 }
 
 .c1 {
-  max-width: 78rem;
+  max-width: 85rem;
   margin: 0 auto;
 }
 
-.c4 {
+.c5 {
   width: 100%;
   max-width: 32rem;
   height: 0;
@@ -24,16 +24,16 @@ exports[`<Header /> should render  1`] = `
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  z-index: 10;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+  z-index: 11;
   background: rgba(0,0,0,0.91);
   border-radius: 2rem 0 0 2rem;
   border: 0.5rem inset #486afe;
   border-right: 0;
 }
 
-.c6 {
+.c7 {
   width: 12rem;
   height: 12rem;
   border-radius: 50%;
@@ -46,17 +46,17 @@ exports[`<Header /> should render  1`] = `
   transition: transform 0.3s;
 }
 
-.c6 img {
+.c7 img {
   border-radius: 50%;
 }
 
-.c6:hover {
+.c7:hover {
   -webkit-transform: translate(0,-10%);
   -ms-transform: translate(0,-10%);
   transform: translate(0,-10%);
 }
 
-.c5 {
+.c6 {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -74,16 +74,16 @@ exports[`<Header /> should render  1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   opacity: 0;
 }
 
 .c2 {
-  background: rgba(255,255,255,0.55);
+  background: rgba(0,0,0,0.65);
   padding: 0.3rem;
   position: fixed;
-  top: 2rem;
+  top: 2.6rem;
   right: 3rem;
   border-radius: 50%;
   display: -webkit-box;
@@ -100,25 +100,35 @@ exports[`<Header /> should render  1`] = `
   justify-content: center;
   z-index: 11;
   cursor: pointer;
-  -webkit-transition: all.3s linear;
-  transition: all.3s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .c2:hover {
-  -webkit-transform: translate(-5%,-5%);
-  -ms-transform: translate(-5%,-5%);
-  transform: translate(-5%,-5%);
-  -webkit-filter: brightness(0.7);
-  filter: brightness(0.7);
+  border: 0.1rem solid #f8f8f8;
+  -webkit-filter: brightness(0.9);
+  filter: brightness(0.9);
 }
 
-.c7 {
+.c4 {
+  background: rgba(0,0,0,0.55);
+  height: 0;
+  width: 0;
+  position: fixed;
+  top: -100vh;
+  right: 0;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+  z-index: 10;
+}
+
+.c8 {
   color: #f8f8f8;
   margin: 1.5rem 0;
   position: relative;
 }
 
-.c7:hover::before {
+.c8:hover::before {
   content: "";
   position: absolute;
   bottom: -1rem;
@@ -133,12 +143,12 @@ exports[`<Header /> should render  1`] = `
 }
 
 .c3 {
-  color: #1e1e1e;
+  color: #f8f8f8;
   font-size: 2.8rem;
 }
 
-.c8 {
-  width: 100vw;
+.c9 {
+  max-width: 85rem;
   height: 12vh;
   display: -webkit-box;
   display: -webkit-flex;
@@ -155,33 +165,82 @@ exports[`<Header /> should render  1`] = `
   padding: 0 3rem;
 }
 
-.c9 {
-  padding: 1.6rem;
+.c10 {
+  padding: 0.8rem 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
-.c10 {
+.c11 {
+  width: 3.4rem;
+  height: 3.6rem;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 0.3rem;
+}
+
+.c12 {
   font-size: 3.8rem;
   font-family: 'Tangerine',cursive;
   color: #b7f600;
-  position: relative;
   font-weight: 800;
 }
 
-.c10 span {
+.c12 span {
   color: #1e1e1e;
 }
 
-.c10::before {
-  content: "";
-  position: absolute;
-  bottom: -0.4rem;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  width: 80%;
-  height: 0.3rem;
-  background: #b7f600;
+@media (min-width:620px) {
+  .c5 {
+    top: -76vh;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    border-radius: 2rem;
+    border: 0.5rem solid #486afe;
+    max-width: 0;
+  }
+}
+
+@media (max-width:620px) {
+  .c5 {
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
+@media (min-width:620px) {
+  .c2 {
+    right: calc(50% - 30rem);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width:620px) {
+  .c4 {
+    top: 0;
+    right: -100vw;
+  }
+}
+
+@media (min-width:620px) {
+  .c9 {
+    margin-left: 2rem;
+  }
 }
 
 <div>
@@ -221,14 +280,78 @@ exports[`<Header /> should render  1`] = `
         </svg>
       </button>
       <div
-        aria-label="Menu de nagação de telas"
         class="c4"
       >
-        <nav
+        <div
+          aria-label="Menu de nagação de telas"
           class="c5"
         >
-          <div
+          <nav
             class="c6"
+          >
+            <div
+              class="c7"
+            >
+              <div
+                style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
+              >
+                <img
+                  data-nimg="fill"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                />
+                <noscript />
+              </div>
+            </div>
+            <div
+              class="c8"
+            >
+              <a
+                href="/#"
+              >
+                Inicio
+              </a>
+            </div>
+            <div
+              class="c8"
+            >
+              <a
+                href="/#projects"
+              >
+                Projetos
+              </a>
+            </div>
+            <div
+              class="c8"
+            >
+              <a
+                href="/#skilss"
+              >
+                Habilidades
+              </a>
+            </div>
+            <div
+              class="c8"
+            >
+              <a
+                href="/#contacts"
+              >
+                Contato
+              </a>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <header
+        class="c9"
+      >
+        <div
+          aria-label="Logo do Portfólio"
+          class="c10"
+        >
+          <div
+            class="c11"
           >
             <div
               style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
@@ -242,62 +365,15 @@ exports[`<Header /> should render  1`] = `
               <noscript />
             </div>
           </div>
-          <div
-            class="c7"
-          >
-            <a
-              href="/#"
-            >
-              Inicio
-            </a>
-          </div>
-          <div
-            class="c7"
-          >
-            <a
-              href="/#projects"
-            >
-              Projetos
-            </a>
-          </div>
-          <div
-            class="c7"
-          >
-            <a
-              href="/#skilss"
-            >
-              Habilidades
-            </a>
-          </div>
-          <div
-            class="c7"
-          >
-            <a
-              href="/#contacts"
-            >
-              Contato
-            </a>
-          </div>
-        </nav>
-      </div>
-      <header
-        class="c8"
-      >
-        <a
-          aria-label="Logo do Portfólio"
-          class="c9"
-          href="#"
-          title="logo"
-        >
           <p
-            class="c10"
+            class="c12"
           >
             Web
             <span>
               Dev
             </span>
           </p>
-        </a>
+        </div>
       </header>
     </div>
   </div>

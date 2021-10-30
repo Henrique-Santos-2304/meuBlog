@@ -1,9 +1,19 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const ContentSkilss = styled.section`
-  margin: 2rem 0;
+  ${({ theme }) => css`
+    padding: 2rem 0;
+    max-width: ${theme.grid.containerContent};
+    margin: 0 auto;
+    @media (min-width: ${theme.media.medium}) {
+      padding: 2rem ${theme.spacings.small};
+    }
+    @media (min-width: ${theme.media.xmedium}) {
+      padding: 2rem ${theme.spacings.large};
+    }
+  `}
 `;
 
 export const Span = styled.div`
-  margin: 2rem 0;
+  margin: 4.6rem 0;
 `;

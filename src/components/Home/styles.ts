@@ -2,18 +2,28 @@ import styled, { css } from "styled-components";
 import Image from "next/image";
 
 export const MyDescription = styled.section`
+  ${({ theme }) => css`}
+  max-width: ${theme.grid.containerContent};
+  margin: 0 auto;
   text-align: center;
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  height: 75vh;
+
+
+  @media ( min-width: ${theme.media.medium}){
+    padding: 0 ${theme.spacings.small};
+  }
+  @media ( min-width: ${theme.media.medium}){
+    padding: 0 ${theme.spacings.xxlarge} ;
+  }
+  `}
 `;
 
 export const ContentDescription = styled.article`
   ${({ theme }) => css`
     width: max-content;
     padding: 1rem 2.9rem 1rem 1.4rem;
-    margin: 2.4rem 0 0 2rem;
+    margin: 1rem 0 0 2rem;
     background: rgba(255, 255, 255, 0.15);
     color: ${theme.colors.secondary};
     display: flex;
@@ -32,6 +42,10 @@ export const ContentDescription = styled.article`
       height: 80%;
       width: 0.3rem;
       background: ${theme.colors.effectsPrimary};
+    }
+
+    @media (min-width: ${theme.media.xmedium}) {
+      margin-left: 15rem;
     }
   `}
 `;
@@ -65,11 +79,18 @@ export const Dev = styled.p`
 `;
 
 export const PhotoContent = styled.main`
+  ${({ theme }) => css`}
   position: relative;
   width: 30rem;
-  height: 44rem;
+  height: 41rem;
   align-self: flex-end;
   justify-self: flex-end;
+
+  @media (min-width: ${theme.media.xmedium}) {
+      margin-right: 10rem;
+
+    }
+  `}
 `;
 
 export const PhotoUser = styled(Image)``;

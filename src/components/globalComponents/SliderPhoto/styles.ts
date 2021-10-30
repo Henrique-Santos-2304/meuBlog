@@ -1,11 +1,17 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import Slider from "react-slick";
 
 export const SliderBox = styled(Slider)`
-  position: relative;
+  ${({ theme }) => css`
+    position: relative;
+
+    @media (min-width: ${theme.media.medium}) {
+      border-radius: 2rem;
+    }
+  `}
 `;
 export const Dots = styled.div`
-  bottom: -2.4rem;
+  bottom: -2.2rem;
   ul {
     &:last-child {
       color: ${({ theme }) => theme.colors.effectsPrimary};

@@ -1,26 +1,34 @@
 import * as S from "./styles";
-import Link from "next/link";
 
 const IconsContact = () => (
   <>
     <S.Wrapper>
-      <Link href="https://github.com/Henrique-Santos-2304" passHref>
+      <S.Links href="https://github.com/Henrique-Santos-2304" passHref>
         <S.Anchor>
-          <S.Github />
+          <S.ContentIcon>
+            <S.Github />
+          </S.ContentIcon>
         </S.Anchor>
-      </Link>
+      </S.Links>
 
-      <Link href="https://www.linkedin.com/in/henriquewebdeveloper/" passHref>
+      <S.Links
+        href="https://www.linkedin.com/in/henriquewebdeveloper/"
+        passHref
+      >
         <S.Anchor>
-          <S.Linkedin />
+          <S.ContentIcon>
+            <S.Linkedin />
+          </S.ContentIcon>
         </S.Anchor>
-      </Link>
+      </S.Links>
 
-      <Link href="https://spfc.net" passHref>
-        <S.Anchor>
-          <S.Whatsapp />
+      <S.Links href="https://spfc.net" passHref>
+        <S.Anchor title="11.96636-5190">
+          <S.ContentIcon>
+            <S.Whatsapp />
+          </S.ContentIcon>
         </S.Anchor>
-      </Link>
+      </S.Links>
     </S.Wrapper>
   </>
 );

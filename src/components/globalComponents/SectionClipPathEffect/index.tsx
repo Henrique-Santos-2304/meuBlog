@@ -7,7 +7,7 @@ interface childrenProps extends props {
 }
 const SectionClipPathEffect = ({ children, mt }: childrenProps) => (
   <S.CliPathContent mt={mt} data-testid="containerEffectClipPath">
-    {children}
+    <S.ContentResponsive>{children}</S.ContentResponsive>
   </S.CliPathContent>
 );
 

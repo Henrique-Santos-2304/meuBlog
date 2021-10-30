@@ -6,7 +6,6 @@ describe("<MainContact />", () => {
   it("should render ", () => {
     const { container } = renderTheme(<MainContact />);
     expect(container).toMatchSnapshot();
-    screen.logTestingPlaygroundURL();
   });
   it("should render ", () => {
     renderTheme(<MainContact />);

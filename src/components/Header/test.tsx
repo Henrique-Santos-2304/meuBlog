@@ -11,17 +11,13 @@ describe("<Header />", () => {
     renderTheme(<Header />);
     const preText = screen.getByText(/web/i);
     const proText = screen.getByText(/dev/i);
-    const linkHomeLogo = screen.getByRole("link", {
-      name: /Logo do Portfólio/i,
-    });
+
     const buttonMenu = screen.getByRole("button", {
       name: /Botão Para abrir o Menu/i,
     });
 
-    expect(linkHomeLogo).toBeInTheDocument();
     expect(preText).toBeInTheDocument();
     expect(proText).toBeInTheDocument();
     expect(buttonMenu).toBeInTheDocument();
-    expect(linkHomeLogo).toHaveAttribute("href", "#");
   });
 });

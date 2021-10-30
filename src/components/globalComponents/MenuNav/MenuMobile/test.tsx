@@ -34,13 +34,16 @@ describe("<MenuNav />", () => {
     );
     expect(contentNavigation).toHaveStyle({ height: "0", right: "-32rem" });
     expect(navigation).toHaveStyle({ opacity: "0" });
+    expect(buttonToogleMenu).toHaveStyle({ background: "rgba(0, 0, 0, 0.65)" });
 
     fireEvent.click(buttonToogleMenu);
     expect(contentNavigation).toHaveStyle({ height: "76vh", right: "0" });
     expect(navigation).toHaveStyle({ opacity: "1" });
+    expect(buttonToogleMenu).toHaveStyle({ background: "transparent" });
 
     fireEvent.click(navigation!);
     expect(contentNavigation).toHaveStyle({ height: "0", right: "-32rem" });
     expect(navigation).toHaveStyle({ opacity: "0" });
+    expect(buttonToogleMenu).toHaveStyle({ background: "rgba(0, 0, 0, 0.65)" });
   });
 });

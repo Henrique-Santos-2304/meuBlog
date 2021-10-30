@@ -1,25 +1,29 @@
 import styled, { css } from "styled-components";
 
 export const Wrapper = styled.div`
-  position: relative;
+  ${({ theme }) => css`
+    position: relative;
+    max-width: ${theme.grid.containerContent};
+  `}
 `;
 export const ModalForm = styled.div`
-  width: max-content;
-  position: absolute;
-  top: -1rem;
-  left: 50%;
-  padding: 0.6rem 1.4rem;
-  transform: translateX(-50%);
-  font-size: 1.4rem;
-  background: rgba(255, 255, 255, 0.15);
-  color: ${({ theme }) => theme.colors.effectsPrimary};
-  text-align: center;
-  border-radius: 0.5rem;
+  ${({ theme }) => css`
+    position: absolute;
+    top: -1rem;
+    left: 50%;
+    padding: 0.6rem;
+    transform: translateX(-50%);
+    font-size: 1.4rem;
+    background: rgba(255, 255, 255, 0.15);
+    color: ${theme.colors.effectsPrimary};
+    text-align: center;
+    border-radius: 0.5rem;
+  `}
 `;
 export const Form = styled.form`
-  padding: 3rem 0.5rem;
+  padding: 1rem 0.5rem;
   margin: -1rem auto;
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,9 +32,9 @@ export const Form = styled.form`
 
 export const Inputs = styled.input`
   ${({ theme }) => css`
-    padding: ${theme.spacings.xxsmall};
+    padding: ${theme.spacings.xxsmall} ${theme.spacings.xsmall};
     border-bottom: 0.1rem solid ${theme.colors.secondary};
-    font-size: 0.8rem;
+    font-size: 1.4rem;
     background: transparent;
     border-radius: 0.7rem;
     text-align: start;
@@ -40,43 +44,56 @@ export const Inputs = styled.input`
     ::placeholder {
       color: rgba(0, 0, 0, 0.45);
     }
-    &:hover {
-      transform: translateY(-3%);
-    }
+
     &:hover,
     &:focus {
       background: rgba(255, 255, 255, 0.1);
       border: 0.1rem solid ${theme.colors.effectsPrimary};
     }
+
+    @media (min-width: ${theme.media.medium}) {
+      width: 28rem;
+    }
+    @media (min-width: ${theme.media.xmedium}) {
+      font-size: ${theme.font.sizes.medium};
+    }
   `}
 `;
 
 export const TextAreas = styled.textarea.attrs({
-  cols: 21,
+  cols: 25,
   rows: 6,
 })`
   ${({ theme }) => css`
-    padding: ${theme.spacings.xsmall};
+    padding: ${theme.spacings.xxsmall};
     overflow: hidden;
     border: 0;
+    font-size: 1.4rem;
+    font-family: ${theme.font.family.Poppins};
     background: rgba(0, 0, 0, 0.1);
     border-radius: 0.6rem;
     transition: all 0.3s linear;
     color: ${theme.colors.primary};
-    &:hover {
-      transform: translateY(-3%);
-    }
+
     ::placeholder {
       color: rgba(0, 0, 0, 0.45);
     }
+    &:hover,
     &:focus {
       border: 0.1rem solid ${theme.colors.effectsPrimary};
       outline: none;
+    }
+    @media (min-width: ${theme.media.medium}) {
+      width: 28rem;
+    }
+    @media (min-width: ${theme.media.xmedium}) {
+      font-size: ${theme.font.sizes.medium};
     }
   `}
 `;
 export const Button = styled.button`
   ${({ theme }) => css`
+    margin-bottom: 0.3rem;
     padding: 0.5rem ${theme.spacings.xsmall};
     background: transparent;
     color: ${theme.colors.effectsPrimary};

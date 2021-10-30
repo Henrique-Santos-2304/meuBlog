@@ -6,16 +6,31 @@ type marginProps = {
   marginBox: string;
 };
 export const ContentSection = styled.div<marginProps>`
-  width: 100vw;
-  margin: ${({ marginBox }) => marginBox};
-  height: max-content;
-  display: flex;
-  flex-direction: column;
+  ${({ theme, marginBox }) => css`
+    max-width: (100%, ${theme.grid.containerContent});
+    margin: ${marginBox};
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: ${theme.media.medium}) {
+      border-radius: 2rem;
+    }
+    @media (min-width: ${theme.media.xmedium}) {
+      padding: 0 8rem;
+    }
+  `}
 `;
 export const ContentTitle = styled.header`
-  width: 100%;
-  padding: 0.9rem 0;
-  background: rgba(0, 0, 0, 0.84);
+  ${({ theme }) => css`
+    width: 100%;
+    padding: 0.9rem 0;
+    background: rgba(0, 0, 0, 0.84);
+
+    @media (min-width: ${theme.media.medium}) {
+      border-radius: 1rem 1rem 0 0;
+    }
+  `}
 `;
 export const TitleProject = styled.h1`
   ${({ theme }) => css`
@@ -34,12 +49,17 @@ export const Wrapper = styled.div`
 export const PhotoProject = styled(Image)``;
 
 export const ContentButton = styled.footer`
-  width: 100%;
-  padding: 2rem 0;
-  background: rgba(0, 0, 0, 0.84);
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  ${({ theme }) => css`
+    width: 100%;
+    padding: 2rem 0;
+    background: rgba(0, 0, 0, 0.84);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    @media (min-width: ${theme.media.medium}) {
+      border-radius: 0 0 1rem 1rem;
+    }
+  `}
 `;
 export const ButtonAbout = styled.button`
   ${({ theme }) => css`

@@ -6,7 +6,7 @@ export const Wrapper = styled.div``;
 
 export const IconOpen = styled(MdDragIndicator)`
   ${({ theme }) => css`
-    color: ${theme.colors.secondary};
+    color: ${theme.colors.primary};
     font-size: 2.8rem;
   `}
 `;

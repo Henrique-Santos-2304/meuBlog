@@ -10,7 +10,7 @@ exports[`<Container /> should render  1`] = `
 }
 
 .c1 {
-  max-width: 78rem;
+  max-width: 85rem;
   margin: 0 auto;
 }
 

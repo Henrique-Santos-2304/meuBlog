@@ -2,7 +2,7 @@
 
 exports[`<CardBox /> should render  1`] = `
 .c0 {
-  width: 100vw;
+  max-width: (100%,85rem);
   margin: 1rem;
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -91,6 +91,30 @@ exports[`<CardBox /> should render  1`] = `
 .c7 {
   margin-right: 0.8rem;
   font-size: 1.8rem;
+}
+
+@media (min-width:620px) {
+  .c0 {
+    border-radius: 2rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    padding: 0 8rem;
+  }
+}
+
+@media (min-width:620px) {
+  .c1 {
+    border-radius: 1rem 1rem 0 0;
+  }
+}
+
+@media (min-width:620px) {
+  .c4 {
+    border-radius: 0 0 1rem 1rem;
+  }
 }
 
 <div>
