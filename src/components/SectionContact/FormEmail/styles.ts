@@ -21,8 +21,8 @@ export const ModalForm = styled.div`
   `}
 `;
 export const Form = styled.form`
-  padding: 1rem 0.5rem;
-  margin: -1rem auto;
+  padding: 0.3rem 0.5rem;
+  margin: 0rem auto;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -52,17 +52,17 @@ export const Inputs = styled.input`
     }
 
     @media (min-width: ${theme.media.medium}) {
-      width: 28rem;
+      width: 24rem;
     }
     @media (min-width: ${theme.media.xmedium}) {
-      font-size: ${theme.font.sizes.medium};
+      font-size: ${theme.font.sizes.small};
     }
   `}
 `;
 
 export const TextAreas = styled.textarea.attrs({
   cols: 25,
-  rows: 6,
+  rows: 5,
 })`
   ${({ theme }) => css`
     padding: ${theme.spacings.xxsmall};
@@ -84,10 +84,10 @@ export const TextAreas = styled.textarea.attrs({
       outline: none;
     }
     @media (min-width: ${theme.media.medium}) {
-      width: 28rem;
+      width: 24rem;
     }
     @media (min-width: ${theme.media.xmedium}) {
-      font-size: ${theme.font.sizes.medium};
+      font-size: ${theme.font.sizes.small};
     }
   `}
 `;
@@ -100,5 +100,11 @@ export const Button = styled.button`
     font-weight: 700;
     border-radius: 0.5rem;
     border: 0.1rem solid ${theme.colors.effectsPrimary};
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+      color: ${theme.colors.primary};
+      border: 0.1rem solid ${theme.colors.primary};
+    }
   `}
 `;

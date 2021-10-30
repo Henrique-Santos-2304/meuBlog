@@ -8,6 +8,12 @@ export const Wrapper = styled.section`
     h1 {
       text-align: center;
     }
+    @media (min-width: ${theme.media.medium}) {
+      padding: 2rem ${theme.spacings.small};
+    }
+    @media (min-width: ${theme.media.xmedium}) {
+      padding: 2rem ${theme.spacings.large};
+    }
   `}
 `;
 export const ContainerFooter = styled.footer`

@@ -21,6 +21,7 @@ const SectionProject = () => {
           images={images}
           receptorCards="projects"
           slidesToShow={1}
+          slidesToScroll={1}
           marginBox="2rem 0 1rem"
         />
       </S.ContentSlide>

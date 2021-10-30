@@ -11,7 +11,7 @@ export const ContainerSkilss = styled.div<marginProps>`
   justify-content: center;
   background: rgba(0, 0, 0, 0.55);
   margin: ${({ marginBox }) => marginBox};
-  padding: 2rem;
+  padding: 1rem 0.5rem;
   border-radius: 1rem;
   position: relative;
 
@@ -28,7 +28,7 @@ export const ContainerSkilss = styled.div<marginProps>`
 `;
 export const ContentImage = styled.div`
   width: 5rem;
-  height: 5rem;
+  height: 4rem;
   position: relative;
 `;
 export const ImageSkilss = styled(Image)``;

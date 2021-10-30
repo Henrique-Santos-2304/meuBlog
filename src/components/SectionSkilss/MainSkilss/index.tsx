@@ -48,6 +48,7 @@ const SectionSkilss = () => {
           images={images1}
           receptorCards="skilss"
           slidesToShow={4.4}
+          slidesToScroll={2}
           marginBox="2rem 1.5rem"
           responsive={responsiveSlide}
         />
@@ -56,6 +57,7 @@ const SectionSkilss = () => {
           images={images2}
           receptorCards="skilss"
           slidesToShow={4.4}
+          slidesToScroll={2}
           marginBox="3rem 1.5rem 2rem"
           responsive={responsiveSlide}
         />

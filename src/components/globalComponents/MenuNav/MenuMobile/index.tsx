@@ -6,6 +6,7 @@ import ButtonToogleMenu from "../ButtonToogleMenu";
 
 const MenuNav = () => {
   const [menuVisible, setMenuVisible] = useState(false);
+
   return (
     <>
       <S.Contenticon
@@ -18,15 +19,10 @@ const MenuNav = () => {
       <S.ContainerFull
         isVisible={menuVisible}
         onClick={() => setMenuVisible(false)}
+        aria-label="Menu de nagação de telas"
       >
-        <S.Wrapper
-          isVisible={menuVisible}
-          aria-label="Menu de nagação de telas"
-        >
-          <S.MenuNav
-            isVisible={menuVisible}
-            onClick={() => setMenuVisible(false)}
-          >
+        <S.Wrapper isVisible={menuVisible} data-testid="subMenuNav">
+          <S.MenuNav isVisible={menuVisible}>
             <S.PhotoContainer>
               <Image
                 src="https://res.cloudinary.com/defnibbpl/image/upload/v1635012439/image_User_940e9f11e7.jpg"

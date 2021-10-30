@@ -13,7 +13,7 @@ const AboutDescription = ({ title, description, mt }: aboutProps) => (
         msg={title}
         colorText="#1e1e1e"
         colorEffect="#486afe"
-        fontSizeText="2rem"
+        fontSizeText="1.8rem"
         marginText="0 0 1rem 1.5rem"
         aria-label="Titulo da seção"
       />

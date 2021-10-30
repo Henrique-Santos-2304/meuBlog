@@ -14,7 +14,7 @@ export const MyDescription = styled.section`
     padding: 0 ${theme.spacings.small};
   }
   @media ( min-width: ${theme.media.medium}){
-    padding: 0 ${theme.spacings.xxlarge} ;
+    padding: 0 15rem ;
   }
   `}
 `;
@@ -23,12 +23,13 @@ export const ContentDescription = styled.article`
   ${({ theme }) => css`
     width: max-content;
     padding: 1rem 2.9rem 1rem 1.4rem;
-    margin: 1rem 0 0 2rem;
+    margin: 1rem 0 0 1.7rem;
     background: rgba(255, 255, 255, 0.15);
     color: ${theme.colors.secondary};
     display: flex;
     position: relative;
     flex-direction: column;
+    font-size: 1.6rem;
     align-items: flex-start;
     font-weight: 500;
     border-radius: 2rem;
@@ -42,10 +43,6 @@ export const ContentDescription = styled.article`
       height: 80%;
       width: 0.3rem;
       background: ${theme.colors.effectsPrimary};
-    }
-
-    @media (min-width: ${theme.media.xmedium}) {
-      margin-left: 15rem;
     }
   `}
 `;
@@ -64,7 +61,7 @@ export const Name = styled.h1.attrs({
 })`
   ${({ theme }) => css`
     text-align: start;
-    font-size: 2.3rem;
+    font-size: 1.8rem;
     margin-left: 1.3rem;
     font-weight: 300;
     strong {
@@ -79,18 +76,11 @@ export const Dev = styled.p`
 `;
 
 export const PhotoContent = styled.main`
-  ${({ theme }) => css`}
   position: relative;
-  width: 30rem;
-  height: 41rem;
+  width: 26rem;
+  height: 36rem;
   align-self: flex-end;
   justify-self: flex-end;
-
-  @media (min-width: ${theme.media.xmedium}) {
-      margin-right: 10rem;
-
-    }
-  `}
 `;
 
 export const PhotoUser = styled(Image)``;

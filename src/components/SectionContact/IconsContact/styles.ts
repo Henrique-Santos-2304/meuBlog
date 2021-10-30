@@ -16,7 +16,7 @@ export const Wrapper = styled.footer`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  padding: 1.6rem;
 `;
 export const Linkedin = styled(FaLinkedinIn)`
   ${({ theme }) => css`
@@ -24,8 +24,8 @@ export const Linkedin = styled(FaLinkedinIn)`
     background: #0a66c2;
     border: 0.1rem solid ${theme.colors.primary};
     border-radius: 50%;
-    padding: 0.3rem;
-    font-size: 2.6rem;
+    padding: 0.1rem;
+    font-size: 2.4rem;
   `}
 `;
 export const ContentIcon = styled.div`
@@ -41,7 +41,7 @@ export const ContentIcon = styled.div`
   transition: transform 0.3s;
   margin: 0 1.3rem;
   &:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
   }
 
   &::before {
@@ -76,7 +76,7 @@ export const Github = styled(FaGithub)`
   ${({ theme }) => css`
     color: ${theme.colors.primary};
     background: ${theme.colors.secondary};
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     border: 0.1rem solid ${theme.colors.secondary};
     border-radius: 50%;
   `}
@@ -84,6 +84,6 @@ export const Github = styled(FaGithub)`
 
 export const contentWhatsapp = styled.div``;
 export const Whatsapp = styled(FaWhatsapp)`
-  font-size: 3rem;
+  font-size: 2.7rem;
   color: #42bd51;
 `;

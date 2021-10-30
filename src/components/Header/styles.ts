@@ -13,21 +13,23 @@ export const WrapperHeader = styled.header`
   }
 `;
 export const ContentLogo = styled.div`
-  padding: ${({ theme }) => theme.spacings.xxsmall} 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  ${({ theme }) => css`
+    padding: ${theme.spacings.xxsmall} 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  `}
 `;
 export const LogoImage = styled.div`
-  width: 3.4rem;
-  height: 3.6rem;
+  width: 2.7rem;
+  height: 2.7rem;
   border-radius: 50%;
   position: relative;
-  margin-right: 0.3rem;
+  margin: 0 0.3rem 0.3rem 0;
 `;
 export const Logo = styled.p`
   ${({ theme }) => css`
-    font-size: ${theme.font.sizes.xxbiglarge};
+    font-size: ${theme.font.sizes.xbiglarge};
     font-family: ${theme.font.family.Tangerine};
     color: ${theme.colors.effectsPrimary};
 

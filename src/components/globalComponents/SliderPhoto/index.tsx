@@ -9,6 +9,7 @@ const SliderPhoto = ({
   images,
   receptorCards,
   slidesToShow,
+  slidesToScroll,
   marginBox,
   responsive,
 }: slideImageprops) => {
@@ -17,7 +18,7 @@ const SliderPhoto = ({
     infinite: false,
     speed: 1000,
     slidesToShow: slidesToShow,
-    slidesToScroll: 1,
+    slidesToScroll: slidesToScroll,
     arrows: false,
     responsive,
     appendDots: (dots: any) => (

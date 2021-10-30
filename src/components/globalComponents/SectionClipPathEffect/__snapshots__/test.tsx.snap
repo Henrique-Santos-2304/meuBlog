@@ -12,7 +12,7 @@ exports[`<SectionClipPathEffect /> should render  1`] = `
 }
 
 .c1 {
-  max-width: 85rem;
+  max-width: 74rem;
   margin: 0 auto;
 }
 

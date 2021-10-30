@@ -16,9 +16,6 @@ const CardBox = ({ title, img, buttonCode, marginBox }: cardsSlides) => (
       <S.PhotoProject src={img} layout="fill" quality={100} />
     </S.Wrapper>
     <S.ContentButton>
-      <S.ButtonAbout aria-label="Link para detalhes do Projeto">
-        Sobre
-      </S.ButtonAbout>
       <Link href={buttonCode} passHref>
         <a target="_blank">
           <S.ButtonCode aria-label="Link para código do Projeto">

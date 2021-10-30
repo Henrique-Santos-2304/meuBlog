@@ -2,7 +2,7 @@
 
 exports[`<SectionProject /> should render  1`] = `
 .c0 {
-  max-width: 85rem;
+  max-width: 74rem;
   margin: 0 auto;
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -42,7 +42,7 @@ exports[`<SectionProject /> should render  1`] = `
 }
 
 .c5 {
-  max-width: (100%,85rem);
+  max-width: (100%,74rem);
   margin: 2rem 0 1rem;
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -71,13 +71,13 @@ exports[`<SectionProject /> should render  1`] = `
 
 .c8 {
   width: 100%;
-  height: 25rem;
+  height: 20rem;
   position: relative;
 }
 
 .c9 {
   width: 100%;
-  padding: 2rem 0;
+  padding: 1rem 0;
   background: rgba(0,0,0,0.84);
   display: -webkit-box;
   display: -webkit-flex;
@@ -87,18 +87,31 @@ exports[`<SectionProject /> should render  1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: space-evenly;
-  -webkit-justify-content: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   font-size: 1.4rem;
   font-weight: 700;
-  color: #1e1e1e;
-  background: #b7f600;
-  padding: 1rem 2rem;
+  background: transparent;
+  border: 0.1rem solid rgba(255,255,255,0.15);
+  color: #f8f8f8;
+  padding: 0.6rem 1.5rem;
   border-radius: 1rem;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
@@ -112,23 +125,6 @@ exports[`<SectionProject /> should render  1`] = `
 }
 
 .c11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  background: #1e1e1e;
-  color: #f8f8f8;
-}
-
-.c12 {
   margin-right: 0.8rem;
   font-size: 1.8rem;
 }
@@ -137,23 +133,23 @@ exports[`<SectionProject /> should render  1`] = `
   position: relative;
 }
 
-.c13 {
+.c12 {
   bottom: -2.2rem;
 }
 
-.c13 ul:last-child {
+.c12 ul:last-child {
   color: #b7f600;
 }
 
-.c13 ul li {
+.c12 ul li {
   color: #b7f600;
 }
 
-.c13 ul li.slick-active button::before {
+.c12 ul li.slick-active button::before {
   color: #b7f600;
 }
 
-.c13 ul li button::before {
+.c12 ul li button::before {
   font-size: 2.3rem;
 }
 
@@ -282,22 +278,16 @@ exports[`<SectionProject /> should render  1`] = `
                   <footer
                     class="c9"
                   >
-                    <button
-                      aria-label="Link para detalhes do Projeto"
-                      class="c10"
-                    >
-                      Sobre
-                    </button>
                     <a
                       href="https://github.com/Henrique-Santos-2304/Restaurante-LeScone"
                       target="_blank"
                     >
                       <button
                         aria-label="Link para código do Projeto"
-                        class="c10 c11"
+                        class="c10"
                       >
                         <svg
-                          class="c12"
+                          class="c11"
                           fill="currentColor"
                           height="1em"
                           stroke="currentColor"
@@ -358,22 +348,16 @@ exports[`<SectionProject /> should render  1`] = `
                   <footer
                     class="c9"
                   >
-                    <button
-                      aria-label="Link para detalhes do Projeto"
-                      class="c10"
-                    >
-                      Sobre
-                    </button>
                     <a
                       href="https://github.com/Henrique-Santos-2304/Multitech"
                       target="_blank"
                     >
                       <button
                         aria-label="Link para código do Projeto"
-                        class="c10 c11"
+                        class="c10"
                       >
                         <svg
-                          class="c12"
+                          class="c11"
                           fill="currentColor"
                           height="1em"
                           stroke="currentColor"
@@ -434,22 +418,16 @@ exports[`<SectionProject /> should render  1`] = `
                   <footer
                     class="c9"
                   >
-                    <button
-                      aria-label="Link para detalhes do Projeto"
-                      class="c10"
-                    >
-                      Sobre
-                    </button>
                     <a
                       href="https://github.com/Henrique-Santos-2304/Agencia-de-Desenvolvedores"
                       target="_blank"
                     >
                       <button
                         aria-label="Link para código do Projeto"
-                        class="c10 c11"
+                        class="c10"
                       >
                         <svg
-                          class="c12"
+                          class="c11"
                           fill="currentColor"
                           height="1em"
                           stroke="currentColor"
@@ -472,7 +450,7 @@ exports[`<SectionProject /> should render  1`] = `
           </div>
         </div>
         <div
-          class="c13 slick-dots"
+          class="c12 slick-dots"
         >
           <ul
             aria-label="Botões para trocar as fotos"

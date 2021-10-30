@@ -4,46 +4,42 @@ type menuVisible = {
   isVisible: boolean;
 };
 
-export const Wrapper = styled.div<menuVisible>`
+export const Wrapper = styled.nav<menuVisible>`
   ${({ theme, isVisible }) => css`
     width: 100%;
     max-width: 32rem;
-    height: ${isVisible ? "76vh" : 0};
-    position: fixed;
-    top: 50%;
-    right: ${isVisible ? 0 : "-32rem"};
-    transform: translateY(-50%);
+    height: 76vh;
     transition: all 0.6s ease-in-out;
-    z-index: 11;
+    z-index: 15;
     background: rgba(0, 0, 0, 0.91);
     border-radius: 2rem 0 0 2rem;
     border: 0.5rem inset ${theme.colors.bgSecondary};
     border-right: 0;
+    transition: all 0.5s ease-in-out;
+    opacity: ${isVisible ? 1 : 0};
 
     @media (min-width: ${theme.media.medium}) {
-      top: ${isVisible ? "50%" : "-76vh"};
-      left: 50%;
-      transform: translate(-50%, -50%);
       border-radius: 2rem;
       border: 0.5rem solid ${theme.colors.bgSecondary};
-      max-width: ${isVisible ? "40rem" : 0};
+      max-width: 40rem;
     }
-    @media (max-width: ${theme.media.medium}) {
-      transform: translateY(-50%);
+    @media (max-width: ${theme.media.xmedium}) {
+      margin-left: 9rem;
     }
   `}
 `;
 
 export const PhotoContainer = styled.div`
   ${({ theme }) => css`
-    width: 12rem;
-    height: 12rem;
+    width: 10rem;
+    height: 10rem;
     border-radius: 50%;
     margin: 1.3rem 0 2rem;
     position: relative;
     border-radius: 50%;
     border: 0.2rem groove ${theme.colors.bgSecondary};
     transition: transform 0.3s;
+    pointer-events: none;
 
     img {
       border-radius: 50%;
@@ -53,17 +49,13 @@ export const PhotoContainer = styled.div`
     }
   `}
 `;
-export const MenuNav = styled.nav<menuVisible>`
-  ${({ isVisible }) => css`
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.2s ease-in-out;
-    opacity: ${isVisible ? 1 : 0};
-  `}
+export const MenuNav = styled.div<menuVisible>`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
 export const Contenticon = styled.button<menuVisible>`
   ${({ isVisible }) => css`
@@ -91,19 +83,18 @@ export const Contenticon = styled.button<menuVisible>`
   `}
 `;
 export const ContainerFull = styled.div<menuVisible>`
-  ${({ theme, isVisible }) => css`
-    background: rgba(0, 0, 0, 0.55);
-    height: ${isVisible ? "100vh" : 0};
-    width: ${isVisible ? "100vw" : 0};
+  ${({ isVisible }) => css`
+    background: rgba(0, 0, 0, 0.65);
+    height: 100vh;
+    width: ${isVisible ? "100vw" : "35rem"};
     position: fixed;
-    top: ${isVisible ? 0 : "-100vh"};
+    top: 0;
     right: 0;
-    transition: all 0.6s ease-in-out;
+    transition: all 0.5s ease-in-out;
     z-index: 10;
-
-    @media (max-width: ${theme.media.medium}) {
-      top: 0;
-      right: ${isVisible ? 0 : "-100vw"};
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: ${isVisible ? 1 : 0};
   `}
 `;

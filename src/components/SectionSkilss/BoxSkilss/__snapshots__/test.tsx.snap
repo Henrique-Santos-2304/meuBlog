@@ -19,7 +19,7 @@ exports[`<BoxSkilss /> should render  1`] = `
   justify-content: center;
   background: rgba(0,0,0,0.55);
   margin: 1rem;
-  padding: 2rem;
+  padding: 1rem 0.5rem;
   border-radius: 1rem;
   position: relative;
 }
@@ -39,7 +39,7 @@ exports[`<BoxSkilss /> should render  1`] = `
 
 .c1 {
   width: 5rem;
-  height: 5rem;
+  height: 4rem;
   position: relative;
 }
 

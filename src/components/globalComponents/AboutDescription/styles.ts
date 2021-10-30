@@ -5,8 +5,8 @@ export const ContentAbout = styled.div`
 `;
 export const TextDescription = styled.p`
   ${({ theme }) => css`
-    margin-top: 1rem;
-    font-size: ${theme.font.sizes.medium};
+    margin-top: 2rem;
+    font-size: ${theme.font.sizes.small};
     font-weight: 500;
 
     strong {

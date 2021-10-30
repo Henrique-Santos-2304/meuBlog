@@ -7,7 +7,7 @@ export const ContentInputs = styled.div`
   align-items: flex-start;
   justify-content: center;
   padding: 1rem 0.6rem;
-  margin: 1rem 0;
+  margin: 0.6rem 0;
 `;
 export const Label = styled.label`
   ${({ theme }) => css`
@@ -16,7 +16,7 @@ export const Label = styled.label`
     color: ${theme.colors.primary};
 
     @media (min-width: ${theme.media.xmedium}) {
-      font-size: ${theme.font.sizes.medium};
+      font-size: ${theme.font.sizes.small};
     }
   `}
 `;

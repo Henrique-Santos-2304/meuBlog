@@ -16,6 +16,7 @@ export type slideImageprops = {
   images: imagesProps[];
   receptorCards: "skilss" | "projects";
   slidesToShow: number;
+  slidesToScroll: number;
   marginBox: string;
   responsive?: responsivePropsSlide[];
 };

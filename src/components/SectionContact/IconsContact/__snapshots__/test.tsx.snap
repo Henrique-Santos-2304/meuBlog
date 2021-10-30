@@ -14,7 +14,7 @@ exports[`<IconsContact /> should render  1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 2rem;
+  padding: 1.6rem;
 }
 
 .c3 {
@@ -22,8 +22,8 @@ exports[`<IconsContact /> should render  1`] = `
   background: #0a66c2;
   border: 0.1rem solid #f8f8f8;
   border-radius: 50%;
-  padding: 0.3rem;
-  font-size: 2.6rem;
+  padding: 0.1rem;
+  font-size: 2.4rem;
 }
 
 .c1 {
@@ -52,9 +52,9 @@ exports[`<IconsContact /> should render  1`] = `
 }
 
 .c1:hover {
-  -webkit-transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  transform: scale(1.5);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .c1::before {
@@ -85,13 +85,13 @@ exports[`<IconsContact /> should render  1`] = `
 .c2 {
   color: #f8f8f8;
   background: #1e1e1e;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   border: 0.1rem solid #1e1e1e;
   border-radius: 50%;
 }
 
 .c4 {
-  font-size: 3rem;
+  font-size: 2.7rem;
   color: #42bd51;
 }
 

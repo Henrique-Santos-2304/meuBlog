@@ -2,7 +2,7 @@
 
 exports[`Header should render  1`] = `
 .c0 {
-  max-width: 85rem;
+  max-width: 74rem;
   margin: 0 auto;
   text-align: center;
   display: -webkit-box;
@@ -19,7 +19,7 @@ exports[`Header should render  1`] = `
   width: -moz-max-content;
   width: max-content;
   padding: 1rem 2.9rem 1rem 1.4rem;
-  margin: 1rem 0 0 2rem;
+  margin: 1rem 0 0 1.7rem;
   background: rgba(255,255,255,0.15);
   color: #1e1e1e;
   display: -webkit-box;
@@ -30,6 +30,7 @@ exports[`Header should render  1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  font-size: 1.6rem;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -61,7 +62,7 @@ exports[`Header should render  1`] = `
 
 .c3 {
   text-align: start;
-  font-size: 2.3rem;
+  font-size: 1.8rem;
   margin-left: 1.3rem;
   font-weight: 300;
 }
@@ -77,8 +78,8 @@ exports[`Header should render  1`] = `
 
 .c5 {
   position: relative;
-  width: 30rem;
-  height: 41rem;
+  width: 26rem;
+  height: 36rem;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -93,19 +94,7 @@ exports[`Header should render  1`] = `
 
 @media ( min-width:620px) {
   .c0 {
-    padding: 0 5.6rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c1 {
-    margin-left: 15rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c5 {
-    margin-right: 10rem;
+    padding: 0 15rem;
   }
 }
 

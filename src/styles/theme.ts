@@ -1,7 +1,7 @@
 export default {
   grid: {
     container: "100vw",
-    containerContent: "85rem",
+    containerContent: "74rem",
   },
   media: {
     small: "376px",

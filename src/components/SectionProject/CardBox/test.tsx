@@ -18,10 +18,10 @@ describe("<CardBox />", () => {
     renderTheme(<CardBox {...mockImage} />);
     const title = screen.getByRole("heading");
     const image = screen.getByRole("img");
-    const buttons = screen.getAllByRole("button");
+    const buttons = screen.getByRole("button");
 
     expect(title).toBeInTheDocument();
     expect(image).toBeInTheDocument();
-    expect(buttons).toHaveLength(2);
+    expect(buttons).toBeInTheDocument();
   });
 });
