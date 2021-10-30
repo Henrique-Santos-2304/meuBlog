@@ -48,12 +48,10 @@ export const ContentDescription = styled.article`
 `;
 
 export const Welcome = styled.p`
-  ${({ theme }) => css`
-    margin-left: 1.3rem;
-    span {
-      color: ${theme.colors.effectsPrimary};
-    }
-  `}
+  margin-left: 1.3rem;
+  span {
+    color: #ed0e30;
+  }
 `;
 
 export const Name = styled.h1.attrs({

@@ -57,7 +57,7 @@ exports[`Header should render  1`] = `
 }
 
 .c2 span {
-  color: #b7f600;
+  color: #ed0e30;
 }
 
 .c3 {
@@ -110,7 +110,11 @@ exports[`Header should render  1`] = `
       <p
         class="c2"
       >
-        Bem vindo(a),
+        Bem vindo(
+        <span>
+          a
+        </span>
+        ),
       </p>
       <h1
         class="c3"

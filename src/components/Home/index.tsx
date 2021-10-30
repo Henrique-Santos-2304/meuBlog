@@ -7,7 +7,9 @@ const Home = () => (
         aria-label="Minha Apresentação"
         data-testid="apresentation"
       >
-        <S.Welcome>Bem vindo(a),</S.Welcome>
+        <S.Welcome>
+          Bem vindo(<span>a</span>),
+        </S.Welcome>
         <S.Name>
           Sou
           <strong> Henrique</strong>,
