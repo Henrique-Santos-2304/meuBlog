@@ -62,4 +62,22 @@ export const FRAGMENTS = gql`
       }
     }
   }
+  fragment descriptionHome on PortfolioWeb {
+    descriptionSection {
+      title
+      descriprions
+    }
+  }
+  fragment descriptionProjects on PortfolioWeb {
+    descriptionProject {
+      title
+      descriprions
+    }
+  }
+  fragment descriptionSkilss on PortfolioWeb {
+    descriptionSkill {
+      title
+      descriprions
+    }
+  }
 `;

@@ -3,10 +3,10 @@ import SectionClipPathEffect from "components/globalComponents/SectionClipPathEf
 import * as S from "./styles";
 type aboutProps = {
   title: string;
-  description: string;
+  descriprions: string;
   mt?: string;
 };
-const AboutDescription = ({ title, description, mt }: aboutProps) => (
+const AboutDescription = ({ title, descriprions, mt }: aboutProps) => (
   <SectionClipPathEffect mt={mt}>
     <S.ContentAbout>
       <Headings
@@ -18,7 +18,7 @@ const AboutDescription = ({ title, description, mt }: aboutProps) => (
         aria-label="Titulo da seção"
       />
       <S.TextDescription aria-label="Texto com a descrição do Programador">
-        {description}
+        {descriprions}
       </S.TextDescription>
     </S.ContentAbout>
   </SectionClipPathEffect>

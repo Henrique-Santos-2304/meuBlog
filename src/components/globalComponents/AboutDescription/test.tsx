@@ -4,7 +4,7 @@ import { renderTheme } from "utils/testRenderTheme";
 
 const mock = {
   title: "seção1",
-  description: "Descrição da seção",
+  descriprions: "Descrição da seção",
 };
 describe("<AboutDescription />", () => {
   it("should render ", () => {

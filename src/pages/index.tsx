@@ -7,7 +7,6 @@ import SectionSkilss from "components/SectionSkilss/MainSkilss";
 import SectionContact from "components/SectionContact/MainContact";
 import AboutDescription from "components/globalComponents/AboutDescription";
 import GoToTop from "components/globalComponents/GoToTop";
-import { about } from "utils/descriptionAbout/about";
 
 import { GetStaticProps } from "next";
 import { initializeApollo } from "utils/apollo";
@@ -41,11 +40,11 @@ export default function Home({ data }: dataPageProps) {
       <Header dataHeader={data.logoPage} />
       <MenuMobile menuNav={data.menuNav} />
       <SectionHome dataHome={data.home} />
-      <AboutDescription {...about.aboutPersonal} mt="-7rem" />
+      <AboutDescription {...data.descriptionHome} mt="-7rem" />
       <SectionProject />
-      <AboutDescription {...about.aboutProjects} mt="2rem" />
+      <AboutDescription {...data.descriptionProject} mt="2rem" />
       <SectionSkilss />
-      <AboutDescription {...about.aboutSkills} mt="3rem" />
+      <AboutDescription {...data.descriptionSkills} mt="3rem" />
       <SectionContact />
       <GoToTop />
     </>
@@ -58,7 +57,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const { data } = await apolloClient.query<pageProps>({
     query: Query_PAGE,
   });
-  console.log(data.portfolioWeb.Home);
+  console.log(data.portfolioWeb.descriptionSkill);
   return {
     props: {
       data: {
@@ -71,6 +70,9 @@ export const getStaticProps: GetStaticProps = async () => {
         logoPage: data.portfolioWeb.logoPage,
         menuNav: data.portfolioWeb.menuNav,
         home: data.portfolioWeb.Home,
+        descriptionHome: data.portfolioWeb.descriptionSection,
+        descriptionProject: data.portfolioWeb.descriptionProject,
+        descriptionSkills: data.portfolioWeb.descriptionSkill,
       },
 
       initialApolloState: apolloClient.cache.extract(),

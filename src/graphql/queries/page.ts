@@ -12,6 +12,12 @@ export const Query_PAGE = gql`
       ...menuNav
 
       ...home
+
+      ...descriptionHome
+
+      ...descriptionProjects
+
+      ...descriptionSkilss
     }
   }
 `;

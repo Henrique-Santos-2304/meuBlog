@@ -65,6 +65,11 @@ export type home = {
   photoUser: photoUser;
 };
 
+export type descriptions = {
+  title: string;
+  descriprions: string;
+};
+
 export interface pageProps {
   portfolioWeb: {
     __typename?: any;
@@ -75,6 +80,9 @@ export interface pageProps {
     logoPage: LogoPage;
     menuNav: menuNav;
     Home: home;
+    descriptionSection: descriptions;
+    descriptionProject: descriptions;
+    descriptionSkill: descriptions;
   };
 }
 
@@ -84,5 +92,8 @@ export interface dataPageProps {
     logoPage: LogoPage;
     menuNav: menuNav;
     home: home;
+    descriptionHome: descriptions;
+    descriptionProject: descriptions;
+    descriptionSkills: descriptions;
   };
 }
