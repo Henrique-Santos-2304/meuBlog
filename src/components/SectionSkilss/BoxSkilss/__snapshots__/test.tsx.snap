@@ -63,6 +63,7 @@ exports[`<BoxSkilss /> should render  1`] = `
         style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
       >
         <img
+          alt="logo da foto1"
           class=""
           data-nimg="fill"
           decoding="async"

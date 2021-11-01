@@ -63,7 +63,7 @@ exports[`<SectionSkilss /> should render  1`] = `
   background: #b7f600;
 }
 
-.c8 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -86,7 +86,7 @@ exports[`<SectionSkilss /> should render  1`] = `
   position: relative;
 }
 
-.c8::before {
+.c7::before {
   content: "";
   position: absolute;
   width: 0.3rem;
@@ -117,33 +117,13 @@ exports[`<SectionSkilss /> should render  1`] = `
   position: relative;
 }
 
-.c6 {
-  bottom: -2.2rem;
-}
-
-.c6 ul:last-child {
-  color: #b7f600;
-}
-
-.c6 ul li {
-  color: #b7f600;
-}
-
-.c6 ul li.slick-active button::before {
-  color: #b7f600;
-}
-
-.c6 ul li button::before {
-  font-size: 2.3rem;
-}
-
 .c0 {
   padding: 2rem 0;
   max-width: 74rem;
   margin: 0 auto;
 }
 
-.c7 {
+.c6 {
   margin: 4.6rem 0;
 }
 
@@ -173,12 +153,12 @@ exports[`<SectionSkilss /> should render  1`] = `
     <h1
       class="c1"
     >
-      Minhas Habilidades
+      minhas habilidades
     </h1>
     <div
       class="slick-slider c2 slick-initialized"
-      dir="ltr"
     >
+      
       <div
         class="slick-list"
       >
@@ -205,6 +185,7 @@ exports[`<SectionSkilss /> should render  1`] = `
                     style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
                   >
                     <img
+                      alt="logo da foto1"
                       class=""
                       data-nimg="fill"
                       decoding="async"
@@ -217,7 +198,7 @@ exports[`<SectionSkilss /> should render  1`] = `
                 <h3
                   class="c5"
                 >
-                  Typescript
+                  Titulo da imagem
                 </h3>
               </div>
             </div>
@@ -241,6 +222,7 @@ exports[`<SectionSkilss /> should render  1`] = `
                     style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
                   >
                     <img
+                      alt="logo da foto2"
                       class=""
                       data-nimg="fill"
                       decoding="async"
@@ -253,232 +235,23 @@ exports[`<SectionSkilss /> should render  1`] = `
                 <h3
                   class="c5"
                 >
-                  JavaScript
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div
-            aria-hidden="false"
-            class="slick-slide slick-active"
-            data-index="2"
-            style="outline: none; width: 0px;"
-            tabindex="-1"
-          >
-            <div>
-              <div
-                aria-label="Linguagens,Frameworks ou bibliotecas dominadas"
-                class="c3"
-              >
-                <div
-                  class="c4"
-                >
-                  <div
-                    style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
-                  >
-                    <img
-                      class=""
-                      data-nimg="fill"
-                      decoding="async"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </div>
-                </div>
-                <h3
-                  class="c5"
-                >
-                  React
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div
-            aria-hidden="false"
-            class="slick-slide slick-active"
-            data-index="3"
-            style="outline: none; width: 0px;"
-            tabindex="-1"
-          >
-            <div>
-              <div
-                aria-label="Linguagens,Frameworks ou bibliotecas dominadas"
-                class="c3"
-              >
-                <div
-                  class="c4"
-                >
-                  <div
-                    style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
-                  >
-                    <img
-                      class=""
-                      data-nimg="fill"
-                      decoding="async"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </div>
-                </div>
-                <h3
-                  class="c5"
-                >
-                  Next
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div
-            aria-hidden="false"
-            class="slick-slide slick-active"
-            data-index="4"
-            style="outline: none; width: 0px;"
-            tabindex="-1"
-          >
-            <div>
-              <div
-                aria-label="Linguagens,Frameworks ou bibliotecas dominadas"
-                class="c3"
-              >
-                <div
-                  class="c4"
-                >
-                  <div
-                    style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
-                  >
-                    <img
-                      class=""
-                      data-nimg="fill"
-                      decoding="async"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </div>
-                </div>
-                <h3
-                  class="c5"
-                >
-                  Jest
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div
-            aria-hidden="true"
-            class="slick-slide"
-            data-index="5"
-            style="outline: none; width: 0px;"
-            tabindex="-1"
-          >
-            <div>
-              <div
-                aria-label="Linguagens,Frameworks ou bibliotecas dominadas"
-                class="c3"
-              >
-                <div
-                  class="c4"
-                >
-                  <div
-                    style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
-                  >
-                    <img
-                      class=""
-                      data-nimg="fill"
-                      decoding="async"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </div>
-                </div>
-                <h3
-                  class="c5"
-                >
-                  Cypress
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div
-            aria-hidden="true"
-            class="slick-slide"
-            data-index="6"
-            style="outline: none; width: 0px;"
-            tabindex="-1"
-          >
-            <div>
-              <div
-                aria-label="Linguagens,Frameworks ou bibliotecas dominadas"
-                class="c3"
-              >
-                <div
-                  class="c4"
-                >
-                  <div
-                    style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
-                  >
-                    <img
-                      class=""
-                      data-nimg="fill"
-                      decoding="async"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </div>
-                </div>
-                <h3
-                  class="c5"
-                >
-                  Storybook
+                  titulo da foto
                 </h3>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div
-        class="c6 slick-dots"
-      >
-        <ul
-          aria-label="Botões para trocar as fotos"
-        >
-           
-          <li
-            class="slick-active"
-          >
-            <button>
-              1
-            </button>
-          </li>
-          <li
-            class=""
-          >
-            <button>
-              2
-            </button>
-          </li>
-          <li
-            class=""
-          >
-            <button>
-              3
-            </button>
-          </li>
-           
-        </ul>
-      </div>
+      
+      
     </div>
     <div
-      class="c7"
+      class="c6"
     />
     <div
       class="slick-slider c2 slick-initialized"
-      dir="ltr"
     >
+      
       <div
         class="slick-list"
       >
@@ -496,7 +269,7 @@ exports[`<SectionSkilss /> should render  1`] = `
             <div>
               <div
                 aria-label="Linguagens,Frameworks ou bibliotecas dominadas"
-                class="c8"
+                class="c7"
               >
                 <div
                   class="c4"
@@ -505,6 +278,7 @@ exports[`<SectionSkilss /> should render  1`] = `
                     style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
                   >
                     <img
+                      alt="logo da foto1"
                       class=""
                       data-nimg="fill"
                       decoding="async"
@@ -517,7 +291,7 @@ exports[`<SectionSkilss /> should render  1`] = `
                 <h3
                   class="c5"
                 >
-                  Typescript
+                  Titulo da imagem
                 </h3>
               </div>
             </div>
@@ -532,7 +306,7 @@ exports[`<SectionSkilss /> should render  1`] = `
             <div>
               <div
                 aria-label="Linguagens,Frameworks ou bibliotecas dominadas"
-                class="c8"
+                class="c7"
               >
                 <div
                   class="c4"
@@ -541,6 +315,7 @@ exports[`<SectionSkilss /> should render  1`] = `
                     style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
                   >
                     <img
+                      alt="logo da foto2"
                       class=""
                       data-nimg="fill"
                       decoding="async"
@@ -553,224 +328,15 @@ exports[`<SectionSkilss /> should render  1`] = `
                 <h3
                   class="c5"
                 >
-                  JavaScript
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div
-            aria-hidden="false"
-            class="slick-slide slick-active"
-            data-index="2"
-            style="outline: none; width: 0px;"
-            tabindex="-1"
-          >
-            <div>
-              <div
-                aria-label="Linguagens,Frameworks ou bibliotecas dominadas"
-                class="c8"
-              >
-                <div
-                  class="c4"
-                >
-                  <div
-                    style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
-                  >
-                    <img
-                      class=""
-                      data-nimg="fill"
-                      decoding="async"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </div>
-                </div>
-                <h3
-                  class="c5"
-                >
-                  React
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div
-            aria-hidden="false"
-            class="slick-slide slick-active"
-            data-index="3"
-            style="outline: none; width: 0px;"
-            tabindex="-1"
-          >
-            <div>
-              <div
-                aria-label="Linguagens,Frameworks ou bibliotecas dominadas"
-                class="c8"
-              >
-                <div
-                  class="c4"
-                >
-                  <div
-                    style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
-                  >
-                    <img
-                      class=""
-                      data-nimg="fill"
-                      decoding="async"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </div>
-                </div>
-                <h3
-                  class="c5"
-                >
-                  Next
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div
-            aria-hidden="false"
-            class="slick-slide slick-active"
-            data-index="4"
-            style="outline: none; width: 0px;"
-            tabindex="-1"
-          >
-            <div>
-              <div
-                aria-label="Linguagens,Frameworks ou bibliotecas dominadas"
-                class="c8"
-              >
-                <div
-                  class="c4"
-                >
-                  <div
-                    style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
-                  >
-                    <img
-                      class=""
-                      data-nimg="fill"
-                      decoding="async"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </div>
-                </div>
-                <h3
-                  class="c5"
-                >
-                  Jest
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div
-            aria-hidden="true"
-            class="slick-slide"
-            data-index="5"
-            style="outline: none; width: 0px;"
-            tabindex="-1"
-          >
-            <div>
-              <div
-                aria-label="Linguagens,Frameworks ou bibliotecas dominadas"
-                class="c8"
-              >
-                <div
-                  class="c4"
-                >
-                  <div
-                    style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
-                  >
-                    <img
-                      class=""
-                      data-nimg="fill"
-                      decoding="async"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </div>
-                </div>
-                <h3
-                  class="c5"
-                >
-                  Cypress
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div
-            aria-hidden="true"
-            class="slick-slide"
-            data-index="6"
-            style="outline: none; width: 0px;"
-            tabindex="-1"
-          >
-            <div>
-              <div
-                aria-label="Linguagens,Frameworks ou bibliotecas dominadas"
-                class="c8"
-              >
-                <div
-                  class="c4"
-                >
-                  <div
-                    style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
-                  >
-                    <img
-                      class=""
-                      data-nimg="fill"
-                      decoding="async"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </div>
-                </div>
-                <h3
-                  class="c5"
-                >
-                  Storybook
+                  titulo da foto
                 </h3>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div
-        class="c6 slick-dots"
-      >
-        <ul
-          aria-label="Botões para trocar as fotos"
-        >
-           
-          <li
-            class="slick-active"
-          >
-            <button>
-              1
-            </button>
-          </li>
-          <li
-            class=""
-          >
-            <button>
-              2
-            </button>
-          </li>
-          <li
-            class=""
-          >
-            <button>
-              3
-            </button>
-          </li>
-           
-        </ul>
-      </div>
+      
+      
     </div>
   </section>
 </div>

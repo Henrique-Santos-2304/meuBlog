@@ -1,7 +1,12 @@
+import { imageLoads } from "graphql/typesQueries/types";
+
 export type imagesProps = {
-  img: string;
+  ariaLabel: string;
   title: string;
-  buttonCode?: string;
+  image: imageLoads;
+  urlProject?: string;
+  ariaLabelButton?: string;
+  buttonText?: string;
 };
 export type responsivePropsSlide = {
   breakpoint: number;

@@ -81,7 +81,7 @@ export type slidesProject = {
 
 export type projects = {
   title: string;
-  slidesProject: slidesProject;
+  slidesProject: slidesProject[];
 };
 
 export type slidesSkilss = {
@@ -94,8 +94,8 @@ export type skilss = {
   title: string;
   arialabelTitle: string;
   ariaLabel: string;
-  slidesCssSkilss: slidesSkilss;
-  slidesSkills: slidesSkilss;
+  slidesCssSkilss: slidesSkilss[];
+  slidesSkills: slidesSkilss[];
 };
 export interface pageProps {
   portfolioWeb: {

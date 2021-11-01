@@ -1,9 +1,12 @@
 import Headings from "components/globalComponents/Headings";
 import SliderPhoto from "components/globalComponents/SliderPhoto";
-import { images1, images2 } from "../cardsBoxSkilssMock";
+import { skilss } from "graphql/typesQueries/types";
 import * as S from "./styles";
 
-const SectionSkilss = () => {
+type propsSkilss = {
+  dataSkilss: skilss;
+};
+const SectionSkilss = ({ dataSkilss }: propsSkilss) => {
   const responsiveSlide = [
     {
       breakpoint: 650,
@@ -37,15 +40,15 @@ const SectionSkilss = () => {
     <>
       <S.ContentSkilss id="skilss">
         <Headings
-          msg="Minhas Habilidades"
+          msg={dataSkilss.title}
           colorEffect="#b7f600"
           colorText="#f8f8f8"
           fontSizeText="2rem"
           marginText="1.5rem 0 1.4rem 2rem"
-          aria-label="Titulo da seção"
+          aria-label={dataSkilss.ariaLabel}
         />
         <SliderPhoto
-          images={images1}
+          images={dataSkilss.slidesSkills}
           receptorCards="skilss"
           slidesToShow={4.4}
           slidesToScroll={2}
@@ -54,7 +57,7 @@ const SectionSkilss = () => {
         />
         <S.Span></S.Span>
         <SliderPhoto
-          images={images2}
+          images={dataSkilss.slidesCssSkilss}
           receptorCards="skilss"
           slidesToShow={4.4}
           slidesToScroll={2}

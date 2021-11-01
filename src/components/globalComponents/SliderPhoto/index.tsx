@@ -29,26 +29,20 @@ const SliderPhoto = ({
   };
   return (
     <S.SliderBox {...settings} aria-label="Slides de fotos">
-      {images.map((image) =>
-        receptorCards === "skilss" ? (
-          <BoxSkilss
-            key={image.title}
-            title={image.title}
-            img={image.img}
-            marginBox={marginBox}
-            aria-label="Slide de Habilidades"
-          />
-        ) : (
+      {receptorCards === "skilss" &&
+        images.map((image) => (
+          <BoxSkilss key={image.title} data={image} marginBox={marginBox} />
+        ))}
+
+      {receptorCards === "projects" &&
+        images.map((image) => (
           <CardBox
             key={image.title}
-            title={image.title}
-            img={image.img}
-            buttonCode={image.buttonCode!}
+            data={image}
             marginBox={marginBox}
-            aria-label="Slide de Projetos"
+            data-testid="projectss"
           />
-        )
-      )}
+        ))}
     </S.SliderBox>
   );
 };

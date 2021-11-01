@@ -41,9 +41,9 @@ export default function Home({ data }: dataPageProps) {
       <MenuMobile menuNav={data.menuNav} />
       <SectionHome dataHome={data.home} />
       <AboutDescription {...data.descriptionHome} mt="-7rem" />
-      <SectionProject />
+      <SectionProject dataProject={data.projects} />
       <AboutDescription {...data.descriptionProject} mt="2rem" />
-      <SectionSkilss />
+      <SectionSkilss dataSkilss={data.skilss} />
       <AboutDescription {...data.descriptionSkills} mt="3rem" />
       <SectionContact />
       <GoToTop />

@@ -2,15 +2,19 @@
 import * as S from "./styles";
 
 import Headings from "components/globalComponents/Headings";
-import { images } from "../arrayCardMock";
 import SliderPhoto from "components/globalComponents/SliderPhoto";
+import { projects } from "graphql/typesQueries/types";
 
-const SectionProject = () => {
+type propsProject = {
+  dataProject: projects;
+};
+const SectionProject = ({ dataProject }: propsProject) => {
+  console.log(dataProject);
   return (
     <S.Wrapper id="projects">
       <S.Title>
         <Headings
-          msg="Meus Projetos"
+          msg={dataProject.title}
           fontSizeText="2rem"
           marginText="1.5rem 0 1.4rem 3rem"
           aria-label="Titulo da seção"
@@ -18,7 +22,7 @@ const SectionProject = () => {
       </S.Title>
       <S.ContentSlide>
         <SliderPhoto
-          images={images}
+          images={dataProject.slidesProject}
           receptorCards="projects"
           slidesToShow={1}
           slidesToScroll={1}
