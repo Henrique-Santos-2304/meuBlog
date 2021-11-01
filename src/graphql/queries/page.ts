@@ -1,41 +1,17 @@
 import { gql } from "@apollo/client";
+import { FRAGMENTS } from "../fragments/metapage";
 
 export const Query_PAGE = gql`
+  ${FRAGMENTS}
   query page_data {
     portfolioWeb {
-      metaDescription
-      title
-      iconPage
-      iconImagePage {
-        url
-      }
-      logoPage {
-        alt
-        title
-        url
-        imageLogo {
-          url
-        }
-        preText
-        proText
-      }
+      ...metaDescript
 
-      menuNav {
-        openMenu
-        closeMenu
-        ariaLabe
-        navigationPage {
-          ariaLabel
-          imageNav {
-            url
-          }
-        }
-        linksNagivation {
-          title
-          url
-          text
-        }
-      }
+      ...logoPage
+
+      ...menuNav
+
+      ...home
     }
   }
 `;

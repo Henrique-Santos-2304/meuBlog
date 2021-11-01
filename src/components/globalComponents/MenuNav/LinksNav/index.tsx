@@ -1,20 +1,19 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import * as S from "./styles";
 import Link from "next/link";
+import { linksNagivation } from "graphql/typesQueries/types";
 
-const LinkNav = () => (
+type propsNavigation = {
+  navigations: linksNagivation[];
+};
+
+const LinkNav = ({ navigations }: propsNavigation) => (
   <>
-    <S.ContentLink>
-      <Link href="#">Inicio</Link>
-    </S.ContentLink>
-    <S.ContentLink>
-      <Link href="#projects">Projetos</Link>
-    </S.ContentLink>
-    <S.ContentLink>
-      <Link href="#skilss">Habilidades</Link>
-    </S.ContentLink>
-    <S.ContentLink>
-      <Link href="#contacts">Contato</Link>
-    </S.ContentLink>
+    {navigations!.map((nav) => (
+      <S.ContentLink key={nav.title}>
+        <Link href={nav.url}>{nav.text}</Link>
+      </S.ContentLink>
+    ))}
   </>
 );
 

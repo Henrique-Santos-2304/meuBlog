@@ -39,8 +39,8 @@ export default function Home({ data }: dataPageProps) {
       </Head>
 
       <Header dataHeader={data.logoPage} />
-      <MenuMobile />
-      <SectionHome />
+      <MenuMobile menuNav={data.menuNav} />
+      <SectionHome dataHome={data.home} />
       <AboutDescription {...about.aboutPersonal} mt="-7rem" />
       <SectionProject />
       <AboutDescription {...about.aboutProjects} mt="2rem" />
@@ -58,7 +58,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const { data } = await apolloClient.query<pageProps>({
     query: Query_PAGE,
   });
-  console.log(data);
+  console.log(data.portfolioWeb.Home);
   return {
     props: {
       data: {
@@ -69,6 +69,8 @@ export const getStaticProps: GetStaticProps = async () => {
           iconPage: data.portfolioWeb.iconPage,
         },
         logoPage: data.portfolioWeb.logoPage,
+        menuNav: data.portfolioWeb.menuNav,
+        home: data.portfolioWeb.Home,
       },
 
       initialApolloState: apolloClient.cache.extract(),

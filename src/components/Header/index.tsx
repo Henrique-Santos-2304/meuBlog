@@ -7,7 +7,6 @@ import { LogoPage } from "graphql/typesQueries/types";
 type propsHeader = { dataHeader: LogoPage };
 
 const Header = ({ dataHeader }: propsHeader) => {
-  console.log(dataHeader);
   return (
     <Container asHeight="small">
       <S.WrapperHeader>

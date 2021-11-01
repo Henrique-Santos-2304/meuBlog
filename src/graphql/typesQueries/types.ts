@@ -34,15 +34,37 @@ export type linksNagivation = {
   url: string;
   text: string;
 };
+export type OpenClose = {
+  title: string;
+  ariaLabel: string;
+};
 
 export type menuNav = {
   __typename?: any;
-  openMenu: string;
-  closeMenu: string;
+  openMenuNav: OpenClose;
+  closeMenuNav: OpenClose;
   ariaLabe: string;
   navigationPage: navigationPage;
-  linksNagivation: linksNagivation;
+  linksNagivation: linksNagivation[];
 };
+
+export type myDescription = {
+  welcome: string;
+  name: string;
+  devDescription: string;
+};
+export type photoUser = {
+  alt: string;
+  arialabel: string;
+  userImage: imageLoads;
+};
+
+export type home = {
+  ariaLabel: string;
+  myDescription: myDescription;
+  photoUser: photoUser;
+};
+
 export interface pageProps {
   portfolioWeb: {
     __typename?: any;
@@ -52,6 +74,7 @@ export interface pageProps {
     iconImagePage: imageLoads;
     logoPage: LogoPage;
     menuNav: menuNav;
+    Home: home;
   };
 }
 
@@ -60,5 +83,6 @@ export interface dataPageProps {
     metas: metaDescription;
     logoPage: LogoPage;
     menuNav: menuNav;
+    home: home;
   };
 }

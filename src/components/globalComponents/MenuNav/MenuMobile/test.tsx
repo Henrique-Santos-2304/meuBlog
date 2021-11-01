@@ -2,17 +2,18 @@
 import MenuNav from ".";
 import { fireEvent, screen } from "@testing-library/react";
 import { renderTheme } from "utils/testRenderTheme";
+import { mockMenuNav } from "./mockMenuNav";
 
 describe("<MenuNav />", () => {
   it("should render ", () => {
-    const { container } = renderTheme(<MenuNav />);
+    const { container } = renderTheme(<MenuNav {...mockMenuNav} />);
     expect(container).toMatchSnapshot();
   });
   it("should have items of the navigation menu ", () => {
-    renderTheme(<MenuNav />);
+    renderTheme(<MenuNav {...mockMenuNav} />);
 
     const buttonToogleMenu = screen.getByLabelText(
-      /Botão de abrir e fechar menu de navegção/i
+      /Botão de abrir e fechar menu de navegação/i
     );
     const navigation = screen.getByRole("navigation");
     const contentNavigation = screen.getByLabelText(
@@ -23,10 +24,10 @@ describe("<MenuNav />", () => {
     expect(contentNavigation).toBeInTheDocument();
   });
   it("should handle menu with click in the button ", () => {
-    renderTheme(<MenuNav />);
+    renderTheme(<MenuNav {...mockMenuNav} />);
 
     const buttonToogleMenu = screen.getByLabelText(
-      /Botão de abrir e fechar menu de navegção/i
+      /Botão de abrir e fechar menu de navegação/i
     );
     const navigation = screen.queryByRole("navigation");
     const contentNavigation = screen.getByLabelText(

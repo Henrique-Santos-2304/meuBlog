@@ -8,7 +8,7 @@ exports[`<ButtonToogleMenu /> should render  1`] = `
 
 <div>
   <svg
-    aria-label="Botão Para abrir o Menu"
+    aria-label="botão para abrir o menu"
     class="c0"
     fill="currentColor"
     height="1em"

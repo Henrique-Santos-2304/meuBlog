@@ -171,11 +171,11 @@ exports[`<MenuNav /> should render  1`] = `
 
 <div>
   <button
-    aria-label="Botão de abrir e fechar menu de navegção"
+    aria-label="Botão de abrir e fechar menu de navegação"
     class="c0"
   >
     <svg
-      aria-label="Botão Para abrir o Menu"
+      aria-label="botão para abrir o menu"
       class="c1"
       fill="currentColor"
       height="1em"
@@ -216,6 +216,7 @@ exports[`<MenuNav /> should render  1`] = `
             style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
           >
             <img
+              alt="esse sou eu"
               data-nimg="fill"
               decoding="async"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -255,7 +256,7 @@ exports[`<MenuNav /> should render  1`] = `
           class="c6"
         >
           <a
-            href="/#contacts"
+            href="/#contact"
           >
             Contato
           </a>

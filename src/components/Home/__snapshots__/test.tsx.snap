@@ -110,26 +110,23 @@ exports[`Header should render  1`] = `
       <p
         class="c2"
       >
-        Bem vindo(
-        <span>
-          a
-        </span>
-        ),
+        Bem vindo
+        ,
       </p>
       <h1
         class="c3"
         title="Meu Nome"
       >
-        Sou
+        Sou Henrique
         <strong>
-           Henrique
+           
         </strong>
         ,
       </h1>
       <p
         class="c4"
       >
-        Desenvolvedor FrontEnd
+        Desenvolvedor Front End
       </p>
     </article>
     <main
@@ -139,7 +136,7 @@ exports[`Header should render  1`] = `
         style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
       >
         <img
-          alt="Esse sou eu "
+          alt="esse sou eu "
           aria-label="Foto do Desenvolvedor dono do Portfólio"
           class=""
           data-nimg="fill"

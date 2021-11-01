@@ -57,7 +57,7 @@ exports[`<LinkNav /> should render  1`] = `
     class="c0"
   >
     <a
-      href="/#contacts"
+      href="/#contact"
     >
       Contato
     </a>
