@@ -3,6 +3,7 @@ export type imageLoads = {
   __typename?: any;
   url: string;
   alt?: string;
+  alternativeText?: string;
 };
 
 export type metaDescription = {
@@ -69,7 +70,33 @@ export type descriptions = {
   title: string;
   descriprions: string;
 };
+export type slidesProject = {
+  title: string;
+  urlProject: string;
+  ariaLabel: string;
+  ariaLabelButton: string;
+  image: imageLoads;
+  buttonText: string;
+};
 
+export type projects = {
+  title: string;
+  slidesProject: slidesProject;
+};
+
+export type slidesSkilss = {
+  ariaLabel: string;
+  title: string;
+  image: imageLoads;
+};
+
+export type skilss = {
+  title: string;
+  arialabelTitle: string;
+  ariaLabel: string;
+  slidesCssSkilss: slidesSkilss;
+  slidesSkills: slidesSkilss;
+};
 export interface pageProps {
   portfolioWeb: {
     __typename?: any;
@@ -81,7 +108,9 @@ export interface pageProps {
     menuNav: menuNav;
     Home: home;
     descriptionSection: descriptions;
+    sectionProject: projects;
     descriptionProject: descriptions;
+    sectionSkills: skilss;
     descriptionSkill: descriptions;
   };
 }
@@ -95,5 +124,7 @@ export interface dataPageProps {
     descriptionHome: descriptions;
     descriptionProject: descriptions;
     descriptionSkills: descriptions;
+    projects: projects;
+    skilss: skilss;
   };
 }

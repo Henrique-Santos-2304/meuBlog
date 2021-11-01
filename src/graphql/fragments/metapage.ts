@@ -68,10 +68,49 @@ export const FRAGMENTS = gql`
       descriprions
     }
   }
+  fragment projects on PortfolioWeb {
+    sectionProject {
+      title
+      slidesProject {
+        title
+        urlProject
+        ariaLabel
+        ariaLabelButton
+        image {
+          alternativeText
+          url
+        }
+        buttonText
+      }
+    }
+  }
   fragment descriptionProjects on PortfolioWeb {
     descriptionProject {
       title
       descriprions
+    }
+  }
+  fragment skilss on PortfolioWeb {
+    sectionSkills {
+      title
+      arialabelTitle
+      ariaLabel
+      slidesCssSkilss {
+        ariaLabel
+        title
+        image {
+          alternativeText
+          url
+        }
+      }
+      slidesSkills {
+        ariaLabel
+        image {
+          alternativeText
+          url
+        }
+        title
+      }
     }
   }
   fragment descriptionSkilss on PortfolioWeb {

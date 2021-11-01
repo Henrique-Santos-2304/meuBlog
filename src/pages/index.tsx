@@ -57,7 +57,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const { data } = await apolloClient.query<pageProps>({
     query: Query_PAGE,
   });
-  console.log(data.portfolioWeb.descriptionSkill);
+  console.log(data.portfolioWeb);
   return {
     props: {
       data: {
@@ -73,6 +73,8 @@ export const getStaticProps: GetStaticProps = async () => {
         descriptionHome: data.portfolioWeb.descriptionSection,
         descriptionProject: data.portfolioWeb.descriptionProject,
         descriptionSkills: data.portfolioWeb.descriptionSkill,
+        projects: data.portfolioWeb.sectionProject,
+        skilss: data.portfolioWeb.sectionSkills,
       },
 
       initialApolloState: apolloClient.cache.extract(),

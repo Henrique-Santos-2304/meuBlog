@@ -15,7 +15,11 @@ export const Query_PAGE = gql`
 
       ...descriptionHome
 
+      ...projects
+
       ...descriptionProjects
+
+      ...skilss
 
       ...descriptionSkilss
     }
