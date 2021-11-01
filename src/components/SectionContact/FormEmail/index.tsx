@@ -55,7 +55,7 @@ const FormEmail = () => {
             id="name"
             type="text"
             placeholder="Digite seu nome"
-            {...register("name", { required: "Digite um nome" })}
+            {...register("name", { required: "Digite seu nome" })}
           />
         </ContentInput>
         {/* Input de Email */}

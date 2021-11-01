@@ -14,152 +14,7 @@ exports[`<Header /> should render  1`] = `
   margin: 0 auto;
 }
 
-.c5 {
-  width: 100%;
-  max-width: 32rem;
-  height: 76vh;
-  -webkit-transition: all 0.6s ease-in-out;
-  transition: all 0.6s ease-in-out;
-  z-index: 15;
-  background: rgba(0,0,0,0.91);
-  border-radius: 2rem 0 0 2rem;
-  border: 0.5rem inset #486afe;
-  border-right: 0;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  opacity: 0;
-}
-
-.c7 {
-  width: 10rem;
-  height: 10rem;
-  border-radius: 50%;
-  margin: 1.3rem 0 2rem;
-  position: relative;
-  border-radius: 50%;
-  border: 0.2rem groove #486afe;
-  -webkit-transition: -webkit-transform 0.3s;
-  -webkit-transition: transform 0.3s;
-  transition: transform 0.3s;
-  pointer-events: none;
-}
-
-.c7 img {
-  border-radius: 50%;
-}
-
-.c7:hover {
-  -webkit-transform: translate(0,-10%);
-  -ms-transform: translate(0,-10%);
-  transform: translate(0,-10%);
-}
-
-.c6 {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 .c2 {
-  background: rgba(0,0,0,0.65);
-  padding: 0.3rem;
-  position: fixed;
-  top: 2.6rem;
-  right: 3rem;
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  z-index: 11;
-  cursor: pointer;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-
-.c2:hover {
-  border: 0.1rem solid #f8f8f8;
-  -webkit-filter: brightness(0.9);
-  filter: brightness(0.9);
-}
-
-.c4 {
-  background: rgba(0,0,0,0.65);
-  height: 100vh;
-  width: 35rem;
-  position: fixed;
-  top: 0;
-  right: 0;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  z-index: 10;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  opacity: 0;
-}
-
-.c8 {
-  color: #f8f8f8;
-  font-size: 1.6rem;
-  margin: 1.5rem 0;
-  position: relative;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-}
-
-.c8:hover::before {
-  content: "";
-  position: absolute;
-  bottom: -1rem;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  width: 120%;
-  height: 0.3rem;
-  background: #486afe;
-  -webkit-animation: fSVfHE 0.6s ease-in-out;
-  animation: fSVfHE 0.6s ease-in-out;
-}
-
-.c3 {
-  color: #f8f8f8;
-  font-size: 2.8rem;
-}
-
-.c9 {
   max-width: 74rem;
   height: 12vh;
   display: -webkit-box;
@@ -177,7 +32,7 @@ exports[`<Header /> should render  1`] = `
   padding: 0 3rem;
 }
 
-.c10 {
+.c3 {
   padding: 0.8rem 1rem;
   display: -webkit-box;
   display: -webkit-flex;
@@ -193,7 +48,7 @@ exports[`<Header /> should render  1`] = `
   justify-content: center;
 }
 
-.c11 {
+.c4 {
   width: 2.7rem;
   height: 2.7rem;
   border-radius: 50%;
@@ -201,42 +56,19 @@ exports[`<Header /> should render  1`] = `
   margin: 0 0.3rem 0.3rem 0;
 }
 
-.c12 {
+.c5 {
   font-size: 3rem;
   font-family: 'Tangerine',cursive;
   color: #b7f600;
   font-weight: 800;
 }
 
-.c12 span {
+.c5 span {
   color: #1e1e1e;
 }
 
 @media (min-width:620px) {
-  .c5 {
-    border-radius: 2rem;
-    border: 0.5rem solid #486afe;
-    max-width: 40rem;
-  }
-}
-
-@media (max-width:768px) {
-  .c5 {
-    margin-left: 9rem;
-  }
-}
-
-@media (min-width:620px) {
   .c2 {
-    right: calc(50% - 30rem);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-  }
-}
-
-@media (min-width:620px) {
-  .c9 {
     margin-left: 2rem;
   }
 }
@@ -249,113 +81,21 @@ exports[`<Header /> should render  1`] = `
       class="c1"
       data-testid="containerScreen"
     >
-      <button
-        aria-label="Botão de abrir e fechar menu de navegção"
+      <header
         class="c2"
       >
-        <svg
-          aria-label="Botão Para abrir o Menu"
-          class="c3"
-          fill="currentColor"
-          height="1em"
-          role="button"
-          stroke="currentColor"
-          stroke-width="0"
-          viewBox="0 0 24 24"
-          width="1em"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <title>
-            Abrir Menu
-          </title>
-          <path
-            d="M0 0h24v24H0V0z"
-            fill="none"
-          />
-          <path
-            d="M11 18c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zm-2-8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 4c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
-          />
-        </svg>
-      </button>
-      <div
-        aria-label="Menu de nagação de telas"
-        class="c4"
-      >
-        <nav
-          class="c5"
-          data-testid="subMenuNav"
-        >
-          <div
-            class="c6"
-          >
-            <div
-              class="c7"
-            >
-              <div
-                style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
-              >
-                <img
-                  data-nimg="fill"
-                  decoding="async"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                />
-                <noscript />
-              </div>
-            </div>
-            <div
-              class="c8"
-            >
-              <a
-                href="/#"
-              >
-                Inicio
-              </a>
-            </div>
-            <div
-              class="c8"
-            >
-              <a
-                href="/#projects"
-              >
-                Projetos
-              </a>
-            </div>
-            <div
-              class="c8"
-            >
-              <a
-                href="/#skilss"
-              >
-                Habilidades
-              </a>
-            </div>
-            <div
-              class="c8"
-            >
-              <a
-                href="/#contacts"
-              >
-                Contato
-              </a>
-            </div>
-          </div>
-        </nav>
-      </div>
-      <header
-        class="c9"
-      >
         <div
-          aria-label="Logo do Portfólio"
-          class="c10"
+          aria-label="Minha logo"
+          class="c3"
         >
           <div
-            class="c11"
+            class="c4"
           >
             <div
               style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
             >
               <img
+                alt="Minha logo"
                 data-nimg="fill"
                 decoding="async"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -365,11 +105,11 @@ exports[`<Header /> should render  1`] = `
             </div>
           </div>
           <p
-            class="c12"
+            class="c5"
           >
-            Web
+            web
             <span>
-              Dev
+              dev
             </span>
           </p>
         </div>

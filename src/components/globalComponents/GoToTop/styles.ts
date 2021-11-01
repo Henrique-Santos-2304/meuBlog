@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { FiChevronUp } from "react-icons/fi";
+
 export const Wrapper = styled.div`
   position: fixed;
   bottom: 2rem;
@@ -25,6 +26,7 @@ export const Anchor = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 `;
 export const Icon = styled(FiChevronUp)`
   color: ${({ theme }) => theme.colors.primary};
