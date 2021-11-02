@@ -22,6 +22,8 @@ export const Query_PAGE = gql`
       ...skilss
 
       ...descriptionSkilss
+
+      ...contact
     }
   }
 `;

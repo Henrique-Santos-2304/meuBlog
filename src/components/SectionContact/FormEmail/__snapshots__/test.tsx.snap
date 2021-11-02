@@ -190,7 +190,7 @@ exports[`<FormEmail /> should render  1`] = `
           class="c4"
           id="name"
           name="name"
-          placeholder="Digite seu nome"
+          placeholder="Digite seu Nome"
           type="text"
         />
       </div>
@@ -229,12 +229,11 @@ exports[`<FormEmail /> should render  1`] = `
           rows="5"
         />
       </div>
-      <button
+      <input
         class="c6"
         type="submit"
-      >
-        Enviar
-      </button>
+        value="enviar"
+      />
     </form>
   </div>
 </div>

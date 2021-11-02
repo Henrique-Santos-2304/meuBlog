@@ -91,7 +91,7 @@ export const TextAreas = styled.textarea.attrs({
     }
   `}
 `;
-export const Button = styled.button`
+export const Button = styled.input`
   ${({ theme }) => css`
     margin-bottom: 0.3rem;
     padding: 0.5rem ${theme.spacings.xsmall};

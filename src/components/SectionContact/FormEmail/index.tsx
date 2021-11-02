@@ -4,8 +4,14 @@ import { useEffect, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
 import ContentInput from "../ContentInput";
+import { contact, formDatas } from "graphql/typesQueries/types";
 
-const FormEmail = () => {
+type propsContact = {
+  dataContact: contact;
+  formEmailData: formDatas;
+};
+
+const FormEmail = ({ dataContact, formEmailData }: propsContact) => {
   const {
     handleSubmit,
     register,
@@ -17,17 +23,17 @@ const FormEmail = () => {
   const onSubmit = async () => {
     await emailjs
       .sendForm(
-        "service_ijjwv7k",
-        "CONTACT_FORM",
+        formEmailData.services,
+        formEmailData.form,
         formRef.current!,
-        "user_mB0pVxnJ1ebEVquIzWsUn"
+        formEmailData.user
       )
       .then(
         function () {
-          setMsgForm("Enviado com sucesso");
+          setMsgForm(dataContact.msgSendEmail.msgSucess);
         },
         function () {
-          setMsgForm("Erro! Verifique seus dados");
+          setMsgForm(dataContact.msgSendEmail.msgError);
         }
       );
   };
@@ -40,7 +46,7 @@ const FormEmail = () => {
   return (
     <S.Wrapper>
       {msgForm && (
-        <S.ModalForm aria-label="alerta de sucesso ou erro para envio de email">
+        <S.ModalForm aria-label={dataContact.msgSendEmail.ariaLabel}>
           {msgForm}
         </S.ModalForm>
       )}
@@ -48,31 +54,33 @@ const FormEmail = () => {
         {/* Input de Nome */}
         <ContentInput
           error={errors.name && errors.name.message}
-          typeLabel="name"
-          txtLabel="Nome"
+          typeLabel={dataContact.Input.name}
+          txtLabel={dataContact.Input.textLabel}
         >
           <S.Inputs
-            id="name"
-            type="text"
-            placeholder="Digite seu nome"
-            {...register("name", { required: "Digite seu nome" })}
+            id={dataContact.Input.name}
+            type={dataContact.Input.type}
+            placeholder={dataContact.Input.placeholder}
+            {...register(dataContact.Input.name, {
+              required: dataContact.Input.msgError,
+            })}
           />
         </ContentInput>
         {/* Input de Email */}
         <ContentInput
           error={errors.email && errors.email.message}
-          typeLabel="email"
-          txtLabel="Email"
+          typeLabel={dataContact.inputEmail.name}
+          txtLabel={dataContact.inputEmail.textLabel}
         >
           <S.Inputs
-            id="email"
-            type="email"
-            placeholder="Digite seu email"
-            {...register("email", {
-              required: "Digite um email",
+            id={dataContact.inputEmail.name}
+            type={dataContact.inputEmail.type}
+            placeholder={dataContact.inputEmail.placeholder}
+            {...register(dataContact.inputEmail.name, {
+              required: dataContact.inputEmail.msgError,
               pattern: {
                 value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                message: "Formato de email inválido",
+                message: dataContact.msgSendEmail.msgFormatEmail,
               },
             })}
           />
@@ -81,17 +89,22 @@ const FormEmail = () => {
         {/* Input de Mensagem  */}
         <ContentInput
           error={errors.message && errors.message.message}
-          typeLabel="message"
-          txtLabel="Mensagem"
+          typeLabel={dataContact.inputMessage.name}
+          txtLabel={dataContact.inputMessage.textLabel}
         >
           <S.TextAreas
-            id="message"
-            placeholder="Digite sua mensagem"
-            {...register("message", { required: "Digite uma mensagem" })}
+            id={dataContact.inputMessage.name}
+            placeholder={dataContact.inputMessage.placeholder}
+            {...register(dataContact.inputMessage.name, {
+              required: dataContact.inputMessage.msgError,
+            })}
           />
         </ContentInput>
 
-        <S.Button type="submit">Enviar</S.Button>
+        <S.Button
+          type={dataContact.buttonSend.type}
+          value={dataContact.buttonSend.text}
+        />
       </S.Form>
     </S.Wrapper>
   );

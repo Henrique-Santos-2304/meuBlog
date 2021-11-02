@@ -119,4 +119,43 @@ export const FRAGMENTS = gql`
       descriprions
     }
   }
+  fragment contact on PortfolioWeb {
+    Contact {
+      title
+      ariaLabel
+      ariaLabelTitle
+      Input {
+        name
+        placeholder
+        type
+        msgError
+        textLabel
+      }
+      inputEmail {
+        name
+        placeholder
+        type
+        msgError
+        textLabel
+      }
+      inputMessage {
+        name
+        placeholder
+        type
+        msgError
+        textLabel
+      }
+      buttonSend {
+        text
+        name
+        type
+      }
+      msgSendEmail {
+        msgSucess
+        msgError
+        ariaLabel
+        msgFormatEmail
+      }
+    }
+  }
 `;

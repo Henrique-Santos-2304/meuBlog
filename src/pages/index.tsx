@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import Head from "next/head";
 import Header from "components/Header";
 import MenuMobile from "components/globalComponents/MenuNav/MenuMobile";
@@ -45,7 +46,10 @@ export default function Home({ data }: dataPageProps) {
       <AboutDescription {...data.descriptionProject} mt="2rem" />
       <SectionSkilss dataSkilss={data.skilss} />
       <AboutDescription {...data.descriptionSkills} mt="3rem" />
-      <SectionContact />
+      <SectionContact
+        dataContact={data.contact}
+        formEmailData={data.formEmail}
+      />
       <GoToTop />
     </>
   );
@@ -75,6 +79,12 @@ export const getStaticProps: GetStaticProps = async () => {
         descriptionSkills: data.portfolioWeb.descriptionSkill,
         projects: data.portfolioWeb.sectionProject,
         skilss: data.portfolioWeb.sectionSkills,
+        contact: data.portfolioWeb.Contact,
+        formEmail: {
+          services: process.env.SERVICES_FORM_EMAIL!,
+          form: process.env.CONTACT_FORM!,
+          user: process.env.USER_FORM_EMAIL!,
+        },
       },
 
       initialApolloState: apolloClient.cache.extract(),

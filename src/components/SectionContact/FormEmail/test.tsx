@@ -3,16 +3,18 @@ import { act, fireEvent, screen } from "@testing-library/react";
 import { renderTheme } from "utils/testRenderTheme";
 import { mocked } from "ts-jest/utils";
 import emailjs from "emailjs-com";
+import { mockMainContact } from "../MainContact/mockMainContact";
 
 jest.mock("emailjs-com");
 
 describe("<FormEmail />", () => {
   it("should render ", () => {
-    const { container } = renderTheme(<FormEmail />);
+    const { container } = renderTheme(<FormEmail {...mockMainContact} />);
     expect(container).toMatchSnapshot();
+    screen.logTestingPlaygroundURL();
   });
   it("all fields of the imaginary form on the screen", () => {
-    renderTheme(<FormEmail />);
+    renderTheme(<FormEmail {...mockMainContact} />);
     const labelName = screen.getByText(/nome/i);
     const labelEmail = screen.getByText(/email/i);
     const labelMessage = screen.getByText(/mensagem/i);
@@ -39,7 +41,7 @@ describe("<FormEmail />", () => {
     expect(buttonSubmit).toBeInTheDocument();
   });
   it("should Have 3 alerts with 3 invalid fields", async () => {
-    renderTheme(<FormEmail />);
+    renderTheme(<FormEmail {...mockMainContact} />);
     const button = screen.getByRole("button", { name: /enviar/i });
 
     fireEvent.submit(button);
@@ -50,7 +52,7 @@ describe("<FormEmail />", () => {
     jest.useFakeTimers();
     const mockEmaijs = mocked(emailjs);
 
-    renderTheme(<FormEmail />);
+    renderTheme(<FormEmail {...mockMainContact} />);
     fireEvent.input(screen.getByRole("textbox", { name: /nome/i }), {
       target: {
         value: "test",
@@ -86,7 +88,7 @@ describe("<FormEmail />", () => {
     jest.useFakeTimers();
     const mockEmaijs = mocked(emailjs);
 
-    renderTheme(<FormEmail />);
+    renderTheme(<FormEmail {...mockMainContact} />);
 
     fireEvent.input(screen.getByRole("textbox", { name: /nome/i }), {
       target: {
@@ -109,15 +111,11 @@ describe("<FormEmail />", () => {
 
     mockEmaijs.sendForm.mockRejectedValueOnce({ Error });
 
-    expect(
-      await screen.findByText(/Erro! Verifique seus dados/i)
-    ).toBeInTheDocument();
+    expect(await screen.findByText(/Falha no envio/i)).toBeInTheDocument();
 
     act(() => {
       jest.runAllTimers(); // trigger setTimeout
     });
-    expect(
-      await screen.queryByText(/Erro! Verifique seus dados/i)
-    ).not.toBeInTheDocument();
+    expect(await screen.queryByText(/Falha no envio/i)).not.toBeInTheDocument();
   });
 });

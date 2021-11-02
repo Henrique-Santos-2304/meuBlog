@@ -97,6 +97,41 @@ export type skilss = {
   slidesCssSkilss: slidesSkilss[];
   slidesSkills: slidesSkilss[];
 };
+export type inputsForms = {
+  name: string;
+  placeholder: string;
+  type: string;
+  msgError: string;
+  textLabel: string;
+};
+
+export type buttonSendForm = {
+  text: string;
+  name: string;
+  type: string;
+};
+export type sendEmailMessage = {
+  msgSucess: string;
+  msgError: string;
+  ariaLabel: string;
+  msgFormatEmail: string;
+};
+
+export type contact = {
+  title: string;
+  ariaLabel: string;
+  ariaLabelTitle: string;
+  Input: inputsForms;
+  inputEmail: inputsForms;
+  inputMessage: inputsForms;
+  buttonSend: buttonSendForm;
+  msgSendEmail: sendEmailMessage;
+};
+export type formDatas = {
+  services: string;
+  form: string;
+  user: string;
+};
 export interface pageProps {
   portfolioWeb: {
     __typename?: any;
@@ -112,6 +147,7 @@ export interface pageProps {
     descriptionProject: descriptions;
     sectionSkills: skilss;
     descriptionSkill: descriptions;
+    Contact: contact;
   };
 }
 
@@ -126,5 +162,7 @@ export interface dataPageProps {
     descriptionSkills: descriptions;
     projects: projects;
     skilss: skilss;
+    contact: contact;
+    formEmail: formDatas;
   };
 }

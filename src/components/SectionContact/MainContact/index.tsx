@@ -1,22 +1,24 @@
 import Headings from "components/globalComponents/Headings";
+import { contact, formDatas } from "graphql/typesQueries/types";
 import FormEmail from "../FormEmail";
-import IconsContact from "../IconsContact";
 import * as S from "./styles";
 
-const MainContact = () => (
+type propsContact = {
+  dataContact: contact;
+  formEmailData: formDatas;
+};
+
+const MainContact = ({ dataContact, formEmailData }: propsContact) => (
   <>
     <S.Wrapper id="contacts">
       <Headings
-        msg="Contato"
+        msg={dataContact.title}
         fontSizeText="2rem"
         marginText="0 0 0 3rem"
-        aria-label="Titulo da seção"
+        aria-label={dataContact.ariaLabelTitle}
       />
-      <FormEmail />
+      <FormEmail dataContact={dataContact} formEmailData={formEmailData} />
     </S.Wrapper>
-    <S.ContainerFooter>
-      <IconsContact />
-    </S.ContainerFooter>
   </>
 );
 
