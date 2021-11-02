@@ -20,6 +20,7 @@ export type responsivePropsSlide = {
 export type slideImageprops = {
   images: imagesProps[];
   receptorCards: "skilss" | "projects";
+  autoplay: boolean;
   slidesToShow: number;
   slidesToScroll: number;
   marginBox: string;

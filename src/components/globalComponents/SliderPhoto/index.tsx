@@ -8,6 +8,7 @@ import { slideImageprops } from "types/typesComponents/typesSlide";
 const SliderPhoto = ({
   images,
   receptorCards,
+  autoplay,
   slidesToShow,
   slidesToScroll,
   marginBox,
@@ -15,11 +16,14 @@ const SliderPhoto = ({
 }: slideImageprops) => {
   const settings = {
     dots: true,
-    infinite: false,
+    infinite: autoplay,
+    autoplay: autoplay,
+    autoplaySpeed: 4000,
     speed: 1000,
     slidesToShow: slidesToShow,
     slidesToScroll: slidesToScroll,
     arrows: false,
+    cssEase: "linear",
     responsive,
     appendDots: (dots: any) => (
       <S.Dots>

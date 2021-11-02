@@ -24,6 +24,7 @@ const SectionProject = ({ dataProject }: propsProject) => {
         <SliderPhoto
           images={dataProject.slidesProject}
           receptorCards="projects"
+          autoplay
           slidesToShow={1}
           slidesToScroll={1}
           marginBox="2rem 0 1rem"

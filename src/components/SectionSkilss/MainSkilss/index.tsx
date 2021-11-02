@@ -50,6 +50,7 @@ const SectionSkilss = ({ dataSkilss }: propsSkilss) => {
         <SliderPhoto
           images={dataSkilss.slidesSkills}
           receptorCards="skilss"
+          autoplay={false}
           slidesToShow={4.4}
           slidesToScroll={2}
           marginBox="2rem 1.5rem"
@@ -59,6 +60,7 @@ const SectionSkilss = ({ dataSkilss }: propsSkilss) => {
         <SliderPhoto
           images={dataSkilss.slidesCssSkilss}
           receptorCards="skilss"
+          autoplay={false}
           slidesToShow={4.4}
           slidesToScroll={2}
           marginBox="3rem 1.5rem 2rem"
