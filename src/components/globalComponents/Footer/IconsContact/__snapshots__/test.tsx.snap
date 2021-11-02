@@ -101,8 +101,9 @@ exports[`<IconsContact /> should render  1`] = `
   >
     <a
       class=""
-      href="https://github.com/Henrique-Santos-2304"
+      href="http://github.com"
       target="_blank"
+      title="/meugithub"
     >
       <div
         class="c1"
@@ -125,8 +126,9 @@ exports[`<IconsContact /> should render  1`] = `
     </a>
     <a
       class=""
-      href="https://www.linkedin.com/in/henriquewebdeveloper/"
+      href="http://linkedin.com"
       target="_blank"
+      title="/meulinkedin"
     >
       <div
         class="c1"
@@ -149,9 +151,9 @@ exports[`<IconsContact /> should render  1`] = `
     </a>
     <a
       class=""
-      href="https://spfc.net"
+      href="http://whatsapp.com"
       target="_blank"
-      title="11.96636-5190"
+      title="/meuwhatsapp"
     >
       <div
         class="c1"

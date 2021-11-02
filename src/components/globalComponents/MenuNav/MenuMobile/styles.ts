@@ -7,10 +7,10 @@ type menuVisible = {
 export const Wrapper = styled.nav<menuVisible>`
   ${({ theme, isVisible }) => css`
     width: 100%;
-    max-width: 32rem;
+    max-width: 42rem;
     height: 76vh;
     transition: all 0.6s ease-in-out;
-    z-index: 15;
+    z-index: ${isVisible ? "15" : "-10"};
     background: rgba(0, 0, 0, 0.91);
     border-radius: 2rem 0 0 2rem;
     border: 0.5rem inset ${theme.colors.bgSecondary};
@@ -21,10 +21,15 @@ export const Wrapper = styled.nav<menuVisible>`
     @media (min-width: ${theme.media.medium}) {
       border-radius: 2rem;
       border: 0.5rem solid ${theme.colors.bgSecondary};
-      max-width: 40rem;
     }
-    @media (max-width: ${theme.media.xmedium}) {
-      margin-left: 9rem;
+    @media (max-width: ${theme.media.medium}) {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -2rem;
+    }
+    @media (max-width: ${theme.media.small}) {
+      max-width: 30rem;
     }
   `}
 `;
@@ -91,7 +96,7 @@ export const ContainerFull = styled.div<menuVisible>`
     top: 0;
     right: 0;
     transition: all 0.5s ease-in-out;
-    z-index: 10;
+    z-index: ${isVisible ? "10" : "-10"};
     display: flex;
     align-items: center;
     justify-content: center;

@@ -7,7 +7,7 @@ import SectionProject from "components/SectionProject/MainProject";
 import SectionSkilss from "components/SectionSkilss/MainSkilss";
 import SectionContact from "components/SectionContact/MainContact";
 import AboutDescription from "components/globalComponents/AboutDescription";
-import GoToTop from "components/globalComponents/GoToTop";
+import Footer from "components/globalComponents/Footer";
 
 import { GetStaticProps } from "next";
 import { initializeApollo } from "utils/apollo";
@@ -50,7 +50,7 @@ export default function Home({ data }: dataPageProps) {
         dataContact={data.contact}
         formEmailData={data.formEmail}
       />
-      <GoToTop />
+      <Footer dataFooter={data.footer} />
     </>
   );
 }
@@ -85,6 +85,7 @@ export const getStaticProps: GetStaticProps = async () => {
           form: process.env.CONTACT_FORM!,
           user: process.env.USER_FORM_EMAIL!,
         },
+        footer: data.portfolioWeb.footer,
       },
 
       initialApolloState: apolloClient.cache.extract(),

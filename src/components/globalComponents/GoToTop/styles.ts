@@ -11,7 +11,8 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all 0.5s linear;
+  transition: all 0.5s ease-in-out;
+  z-index: 100;
   &:hover {
     border: 0.1rem solid ${({ theme }) => theme.colors.primary};
     filter: brightness(0.9);

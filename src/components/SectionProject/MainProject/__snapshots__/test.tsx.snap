@@ -134,7 +134,8 @@ exports[`<SectionProject /> should render  1`] = `
 }
 
 .c12 {
-  bottom: -2.2rem;
+  bottom: -3rem;
+  cursor: pointer;
 }
 
 .c12 ul:last-child {

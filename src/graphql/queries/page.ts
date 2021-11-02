@@ -24,6 +24,8 @@ export const Query_PAGE = gql`
       ...descriptionSkilss
 
       ...contact
+
+      ...footers
     }
   }
 `;

@@ -5,6 +5,7 @@ type marginProps = {
   marginBox: string;
 };
 export const ContainerSkilss = styled.div<marginProps>`
+  height: 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;

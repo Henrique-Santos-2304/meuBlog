@@ -5,6 +5,7 @@ import { useState } from "react";
 import LinksNav from "../LinksNav";
 import ButtonToogleMenu from "../ButtonToogleMenu";
 import { menuNav } from "graphql/typesQueries/types";
+import GoToTop from "components/globalComponents/GoToTop";
 
 type propsMenu = {
   menuNav: menuNav;
@@ -44,6 +45,7 @@ const MenuNav = ({ menuNav }: propsMenu) => {
           </S.MenuNav>
         </S.Wrapper>
       </S.ContainerFull>
+      {!menuVisible && <GoToTop />}
     </>
   );
 };

@@ -119,6 +119,16 @@ export const FRAGMENTS = gql`
       descriprions
     }
   }
+  fragment footers on PortfolioWeb {
+    footer {
+      ariaLabel
+      iconsContactSocial {
+        url
+        titleIcon
+        ariaLabel
+      }
+    }
+  }
   fragment contact on PortfolioWeb {
     Contact {
       title

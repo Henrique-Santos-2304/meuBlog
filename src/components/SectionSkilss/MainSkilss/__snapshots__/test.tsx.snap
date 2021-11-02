@@ -28,6 +28,7 @@ exports[`<SectionSkilss /> should render  1`] = `
 }
 
 .c3 {
+  height: 10rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -64,6 +65,7 @@ exports[`<SectionSkilss /> should render  1`] = `
 }
 
 .c7 {
+  height: 10rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

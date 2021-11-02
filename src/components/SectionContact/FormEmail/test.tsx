@@ -11,7 +11,6 @@ describe("<FormEmail />", () => {
   it("should render ", () => {
     const { container } = renderTheme(<FormEmail {...mockMainContact} />);
     expect(container).toMatchSnapshot();
-    screen.logTestingPlaygroundURL();
   });
   it("all fields of the imaginary form on the screen", () => {
     renderTheme(<FormEmail {...mockMainContact} />);

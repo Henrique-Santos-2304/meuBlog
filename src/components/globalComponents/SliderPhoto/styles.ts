@@ -11,7 +11,9 @@ export const SliderBox = styled(Slider)`
   `}
 `;
 export const Dots = styled.div`
-  bottom: -2.2rem;
+  bottom: -3rem;
+  cursor: pointer;
+
   ul {
     &:last-child {
       color: ${({ theme }) => theme.colors.effectsPrimary};

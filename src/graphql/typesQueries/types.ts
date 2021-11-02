@@ -132,6 +132,17 @@ export type formDatas = {
   form: string;
   user: string;
 };
+
+export type iconSocial = {
+  url: string;
+  titleIcon: string;
+  ariaLabel: string;
+};
+
+export type footerIcon = {
+  ariaLabel: string;
+  iconsContactSocial: iconSocial[];
+};
 export interface pageProps {
   portfolioWeb: {
     __typename?: any;
@@ -148,6 +159,7 @@ export interface pageProps {
     sectionSkills: skilss;
     descriptionSkill: descriptions;
     Contact: contact;
+    footer: footerIcon;
   };
 }
 
@@ -164,5 +176,6 @@ export interface dataPageProps {
     skilss: skilss;
     contact: contact;
     formEmail: formDatas;
+    footer: footerIcon;
   };
 }
