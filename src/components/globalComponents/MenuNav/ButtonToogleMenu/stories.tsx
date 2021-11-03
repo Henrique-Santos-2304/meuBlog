@@ -1,16 +1,16 @@
 import { Story, Meta } from "@storybook/react";
 import ButtonToogleMenu from ".";
+import { mockButtonTooglrMenu } from "./mockButtonToogleMenu";
 
 export default {
   title: "ButtonToogleMenu",
   component: ButtonToogleMenu,
 } as Meta;
 
-export const Basic: Story = (args) => <ButtonToogleMenu {...args} />;
+export const Basic: Story = () => (
+  <ButtonToogleMenu menuVisible={false} {...mockButtonTooglrMenu} />
+);
 
-Basic.args = {
-  title: "title basic",
-  description: "description basic",
-};
-
-export const Default: Story = (args) => <ButtonToogleMenu {...args} />;
+export const Default: Story = () => (
+  <ButtonToogleMenu menuVisible={false} {...mockButtonTooglrMenu} />
+);

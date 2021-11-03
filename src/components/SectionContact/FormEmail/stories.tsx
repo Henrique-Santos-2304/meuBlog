@@ -1,16 +1,12 @@
 import { Story, Meta } from "@storybook/react";
 import FormEmail from ".";
+import { mockMainContact } from "../MainContact/mockMainContact";
 
 export default {
   title: "FormEmail",
   component: FormEmail,
 } as Meta;
 
-export const Basic: Story = (args) => <FormEmail {...args} />;
+export const Basic: Story = () => <FormEmail {...mockMainContact} />;
 
-Basic.args = {
-  title: "title basic",
-  description: "description basic",
-};
-
-export const Default: Story = (args) => <FormEmail {...args} />;
+export const Default: Story = () => <FormEmail {...mockMainContact} />;

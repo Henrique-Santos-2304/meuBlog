@@ -1,16 +1,19 @@
 import { Story, Meta } from "@storybook/react";
-import MediaQuery from ".";
+import HandleMediaQuery from ".";
 
 export default {
   title: "MediaQuery",
-  component: MediaQuery,
+  component: HandleMediaQuery,
 } as Meta;
 
-export const Basic: Story = (args) => <MediaQuery {...args} />;
+export const Basic: Story = () => (
+  <HandleMediaQuery responsive="max-width" asWidth="767px" show>
+    <p>Media Query</p>
+  </HandleMediaQuery>
+);
 
-Basic.args = {
-  title: "title basic",
-  description: "description basic",
-};
-
-export const Default: Story = (args) => <MediaQuery {...args} />;
+export const Default: Story = () => (
+  <HandleMediaQuery responsive="max-width" asWidth="767px" show>
+    <p>Media Query</p>
+  </HandleMediaQuery>
+);

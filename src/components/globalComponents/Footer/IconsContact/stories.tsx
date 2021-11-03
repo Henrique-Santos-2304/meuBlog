@@ -1,16 +1,12 @@
 import { Story, Meta } from "@storybook/react";
 import IconsContact from ".";
+import { mockFooter } from "../mockFooter";
 
 export default {
   title: "IconsContact",
   component: IconsContact,
 } as Meta;
 
-export const Basic: Story = (args) => <IconsContact {...args} />;
+export const Basic: Story = () => <IconsContact {...mockFooter.dataFooter} />;
 
-Basic.args = {
-  title: "title basic",
-  description: "description basic",
-};
-
-export const Default: Story = (args) => <IconsContact {...args} />;
+export const Default: Story = () => <IconsContact {...mockFooter.dataFooter} />;

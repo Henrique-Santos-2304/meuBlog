@@ -1,16 +1,12 @@
 import { Story, Meta } from "@storybook/react";
 import SectionSkilss from ".";
+import { mockSkilss } from "./mockSkilss";
 
 export default {
   title: "SectionSkilss",
   component: SectionSkilss,
 } as Meta;
 
-export const Basic: Story = (args) => <SectionSkilss {...args} />;
+export const Basic: Story = () => <SectionSkilss {...mockSkilss} />;
 
-Basic.args = {
-  title: "title basic",
-  description: "description basic",
-};
-
-export const Default: Story = (args) => <SectionSkilss {...args} />;
+export const Default: Story = () => <SectionSkilss {...mockSkilss} />;

@@ -13,15 +13,7 @@ describe("<SliderPhoto />", () => {
   });
   it("should have cards slides ", () => {
     renderTheme(<SliderPhoto {...mockSlides} receptorCards="skilss" />);
-    const image1 = screen.getByRole("img", {
-      name: /logo da foto1/i,
-      hidden: true,
-    });
-    const image2 = screen.getByRole("img", {
-      name: /logo da foto2/i,
-      hidden: true,
-    });
-    expect(image1).toBeInTheDocument();
-    expect(image2).toBeInTheDocument();
+    const images = screen.getByRole("img");
+    expect(images).toBeInTheDocument();
   });
 });

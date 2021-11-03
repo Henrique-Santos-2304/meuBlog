@@ -5,12 +5,13 @@ export default {
   title: "Heading",
   component: Heading,
 } as Meta;
-
-export const Basic: Story = (args) => <Heading {...args} />;
-
-Basic.args = {
-  title: "title basic",
-  description: "description basic",
+const mock = {
+  msg: "teste",
+  colorText: "red",
+  paddingText: "2rem",
+  fontSizeText: "2.4rem",
+  marginText: "1rem",
 };
+export const Basic: Story = () => <Heading {...mock} />;
 
-export const Default: Story = (args) => <Heading {...args} />;
+export const Default: Story = () => <Heading {...mock} />;

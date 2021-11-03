@@ -1,16 +1,16 @@
 import { Story, Meta } from "@storybook/react";
 import SliderPhoto from ".";
+import { mockSlides } from "./mockSlides";
 
 export default {
   title: "SliderPhoto",
   component: SliderPhoto,
 } as Meta;
 
-export const Basic: Story = (args) => <SliderPhoto {...args} />;
+export const Basic: Story = () => (
+  <SliderPhoto {...mockSlides} receptorCards="skilss" />
+);
 
-Basic.args = {
-  title: "title basic",
-  description: "description basic",
-};
-
-export const Default: Story = (args) => <SliderPhoto {...args} />;
+export const Default: Story = () => (
+  <SliderPhoto {...mockSlides} receptorCards="skilss" />
+);

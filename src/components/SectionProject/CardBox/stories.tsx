@@ -1,4 +1,5 @@
 import { Story, Meta } from "@storybook/react";
+import { mockBoxSkill } from "components/SectionSkilss/BoxSkilss/mockBoxSkilss";
 import CardBox from ".";
 
 export default {
@@ -6,11 +7,6 @@ export default {
   component: CardBox,
 } as Meta;
 
-export const Basic: Story = (args) => <CardBox {...args} />;
+export const Basic: Story = () => <CardBox {...mockBoxSkill} />;
 
-Basic.args = {
-  title: "title basic",
-  description: "description basic",
-};
-
-export const Default: Story = (args) => <CardBox {...args} />;
+export const Default: Story = () => <CardBox {...mockBoxSkill} />;

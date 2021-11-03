@@ -1,16 +1,12 @@
 import { Story, Meta } from "@storybook/react";
 import MainContact from ".";
+import { mockMainContact } from "./mockMainContact";
 
 export default {
   title: "MainContact",
   component: MainContact,
 } as Meta;
 
-export const Basic: Story = (args) => <MainContact {...args} />;
+export const Basic: Story = () => <MainContact {...mockMainContact} />;
 
-Basic.args = {
-  title: "title basic",
-  description: "description basic",
-};
-
-export const Default: Story = (args) => <MainContact {...args} />;
+export const Default: Story = () => <MainContact {...mockMainContact} />;

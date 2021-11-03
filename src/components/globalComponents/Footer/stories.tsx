@@ -1,16 +1,12 @@
 import { Story, Meta } from "@storybook/react";
 import Footer from ".";
+import { mockFooter } from "./mockFooter";
 
 export default {
   title: "Footer",
   component: Footer,
 } as Meta;
 
-export const Basic: Story = (args) => <Footer {...args} />;
+export const Basic: Story = () => <Footer {...mockFooter} />;
 
-Basic.args = {
-  title: "title basic",
-  description: "description basic",
-};
-
-export const Default: Story = (args) => <Footer {...args} />;
+export const Default: Story = () => <Footer {...mockFooter} />;

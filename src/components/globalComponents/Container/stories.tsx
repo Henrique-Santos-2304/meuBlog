@@ -6,11 +6,19 @@ export default {
   component: Container,
 } as Meta;
 
-export const Basic: Story = (args) => <Container {...args} />;
+export const Basic: Story = () => (
+  <Container asHeight="small">
+    <p>Teste</p>
+  </Container>
+);
 
 Basic.args = {
   title: "title basic",
   description: "description basic",
 };
 
-export const Default: Story = (args) => <Container {...args} />;
+export const Default: Story = () => (
+  <Container asHeight="small">
+    <p>Teste</p>
+  </Container>
+);

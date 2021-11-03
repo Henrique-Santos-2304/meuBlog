@@ -1,16 +1,12 @@
 import { Story, Meta } from "@storybook/react";
 import SectionProject from ".";
+import { mockProjects } from "./mockProjects";
 
 export default {
   title: "SectionProject",
   component: SectionProject,
 } as Meta;
 
-export const Basic: Story = (args) => <SectionProject {...args} />;
+export const Basic: Story = () => <SectionProject {...mockProjects} />;
 
-Basic.args = {
-  title: "title basic",
-  description: "description basic",
-};
-
-export const Default: Story = (args) => <SectionProject {...args} />;
+export const Default: Story = () => <SectionProject {...mockProjects} />;

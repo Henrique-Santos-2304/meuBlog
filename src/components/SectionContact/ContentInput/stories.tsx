@@ -5,12 +5,19 @@ export default {
   title: "ContentInput",
   component: ContentInput,
 } as Meta;
-
-export const Basic: Story = (args) => <ContentInput {...args} />;
-
-Basic.args = {
-  title: "title basic",
-  description: "description basic",
+const args = {
+  error: "deu erro",
+  typeLabel: "name",
+  txtLabel: "Nome",
 };
+export const Basic: Story = () => (
+  <ContentInput {...args}>
+    <p>Sou Children</p>
+  </ContentInput>
+);
 
-export const Default: Story = (args) => <ContentInput {...args} />;
+export const Default: Story = () => (
+  <ContentInput {...args}>
+    <p>Sou Children</p>
+  </ContentInput>
+);

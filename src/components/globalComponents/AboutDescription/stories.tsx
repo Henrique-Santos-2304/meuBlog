@@ -5,12 +5,10 @@ export default {
   title: "AboutDescription",
   component: AboutDescription,
 } as Meta;
-
-export const Basic: Story = (args) => <AboutDescription {...args} />;
-
-Basic.args = {
-  title: "title basic",
-  description: "description basic",
+const mock = {
+  title: "seção1",
+  descriprions: "Descrição da seção",
 };
+export const Basic: Story = () => <AboutDescription {...mock} />;
 
-export const Default: Story = (args) => <AboutDescription {...args} />;
+export const Default: Story = () => <AboutDescription {...mock} />;

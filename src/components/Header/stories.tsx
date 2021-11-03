@@ -1,16 +1,12 @@
 import { Story, Meta } from "@storybook/react";
 import Header from ".";
+import { mockHeader } from "./mockHeader";
 
 export default {
   title: "Header",
   component: Header,
 } as Meta;
 
-export const Basic: Story = (args) => <Header {...args} />;
+export const Basic: Story = () => <Header {...mockHeader} />;
 
-Basic.args = {
-  title: "title basic",
-  description: "description basic",
-};
-
-export const Default: Story = (args) => <Header {...args} />;
+export const Default: Story = () => <Header {...mockHeader} />;

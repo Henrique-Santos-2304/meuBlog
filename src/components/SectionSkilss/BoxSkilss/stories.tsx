@@ -1,16 +1,12 @@
 import { Story, Meta } from "@storybook/react";
 import BoxSkilss from ".";
+import { mockBoxSkill } from "./mockBoxSkilss";
 
 export default {
   title: "BoxSkilss",
   component: BoxSkilss,
 } as Meta;
 
-export const Basic: Story = (args) => <BoxSkilss {...args} />;
+export const Basic: Story = () => <BoxSkilss {...mockBoxSkill} />;
 
-Basic.args = {
-  title: "title basic",
-  description: "description basic",
-};
-
-export const Default: Story = (args) => <BoxSkilss {...args} />;
+export const Default: Story = () => <BoxSkilss {...mockBoxSkill} />;

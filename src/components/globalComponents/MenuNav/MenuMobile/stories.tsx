@@ -1,16 +1,12 @@
 import { Story, Meta } from "@storybook/react";
 import MenuNav from ".";
+import { mockMenuNav } from "./mockMenuNav";
 
 export default {
   title: "MenuNav",
   component: MenuNav,
 } as Meta;
 
-export const Basic: Story = (args) => <MenuNav {...args} />;
+export const Basic: Story = () => <MenuNav {...mockMenuNav} />;
 
-Basic.args = {
-  title: "title basic",
-  description: "description basic",
-};
-
-export const Default: Story = (args) => <MenuNav {...args} />;
+export const Default: Story = () => <MenuNav {...mockMenuNav} />;

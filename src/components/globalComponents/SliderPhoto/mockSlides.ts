@@ -25,5 +25,6 @@ export const mockSlides = {
   ],
   slidesToShow: 1,
   slidesToScroll: 1,
+  autoplay: false,
   marginBox: "1rem",
 };

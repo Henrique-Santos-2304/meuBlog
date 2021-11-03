@@ -1,16 +1,12 @@
 import { Story, Meta } from "@storybook/react";
 import LinkNav from ".";
+import { mocknavLinks } from "./mockNaviLinks";
 
 export default {
   title: "LinkNav",
   component: LinkNav,
 } as Meta;
 
-export const Basic: Story = (args) => <LinkNav {...args} />;
+export const Basic: Story = () => <LinkNav {...mocknavLinks} />;
 
-Basic.args = {
-  title: "title basic",
-  description: "description basic",
-};
-
-export const Default: Story = (args) => <LinkNav {...args} />;
+export const Default: Story = () => <LinkNav {...mocknavLinks} />;
