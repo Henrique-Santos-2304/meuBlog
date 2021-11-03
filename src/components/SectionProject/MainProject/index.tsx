@@ -9,7 +9,6 @@ type propsProject = {
   dataProject: projects;
 };
 const SectionProject = ({ dataProject }: propsProject) => {
-  console.log(dataProject);
   return (
     <S.Wrapper id="projects">
       <S.Title>

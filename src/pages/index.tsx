@@ -61,7 +61,6 @@ export const getStaticProps: GetStaticProps = async () => {
   const { data } = await apolloClient.query<pageProps>({
     query: Query_PAGE,
   });
-  console.log(data.portfolioWeb);
   return {
     props: {
       data: {
