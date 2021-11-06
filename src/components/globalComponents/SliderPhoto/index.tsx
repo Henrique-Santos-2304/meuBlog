@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import CardBox from "components/SectionProject/CardBox";
 import BoxSkilss from "components/SectionSkilss/BoxSkilss";
 import * as S from "./styles";
@@ -18,8 +17,8 @@ const SliderPhoto = ({
     dots: true,
     infinite: autoplay,
     autoplay: autoplay,
-    autoplaySpeed: 4000,
-    speed: 1000,
+    autoplaySpeed: 10000,
+    speed: 500,
     slidesToShow: slidesToShow,
     slidesToScroll: slidesToScroll,
     arrows: false,

@@ -15,7 +15,11 @@ import { Query_PAGE } from "graphql/queries/page";
 
 import { dataPageProps, pageProps } from "graphql/typesQueries/types";
 
-export default function Home({ data }: dataPageProps) {
+export default function Home({ data, loading }: dataPageProps) {
+  if (loading) {
+    return <p>Loading...</p>;
+  }
+
   return (
     <>
       <Head>
@@ -42,7 +46,7 @@ export default function Home({ data }: dataPageProps) {
       <MenuMobile menuNav={data.menuNav} />
       <SectionHome dataHome={data.home} />
       <AboutDescription {...data.descriptionHome} mt="-7rem" />
-      <SectionProject dataProject={data.projects} />
+      <SectionProject title={data.projects.title} images={data.images} />
       <AboutDescription {...data.descriptionProject} mt="2rem" />
       <SectionSkilss dataSkilss={data.skilss} />
       <AboutDescription {...data.descriptionSkills} mt="3rem" />
@@ -58,11 +62,13 @@ export default function Home({ data }: dataPageProps) {
 export const getStaticProps: GetStaticProps = async () => {
   const apolloClient = initializeApollo();
 
-  const { data } = await apolloClient.query<pageProps>({
+  const { data, loading } = await apolloClient.query<pageProps>({
     query: Query_PAGE,
   });
+
   return {
     props: {
+      loading: loading,
       data: {
         metas: {
           metaDescription: data.portfolioWeb.metaDescription,
@@ -75,6 +81,9 @@ export const getStaticProps: GetStaticProps = async () => {
         home: data.portfolioWeb.Home,
         descriptionHome: data.portfolioWeb.descriptionSection,
         descriptionProject: data.portfolioWeb.descriptionProject,
+        images: data.portfolioWeb.sectionProject.slidesProject.map(
+          (item) => item
+        ),
         descriptionSkills: data.portfolioWeb.descriptionSkill,
         projects: data.portfolioWeb.sectionProject,
         skilss: data.portfolioWeb.sectionSkills,

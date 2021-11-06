@@ -143,6 +143,9 @@ export type footerIcon = {
   ariaLabel: string;
   iconsContactSocial: iconSocial[];
 };
+export type imagesUrl = {
+  url: string;
+};
 export interface pageProps {
   portfolioWeb: {
     __typename?: any;
@@ -164,6 +167,7 @@ export interface pageProps {
 }
 
 export interface dataPageProps {
+  loading: boolean;
   data: {
     metas: metaDescription;
     logoPage: LogoPage;
@@ -177,5 +181,6 @@ export interface dataPageProps {
     contact: contact;
     formEmail: formDatas;
     footer: footerIcon;
+    images: slidesProject[];
   };
 }

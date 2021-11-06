@@ -3,17 +3,18 @@ import * as S from "./styles";
 
 import Headings from "components/globalComponents/Headings";
 import SliderPhoto from "components/globalComponents/SliderPhoto";
-import { projects } from "graphql/typesQueries/types";
+import { slidesProject } from "graphql/typesQueries/types";
 
 type propsProject = {
-  dataProject: projects;
+  title: string;
+  images: slidesProject[];
 };
-const SectionProject = ({ dataProject }: propsProject) => {
+const SectionProject = ({ title, images }: propsProject) => {
   return (
     <S.Wrapper id="projects">
       <S.Title>
         <Headings
-          msg={dataProject.title}
+          msg={title}
           fontSizeText="2rem"
           marginText="1.5rem 0 1.4rem 3rem"
           aria-label="Titulo da seção"
@@ -21,7 +22,7 @@ const SectionProject = ({ dataProject }: propsProject) => {
       </S.Title>
       <S.ContentSlide>
         <SliderPhoto
-          images={dataProject.slidesProject}
+          images={images}
           receptorCards="projects"
           autoplay
           slidesToShow={1}

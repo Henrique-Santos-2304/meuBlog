@@ -65,6 +65,7 @@ export const TextAreas = styled.textarea.attrs({
   rows: 5,
 })`
   ${({ theme }) => css`
+    width: 22rem;
     padding: ${theme.spacings.xxsmall};
     overflow: hidden;
     border: 0;

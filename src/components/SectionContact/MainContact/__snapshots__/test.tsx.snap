@@ -88,6 +88,7 @@ exports[`<MainContact /> should render  1`] = `
 }
 
 .c7 {
+  width: 22rem;
   padding: 0.8rem;
   overflow: hidden;
   border: 0;
