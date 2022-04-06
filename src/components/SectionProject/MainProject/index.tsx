@@ -1,9 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import * as S from "./styles";
-
 import Headings from "components/globalComponents/Headings";
 import SliderPhoto from "components/globalComponents/SliderPhoto";
 import { slidesProject } from "graphql/typesQueries/types";
+import * as S from "./styles";
 
 type propsProject = {
   title: string;
@@ -27,7 +26,7 @@ const SectionProject = ({ title, images }: propsProject) => {
           autoplay
           slidesToShow={1}
           slidesToScroll={1}
-          marginBox="2rem 0 1rem"
+          marginBox="2rem 0 4rem"
         />
       </S.ContentSlide>
     </S.Wrapper>

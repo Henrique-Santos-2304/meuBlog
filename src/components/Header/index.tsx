@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @next/next/no-img-element */
 import Container from "components/globalComponents/Container";
-import * as S from "./styles";
-import Image from "next/image";
 import { LogoPage } from "graphql/typesQueries/types";
+import Image from "next/image";
+import * as S from "./styles";
 type propsHeader = { dataHeader: LogoPage };
 
 const Header = ({ dataHeader }: propsHeader) => {
@@ -16,6 +16,7 @@ const Header = ({ dataHeader }: propsHeader) => {
               src={dataHeader.imageLogo.url}
               alt={dataHeader.alt}
               layout="fill"
+              priority
             />
           </S.LogoImage>
           <S.Logo>

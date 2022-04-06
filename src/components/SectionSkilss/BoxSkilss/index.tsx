@@ -1,5 +1,5 @@
-import * as S from "./styles";
 import { imagesProps } from "types/typesComponents/typesSlide";
+import * as S from "./styles";
 
 type boxSkilssProps = { data: imagesProps; marginBox: string };
 
@@ -10,6 +10,7 @@ const BoxSkilss = ({ data, marginBox }: boxSkilssProps) => (
         src={data.image.url}
         alt={data.image.alternativeText}
         layout="fill"
+        priority
       />
     </S.ContentImage>
     <S.TitleSkilss>{data.title}</S.TitleSkilss>

@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
-import * as S from "./styles";
 import Link from "next/link";
 import { imagesProps } from "types/typesComponents/typesSlide";
+import * as S from "./styles";
 
 type cardsSlides = {
   data: imagesProps;
@@ -18,6 +18,7 @@ const CardBox = ({ data, marginBox }: cardsSlides) => (
         src={data.image.url}
         alt={data.image.alternativeText}
         layout="fill"
+        priority
       />
     </S.Wrapper>
     <S.ContentButton>
